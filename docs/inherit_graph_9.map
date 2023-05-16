@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classFoam_1_1NarrowBand.html" title="Abstract base class which starts the model hierachy for marking cells which are near the interface ak..." alt="" coords="5,31,108,57"/>
-<area shape="rect" id="node2" href="$classFoam_1_1EmptyNarrowBand.html" title="Abstract base class which starts the model hierachy for marking cells which are near the interface ak..." alt="" coords="156,31,300,57"/>
-<area shape="rect" id="node3" href="$classFoam_1_1DistanceNarrowBand.html" title="Concrete class which calculates a field with {0,1} which mark cells near the zero level&#45;set interface..." alt="" coords="358,5,517,32"/>
-<area shape="rect" id="node4" href="$classFoam_1_1SignChangeNarrowBand.html" title="Concrete class which calculates a field with {0,1} which mark cells near the zero level&#45;set interface..." alt="" coords="348,56,527,83"/>
-<area shape="rect" id="node5" href="$classFoam_1_1NeighbourNarrowBand.html" title="Concrete class which calculates a field with {0,1} which mark cells near the zero level&#45;set interface..." alt="" coords="575,56,744,83"/>
-</map>

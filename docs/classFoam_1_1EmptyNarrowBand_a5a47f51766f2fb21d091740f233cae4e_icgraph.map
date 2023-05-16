@@ -1,7 +1,0 @@
-<map id="field" name="field">
-<area shape="rect" id="node1" title=" " alt="" coords="537,101,588,127"/>
-<area shape="rect" id="node2" href="$classFoam_1_1DistanceNarrowBand.html#a251c1e3e56296c54d6171a2cb0fef64e" title=" " alt="" coords="277,5,479,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1NeighbourNarrowBand.html#a251c1e3e56296c54d6171a2cb0fef64e" title=" " alt="" coords="5,93,219,135"/>
-<area shape="rect" id="node4" href="$classFoam_1_1SignChangeNarrowBand.html#a251c1e3e56296c54d6171a2cb0fef64e" title=" " alt="" coords="267,123,489,164"/>
-<area shape="rect" id="node5" href="$classFoam_1_1EmptyNarrowBand.html#a359617ae7b78900e2591e3eb5421951f" title=" " alt="" coords="351,189,405,215"/>
-</map>

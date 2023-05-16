@@ -1,8 +1,0 @@
-<map id="intersectCell" name="intersectCell">
-<area shape="rect" id="node1" title=" " alt="" coords="384,111,488,138"/>
-<area shape="rect" id="node2" href="$classFoam_1_1geometricPhaseIndicator.html#aea83bfccc67e19568c96a435b6e1cad5" title=" " alt="" coords="108,5,336,47"/>
-<area shape="rect" id="node3" href="$leiaTestFoamGeometry_8C.html#aa80221fcd8d4f90cdb84e6f02a361216" title=" " alt="" coords="120,71,324,112"/>
-<area shape="rect" id="node5" href="$leiaTestFoamGeometry_8C.html#a913393c6e06fdcc919eae126d6a67266" title=" " alt="" coords="120,136,324,177"/>
-<area shape="rect" id="node6" href="$leiaTestFoamGeometry_8C.html#a8c8bd01d268133263eb1bded39e1b61c" title=" " alt="" coords="120,201,324,243"/>
-<area shape="rect" id="node4" href="$leiaTestFoamGeometry_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,143,60,170"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="write" name="write">
-<area shape="rect" id="node1" title=" " alt="" coords="249,46,304,73"/>
-<area shape="rect" id="node2" href="$classFoam_1_1functionObjects_1_1gradPsiError.html#a1b552be79d381b878f9e70cd05cba01a" title="Construct from Time and dictionary." alt="" coords="5,5,201,47"/>
-<area shape="rect" id="node3" href="$classFoam_1_1explicitGradientFvPatchField.html#a78cec3e4ecac4a89a3ad8d38f2ad21f5" title=" " alt="" coords="10,71,197,112"/>
-</map>

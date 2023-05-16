@@ -1,6 +1,0 @@
-<map id="NeighbourNarrowBand" name="NeighbourNarrowBand">
-<area shape="rect" id="node1" title="Concrete class which calculates a field with {0,1} which mark cells near the zero level&#45;set interface..." alt="" coords="10,229,179,256"/>
-<area shape="rect" id="node2" href="$classFoam_1_1SignChangeNarrowBand.html" title="Concrete class which calculates a field with {0,1} which mark cells near the zero level&#45;set interface..." alt="" coords="5,155,184,181"/>
-<area shape="rect" id="node3" href="$classFoam_1_1EmptyNarrowBand.html" title="Abstract base class which starts the model hierachy for marking cells which are near the interface ak..." alt="" coords="23,80,167,107"/>
-<area shape="rect" id="node4" href="$classFoam_1_1NarrowBand.html" title="Abstract base class which starts the model hierachy for marking cells which are near the interface ak..." alt="" coords="43,5,146,32"/>
-</map>
