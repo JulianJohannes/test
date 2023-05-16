@@ -1,0 +1,9 @@
+<map id="geometricPhaseIndicator" name="geometricPhaseIndicator">
+<area shape="rect" id="node1" title="Computes the phase indicator as a volume fraction from a field \psi_c." alt="" coords="318,199,502,225"/>
+<area shape="rect" id="node2" href="$classFoam_1_1phaseIndicator.html" title=" " alt="" coords="99,109,217,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,145,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="170,5,311,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="242,109,413,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="437,109,551,136"/>
+<area shape="rect" id="node7" title=" " alt="" coords="575,109,744,136"/>
+</map>

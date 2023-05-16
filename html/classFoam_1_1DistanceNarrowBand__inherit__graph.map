@@ -1,0 +1,5 @@
+<map id="DistanceNarrowBand" name="DistanceNarrowBand">
+<area shape="rect" id="node1" title="Concrete class which calculates a field with {0,1} which mark cells near the zero level&#45;set interface..." alt="" coords="5,155,164,181"/>
+<area shape="rect" id="node2" href="$classFoam_1_1EmptyNarrowBand.html" title="Abstract base class which starts the model hierachy for marking cells which are near the interface ak..." alt="" coords="13,80,157,107"/>
+<area shape="rect" id="node3" href="$classFoam_1_1NarrowBand.html" title="Abstract base class which starts the model hierachy for marking cells which are near the interface ak..." alt="" coords="33,5,136,32"/>
+</map>

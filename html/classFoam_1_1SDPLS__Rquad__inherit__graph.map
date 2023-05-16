@@ -1,0 +1,4 @@
+<map id="SDPLS_Rquad" name="SDPLS_Rquad">
+<area shape="rect" id="node1" title="Concrete class which calculates the SDPLS source term explicitly." alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node2" href="$classFoam_1_1SDPLSSource.html" title="The base class SDPLSSource is the root for the model hierarchy of the SDPLS method by Fricke et...." alt="" coords="7,5,114,32"/>
+</map>
