@@ -1,0 +1,206 @@
+\hypertarget{classFoam_1_1functionObjects_1_1gradPsiError}{}\doxysection{grad\+Psi\+Error Class Reference}
+\label{classFoam_1_1functionObjects_1_1gradPsiError}\index{gradPsiError@{gradPsiError}}
+
+
+Calculates the absolute signed distance error of a field \textbackslash{}psi which represents signed distance to an interface.  
+
+
+
+
+Inheritance diagram for grad\+Psi\+Error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{d4/dd8/classFoam_1_1functionObjects_1_1gradPsiError__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for grad\+Psi\+Error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{d9/d38/classFoam_1_1functionObjects_1_1gradPsiError__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError_a583055671bd9accc298b9d6b8207e331}{Type\+Name}} (\char`\"{}grad\+Psi\+Error\char`\"{})
+\begin{DoxyCompactList}\small\item\em Runtime type information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError_a1b552be79d381b878f9e70cd05cba01a}{grad\+Psi\+Error}} (const word \&name, const Time \&run\+Time, const dictionary \&dict)
+\begin{DoxyCompactList}\small\item\em Construct from Time and dictionary. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError_ac1be6a3d44ae6eee94a86fe43cbce8fa}{grad\+Psi\+Error}} (const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}} \&)=delete
+\begin{DoxyCompactList}\small\item\em No copy construct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError_aec2ca4543557049503c0071d0bd029f7}{operator=}} (const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}} \&)=delete
+\begin{DoxyCompactList}\small\item\em No copy assignment. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError_af0eb41ff46492b0b103aecb7bb71a1f5}{$\sim$grad\+Psi\+Error}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Type $>$ }\\bool \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError_a2ef292a17db4350496ea4c86b9caab1d}{calcgrad\+Psi\+Error}} ()
+\begin{DoxyCompactList}\small\item\em Calculate the grad\+Psi\+Errornitude of the field and register the result. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError_a416ba87d9e4ec040bf37abe634fe3892}{calc}} ()
+\begin{DoxyCompactList}\small\item\em Calculate the grad\+Psi\+Errornitude of the field and return true if successful. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Calculates the absolute signed distance error of a field \textbackslash{}psi which represents signed distance to an interface. 
+
+\label{_Description}%
+
+
+$<$equation$>$ \[ gradPsiError = ||\nabla \psi|-1| \]
+
+\begin{DoxyParagraph}{Usage}
+Minimal example by using {\ttfamily system/control\+Dict.\+functions}\+: \begin{DoxyVerb}gradPsiError1
+{
+    // Mandatory entries (unmodifiable)
+    type           gradPsiError;
+    libs           (libleiaFunctionObject);
+    field          psi;
+    result         gradPsiError;
+    writeControl   writeTime;
+
+}
+\end{DoxyVerb}
+
+\end{DoxyParagraph}
+The inherited entries are elaborated in\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{}{function\+Object.\+H}}
+\item \mbox{\hyperlink{}{field\+Expression.\+H}}
+\item \mbox{\hyperlink{}{fields\+Expression.\+H}}
+\item \mbox{\hyperlink{}{write\+File.\+H}} ...
+\end{DoxyItemize}
+
+$<$if {\ttfamily post\+Process} is applicable$>$ Minimal example by using the {\ttfamily post\+Process} utility\+: \begin{DoxyVerb}    postProcess -func gradPsiError
+\end{DoxyVerb}
+
+
+$<$if {\ttfamily post\+Process} is not applicable$>$ Usage by the {\ttfamily post\+Process} utility is not available.
+
+\begin{DoxySeeAlso}{See also}
+
+\begin{DoxyItemize}
+\item Foam\+::function\+Object
+\item Foam\+::function\+Objects\+::fv\+Mesh\+Function\+Object
+\item Extended\+Code\+Guide\+::function\+Objects\+::field\+::grad\+Psi\+Error ...
+\end{DoxyItemize}
+\end{DoxySeeAlso}
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/functionObjects/gradPsiError/gradPsiError.H}{\texttt{ grad\+Psi\+Error.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/functionObjects/gradPsiError/gradPsiError.C}{\texttt{ grad\+Psi\+Error.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 95 of file grad\+Psi\+Error.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiError_a1b552be79d381b878f9e70cd05cba01a}\label{classFoam_1_1functionObjects_1_1gradPsiError_a1b552be79d381b878f9e70cd05cba01a}} 
+\index{gradPsiError@{gradPsiError}!gradPsiError@{gradPsiError}}
+\index{gradPsiError@{gradPsiError}!gradPsiError@{gradPsiError}}
+\doxysubsubsection{\texorpdfstring{gradPsiError()}{gradPsiError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}} (\begin{DoxyParamCaption}\item[{const word \&}]{name,  }\item[{const Time \&}]{run\+Time,  }\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})}
+
+
+
+Construct from Time and dictionary. 
+
+
+
+Definition at line 57 of file grad\+Psi\+Error.\+C.
+
+
+
+References write().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{d0/dde/classFoam_1_1functionObjects_1_1gradPsiError_a1b552be79d381b878f9e70cd05cba01a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiError_ac1be6a3d44ae6eee94a86fe43cbce8fa}\label{classFoam_1_1functionObjects_1_1gradPsiError_ac1be6a3d44ae6eee94a86fe43cbce8fa}} 
+\index{gradPsiError@{gradPsiError}!gradPsiError@{gradPsiError}}
+\index{gradPsiError@{gradPsiError}!gradPsiError@{gradPsiError}}
+\doxysubsubsection{\texorpdfstring{gradPsiError()}{gradPsiError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+No copy construct. 
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiError_af0eb41ff46492b0b103aecb7bb71a1f5}\label{classFoam_1_1functionObjects_1_1gradPsiError_af0eb41ff46492b0b103aecb7bb71a1f5}} 
+\index{gradPsiError@{gradPsiError}!````~gradPsiError@{$\sim$gradPsiError}}
+\index{````~gradPsiError@{$\sim$gradPsiError}!gradPsiError@{gradPsiError}}
+\doxysubsubsection{\texorpdfstring{$\sim$gradPsiError()}{~gradPsiError()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiError_a2ef292a17db4350496ea4c86b9caab1d}\label{classFoam_1_1functionObjects_1_1gradPsiError_a2ef292a17db4350496ea4c86b9caab1d}} 
+\index{gradPsiError@{gradPsiError}!calcgradPsiError@{calcgradPsiError}}
+\index{calcgradPsiError@{calcgradPsiError}!gradPsiError@{gradPsiError}}
+\doxysubsubsection{\texorpdfstring{calcgradPsiError()}{calcgradPsiError()}}
+{\footnotesize\ttfamily bool calcgrad\+Psi\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculate the grad\+Psi\+Errornitude of the field and register the result. 
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiError_a416ba87d9e4ec040bf37abe634fe3892}\label{classFoam_1_1functionObjects_1_1gradPsiError_a416ba87d9e4ec040bf37abe634fe3892}} 
+\index{gradPsiError@{gradPsiError}!calc@{calc}}
+\index{calc@{calc}!gradPsiError@{gradPsiError}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily bool calc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Calculate the grad\+Psi\+Errornitude of the field and return true if successful. 
+
+
+
+Definition at line 39 of file grad\+Psi\+Error.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiError_a583055671bd9accc298b9d6b8207e331}\label{classFoam_1_1functionObjects_1_1gradPsiError_a583055671bd9accc298b9d6b8207e331}} 
+\index{gradPsiError@{gradPsiError}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!gradPsiError@{gradPsiError}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}grad\+Psi\+Error\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Runtime type information. 
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiError_aec2ca4543557049503c0071d0bd029f7}\label{classFoam_1_1functionObjects_1_1gradPsiError_aec2ca4543557049503c0071d0bd029f7}} 
+\index{gradPsiError@{gradPsiError}!operator=@{operator=}}
+\index{operator=@{operator=}!gradPsiError@{gradPsiError}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+No copy assignment. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/function\+Objects/grad\+Psi\+Error/\mbox{\hyperlink{gradPsiError_8H}{grad\+Psi\+Error.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/function\+Objects/grad\+Psi\+Error/\mbox{\hyperlink{gradPsiError_8C}{grad\+Psi\+Error.\+C}}\end{DoxyCompactItemize}

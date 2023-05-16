@@ -1,0 +1,139 @@
+\hypertarget{classFoam_1_1NarrowLS}{}\doxysection{Narrow\+LS Class Reference}
+\label{classFoam_1_1NarrowLS}\index{NarrowLS@{NarrowLS}}
+
+
+Inheritance diagram for Narrow\+LS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{d5/d8b/classFoam_1_1NarrowLS__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Narrow\+LS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d32/classFoam_1_1NarrowLS__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1NarrowLS_a1f5da8aca4731ff9c16802435e06fdde}{Type\+Name}} (\char`\"{}narrow\+LS\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1NarrowLS_a2bae7415882f232291bffc349fb9c155}{Narrow\+LS}} (const fv\+Mesh \&mesh)
+\begin{DoxyCompactList}\small\item\em Construct from components. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFoam_1_1NarrowLS_a12d8ee92628f8348b827fa84f57f3686}{$\sim$\+Narrow\+LS}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual tmp$<$ vol\+Vector\+Field $>$ \mbox{\hyperlink{classFoam_1_1NarrowLS_a895475a790fbe5b50a9bd1bf8e6389ca}{grad}} (const vol\+Scalar\+Field \&psi) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const vol\+Scalar\+Field \& \mbox{\hyperlink{classFoam_1_1NarrowLS_ac366afb0da1306767fe45fd5153e611f}{narrow\+Band\+\_\+}}
+\item 
+const vol\+Vector\+Field \& \mbox{\hyperlink{classFoam_1_1NarrowLS_a9b4ea3beb1b77d41e9dbc5b57b05f774}{nc\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 50 of file Narrow\+LS.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1NarrowLS_a2bae7415882f232291bffc349fb9c155}\label{classFoam_1_1NarrowLS_a2bae7415882f232291bffc349fb9c155}} 
+\index{NarrowLS@{NarrowLS}!NarrowLS@{NarrowLS}}
+\index{NarrowLS@{NarrowLS}!NarrowLS@{NarrowLS}}
+\doxysubsubsection{\texorpdfstring{NarrowLS()}{NarrowLS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1NarrowLS}{Narrow\+LS}} (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh }\end{DoxyParamCaption})}
+
+
+
+Construct from components. 
+
+
+
+Definition at line 38 of file Narrow\+LS.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1NarrowLS_a12d8ee92628f8348b827fa84f57f3686}\label{classFoam_1_1NarrowLS_a12d8ee92628f8348b827fa84f57f3686}} 
+\index{NarrowLS@{NarrowLS}!````~NarrowLS@{$\sim$NarrowLS}}
+\index{````~NarrowLS@{$\sim$NarrowLS}!NarrowLS@{NarrowLS}}
+\doxysubsubsection{\texorpdfstring{$\sim$NarrowLS()}{~NarrowLS()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1NarrowLS}{Narrow\+LS}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1NarrowLS_a1f5da8aca4731ff9c16802435e06fdde}\label{classFoam_1_1NarrowLS_a1f5da8aca4731ff9c16802435e06fdde}} 
+\index{NarrowLS@{NarrowLS}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!NarrowLS@{NarrowLS}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}narrow\+LS\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1NarrowLS_a895475a790fbe5b50a9bd1bf8e6389ca}\label{classFoam_1_1NarrowLS_a895475a790fbe5b50a9bd1bf8e6389ca}} 
+\index{NarrowLS@{NarrowLS}!grad@{grad}}
+\index{grad@{grad}!NarrowLS@{NarrowLS}}
+\doxysubsubsection{\texorpdfstring{grad()}{grad()}}
+{\footnotesize\ttfamily tmp$<$ vol\+Vector\+Field $>$ grad (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1GradPsi_a895475a790fbe5b50a9bd1bf8e6389ca}{Grad\+Psi}}.
+
+
+
+Definition at line 47 of file Narrow\+LS.\+C.
+
+
+
+References Narrow\+LS\+::narrow\+Band\+\_\+, and Narrow\+LS\+::nc\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1NarrowLS_ac366afb0da1306767fe45fd5153e611f}\label{classFoam_1_1NarrowLS_ac366afb0da1306767fe45fd5153e611f}} 
+\index{NarrowLS@{NarrowLS}!narrowBand\_@{narrowBand\_}}
+\index{narrowBand\_@{narrowBand\_}!NarrowLS@{NarrowLS}}
+\doxysubsubsection{\texorpdfstring{narrowBand\_}{narrowBand\_}}
+{\footnotesize\ttfamily const vol\+Scalar\+Field\& narrow\+Band\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 55 of file Narrow\+LS.\+H.
+
+
+
+Referenced by Narrow\+LS\+::grad().
+
+\mbox{\Hypertarget{classFoam_1_1NarrowLS_a9b4ea3beb1b77d41e9dbc5b57b05f774}\label{classFoam_1_1NarrowLS_a9b4ea3beb1b77d41e9dbc5b57b05f774}} 
+\index{NarrowLS@{NarrowLS}!nc\_@{nc\_}}
+\index{nc\_@{nc\_}!NarrowLS@{NarrowLS}}
+\doxysubsubsection{\texorpdfstring{nc\_}{nc\_}}
+{\footnotesize\ttfamily const vol\+Vector\+Field\& nc\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file Narrow\+LS.\+H.
+
+
+
+Referenced by Narrow\+LS\+::grad().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Grad\+Psi/\mbox{\hyperlink{NarrowLS_8H}{Narrow\+LS.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Grad\+Psi/\mbox{\hyperlink{NarrowLS_8C}{Narrow\+LS.\+C}}\end{DoxyCompactItemize}

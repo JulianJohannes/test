@@ -1,0 +1,250 @@
+\hypertarget{leiaTestFoamGeometry_8C}{}\doxysection{/home/julian/\+Open\+FOAM/leia2/applications/test/leia\+Test\+Foam\+Geometry/leia\+Test\+Foam\+Geometry.C File Reference}
+\label{leiaTestFoamGeometry_8C}\index{/home/julian/OpenFOAM/leia2/applications/test/leiaTestFoamGeometry/leiaTestFoamGeometry.C@{/home/julian/OpenFOAM/leia2/applications/test/leiaTestFoamGeometry/leiaTestFoamGeometry.C}}
+Include dependency graph for leia\+Test\+Foam\+Geometry.\+C\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dea/leiaTestFoamGeometry_8C__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{leiaTestFoamGeometry_8C_a379985aadecacb4bd32dca5516d5e39b}{test\+Triangle\+Area}} ()
+\item 
+void \mbox{\hyperlink{leiaTestFoamGeometry_8C_ab6210bd0bee1f9e64980341d435cb038}{test\+Oriented\+Square\+Area}} ()
+\item 
+void \mbox{\hyperlink{leiaTestFoamGeometry_8C_a86283082bf5d58bbf99a289d9de1e6da}{test\+Unoriented\+Square\+Area}} ()
+\item 
+void \mbox{\hyperlink{leiaTestFoamGeometry_8C_a913393c6e06fdcc919eae126d6a67266}{test\+Vol\+Fraction\+\_\+\+Unit\+Domain\+Inside\+Plane\+Halfspace}} (vol\+Scalar\+Field \&alpha)
+\item 
+void \mbox{\hyperlink{leiaTestFoamGeometry_8C_aa80221fcd8d4f90cdb84e6f02a361216}{test\+Vol\+Fraction\+\_\+\+Unit\+Domain\+Halved}} (vol\+Scalar\+Field \&alpha)
+\item 
+void \mbox{\hyperlink{leiaTestFoamGeometry_8C_a8c8bd01d268133263eb1bded39e1b61c}{test\+Vol\+Fraction\+\_\+\+Unit\+Domain\+Translating\+Plane}} (vol\+Scalar\+Field \&alpha, Time \&run\+Time)
+\item 
+int \mbox{\hyperlink{leiaTestFoamGeometry_8C_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\bfseries{Original source file}} \href{/home/julian/OpenFOAM/leia2/applications/test/leiaTestFoamGeometry/leiaTestFoamGeometry.C}{\texttt{ leia\+Test\+Foam\+Geometry.\+C}}
+
+\label{_Description}%
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{leiaTestFoamGeometry_8C_a379985aadecacb4bd32dca5516d5e39b}\label{leiaTestFoamGeometry_8C_a379985aadecacb4bd32dca5516d5e39b}} 
+\index{leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}!testTriangleArea@{testTriangleArea}}
+\index{testTriangleArea@{testTriangleArea}!leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}}
+\doxysubsubsection{\texorpdfstring{testTriangleArea()}{testTriangleArea()}}
+{\footnotesize\ttfamily void test\+Triangle\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file leia\+Test\+Foam\+Geometry.\+C.
+
+
+
+References Foam\+::centroid(), Foam\+::centroid\+Area\+Normal(), Foam\+::normal\+Area(), and Foam\+::oriented\+Area\+Normal().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d78/leiaTestFoamGeometry_8C_a379985aadecacb4bd32dca5516d5e39b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{d6/d78/leiaTestFoamGeometry_8C_a379985aadecacb4bd32dca5516d5e39b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{leiaTestFoamGeometry_8C_ab6210bd0bee1f9e64980341d435cb038}\label{leiaTestFoamGeometry_8C_ab6210bd0bee1f9e64980341d435cb038}} 
+\index{leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}!testOrientedSquareArea@{testOrientedSquareArea}}
+\index{testOrientedSquareArea@{testOrientedSquareArea}!leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}}
+\doxysubsubsection{\texorpdfstring{testOrientedSquareArea()}{testOrientedSquareArea()}}
+{\footnotesize\ttfamily void test\+Oriented\+Square\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 79 of file leia\+Test\+Foam\+Geometry.\+C.
+
+
+
+References Foam\+::centroid(), Foam\+::centroid\+Area\+Normal(), Foam\+::normal\+Area(), and Foam\+::oriented\+Area\+Normal().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d78/leiaTestFoamGeometry_8C_ab6210bd0bee1f9e64980341d435cb038_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{d6/d78/leiaTestFoamGeometry_8C_ab6210bd0bee1f9e64980341d435cb038_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{leiaTestFoamGeometry_8C_a86283082bf5d58bbf99a289d9de1e6da}\label{leiaTestFoamGeometry_8C_a86283082bf5d58bbf99a289d9de1e6da}} 
+\index{leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}!testUnorientedSquareArea@{testUnorientedSquareArea}}
+\index{testUnorientedSquareArea@{testUnorientedSquareArea}!leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}}
+\doxysubsubsection{\texorpdfstring{testUnorientedSquareArea()}{testUnorientedSquareArea()}}
+{\footnotesize\ttfamily void test\+Unoriented\+Square\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file leia\+Test\+Foam\+Geometry.\+C.
+
+
+
+References Foam\+::centroid(), Foam\+::centroid\+Area\+Normal(), and Foam\+::normal\+Area().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d78/leiaTestFoamGeometry_8C_a86283082bf5d58bbf99a289d9de1e6da_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{d6/d78/leiaTestFoamGeometry_8C_a86283082bf5d58bbf99a289d9de1e6da_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{leiaTestFoamGeometry_8C_a913393c6e06fdcc919eae126d6a67266}\label{leiaTestFoamGeometry_8C_a913393c6e06fdcc919eae126d6a67266}} 
+\index{leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}!testVolFraction\_UnitDomainInsidePlaneHalfspace@{testVolFraction\_UnitDomainInsidePlaneHalfspace}}
+\index{testVolFraction\_UnitDomainInsidePlaneHalfspace@{testVolFraction\_UnitDomainInsidePlaneHalfspace}!leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}}
+\doxysubsubsection{\texorpdfstring{testVolFraction\_UnitDomainInsidePlaneHalfspace()}{testVolFraction\_UnitDomainInsidePlaneHalfspace()}}
+{\footnotesize\ttfamily void test\+Vol\+Fraction\+\_\+\+Unit\+Domain\+Inside\+Plane\+Halfspace (\begin{DoxyParamCaption}\item[{vol\+Scalar\+Field \&}]{alpha }\end{DoxyParamCaption})}
+
+
+
+Definition at line 150 of file leia\+Test\+Foam\+Geometry.\+C.
+
+
+
+References Foam\+::intersect\+Cell().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d78/leiaTestFoamGeometry_8C_a913393c6e06fdcc919eae126d6a67266_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{leiaTestFoamGeometry_8C_aa80221fcd8d4f90cdb84e6f02a361216}\label{leiaTestFoamGeometry_8C_aa80221fcd8d4f90cdb84e6f02a361216}} 
+\index{leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}!testVolFraction\_UnitDomainHalved@{testVolFraction\_UnitDomainHalved}}
+\index{testVolFraction\_UnitDomainHalved@{testVolFraction\_UnitDomainHalved}!leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}}
+\doxysubsubsection{\texorpdfstring{testVolFraction\_UnitDomainHalved()}{testVolFraction\_UnitDomainHalved()}}
+{\footnotesize\ttfamily void test\+Vol\+Fraction\+\_\+\+Unit\+Domain\+Halved (\begin{DoxyParamCaption}\item[{vol\+Scalar\+Field \&}]{alpha }\end{DoxyParamCaption})}
+
+
+
+Definition at line 203 of file leia\+Test\+Foam\+Geometry.\+C.
+
+
+
+References Foam\+::intersect\+Cell().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d78/leiaTestFoamGeometry_8C_aa80221fcd8d4f90cdb84e6f02a361216_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d6/d78/leiaTestFoamGeometry_8C_aa80221fcd8d4f90cdb84e6f02a361216_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{leiaTestFoamGeometry_8C_a8c8bd01d268133263eb1bded39e1b61c}\label{leiaTestFoamGeometry_8C_a8c8bd01d268133263eb1bded39e1b61c}} 
+\index{leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}!testVolFraction\_UnitDomainTranslatingPlane@{testVolFraction\_UnitDomainTranslatingPlane}}
+\index{testVolFraction\_UnitDomainTranslatingPlane@{testVolFraction\_UnitDomainTranslatingPlane}!leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}}
+\doxysubsubsection{\texorpdfstring{testVolFraction\_UnitDomainTranslatingPlane()}{testVolFraction\_UnitDomainTranslatingPlane()}}
+{\footnotesize\ttfamily void test\+Vol\+Fraction\+\_\+\+Unit\+Domain\+Translating\+Plane (\begin{DoxyParamCaption}\item[{vol\+Scalar\+Field \&}]{alpha,  }\item[{Time \&}]{run\+Time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 329 of file leia\+Test\+Foam\+Geometry.\+C.
+
+
+
+References Foam\+::intersect\+Cell().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d78/leiaTestFoamGeometry_8C_a8c8bd01d268133263eb1bded39e1b61c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d6/d78/leiaTestFoamGeometry_8C_a8c8bd01d268133263eb1bded39e1b61c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{leiaTestFoamGeometry_8C_a0ddf1224851353fc92bfbff6f499fa97}\label{leiaTestFoamGeometry_8C_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}!main@{main}}
+\index{main@{main}!leiaTestFoamGeometry.C@{leiaTestFoamGeometry.C}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 399 of file leia\+Test\+Foam\+Geometry.\+C.
+
+
+
+References test\+Oriented\+Square\+Area(), test\+Triangle\+Area(), test\+Unoriented\+Square\+Area(), test\+Vol\+Fraction\+\_\+\+Unit\+Domain\+Halved(), and test\+Vol\+Fraction\+\_\+\+Unit\+Domain\+Translating\+Plane().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d78/leiaTestFoamGeometry_8C_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}

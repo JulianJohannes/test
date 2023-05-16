@@ -1,0 +1,139 @@
+\hypertarget{classFoam_1_1strictNegativeSpLinearImplicitScheme}{}\doxysection{strict\+Negative\+Sp\+Linear\+Implicit\+Scheme Class Reference}
+\label{classFoam_1_1strictNegativeSpLinearImplicitScheme}\index{strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}}
+
+
+The class \mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme}{strict\+Negative\+Sp\+Linear\+Implicit\+Scheme}} implements an implicit discretization of the source term that ensures contributions to the diagonal dominance of the resulting algebraic linear system.  
+
+
+
+
+Inheritance diagram for strict\+Negative\+Sp\+Linear\+Implicit\+Scheme\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{da/d53/classFoam_1_1strictNegativeSpLinearImplicitScheme__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for strict\+Negative\+Sp\+Linear\+Implicit\+Scheme\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{d0/d4b/classFoam_1_1strictNegativeSpLinearImplicitScheme__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme_a929c8c6a47f8a7b8d560667ec9d1314a}{Type\+Name}} (\char`\"{}strict\+Negative\+Sp\+Linear\+Implicit\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme_a7e70082c0e368463e5011c7acd07b582}{strict\+Negative\+Sp\+Linear\+Implicit\+Scheme}} ()
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme_afe8df6139cc3c2f1b230ff31029074f5}{$\sim$strict\+Negative\+Sp\+Linear\+Implicit\+Scheme}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme_a4d53deabbecc3fa7d747bc576d506e91}{update\+Sc}} (const vol\+Scalar\+Field \&non\+Linear\+Part, const vol\+Scalar\+Field \&psi)
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme_afbedde408444a4d4d78913d3596885e8}{update\+Sp}} (const vol\+Scalar\+Field \&non\+Linear\+Part)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The class \mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme}{strict\+Negative\+Sp\+Linear\+Implicit\+Scheme}} implements an implicit discretization of the source term that ensures contributions to the diagonal dominance of the resulting algebraic linear system. 
+
+\label{_Description}%
+
+
+The linearization constants are computed as \begin{equation} \begin{aligned} S_{strictNegativeSpLinearImplicit,\,c} &= \max(f_{nl}(\psi^n),0)\psi^n_c\\ S_{strictNegativeSpLinearImplicit,\,p} &= \min(f_{nl}(\psi^n),0), \end{aligned} \end{equation} which ensures that the constant $S_p \le 0$ for all cells \cite{patankar_numerical_1980}. The resulting source term, written as \begin{equation} S_{strictNegativeSpLinearImplicit}(\psi^{n+1}) = \max(f_{nl}(\psi^n),0)\psi^n_c + \min(f_{nl}(\psi^n),0)\psi^{n+1}_c, \end{equation} thus switches between explicit and implicit discretization cell by cell and depending on the sign of $f(\psi^n)$. This addresses the problem that unconditional implicit treatment can cause the solution to diverge. The reason is that a positive $S_p$ reduces the diagonal coefficient in the assembled linear system. This harms the diagonal dominance of the matrix, which may then lose its M-\/matrix and discrete stability property.
+
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/SDPLSSource/SourceScheme/strictNegativeSpLinearImplicitScheme.H}{\texttt{ strict\+Negative\+Sp\+Linear\+Implicit\+Scheme.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/SDPLSSource/SourceScheme/strictNegativeSpLinearImplicitScheme.C}{\texttt{ strict\+Negative\+Sp\+Linear\+Implicit\+Scheme.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 67 of file strict\+Negative\+Sp\+Linear\+Implicit\+Scheme.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1strictNegativeSpLinearImplicitScheme_a7e70082c0e368463e5011c7acd07b582}\label{classFoam_1_1strictNegativeSpLinearImplicitScheme_a7e70082c0e368463e5011c7acd07b582}} 
+\index{strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}!strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}}
+\index{strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}!strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}}
+\doxysubsubsection{\texorpdfstring{strictNegativeSpLinearImplicitScheme()}{strictNegativeSpLinearImplicitScheme()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme}{strict\+Negative\+Sp\+Linear\+Implicit\+Scheme}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file strict\+Negative\+Sp\+Linear\+Implicit\+Scheme.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1strictNegativeSpLinearImplicitScheme_afe8df6139cc3c2f1b230ff31029074f5}\label{classFoam_1_1strictNegativeSpLinearImplicitScheme_afe8df6139cc3c2f1b230ff31029074f5}} 
+\index{strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}!````~strictNegativeSpLinearImplicitScheme@{$\sim$strictNegativeSpLinearImplicitScheme}}
+\index{````~strictNegativeSpLinearImplicitScheme@{$\sim$strictNegativeSpLinearImplicitScheme}!strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}}
+\doxysubsubsection{\texorpdfstring{$\sim$strictNegativeSpLinearImplicitScheme()}{~strictNegativeSpLinearImplicitScheme()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme}{strict\+Negative\+Sp\+Linear\+Implicit\+Scheme}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1strictNegativeSpLinearImplicitScheme_a929c8c6a47f8a7b8d560667ec9d1314a}\label{classFoam_1_1strictNegativeSpLinearImplicitScheme_a929c8c6a47f8a7b8d560667ec9d1314a}} 
+\index{strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}strict\+Negative\+Sp\+Linear\+Implicit\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1strictNegativeSpLinearImplicitScheme_a4d53deabbecc3fa7d747bc576d506e91}\label{classFoam_1_1strictNegativeSpLinearImplicitScheme_a4d53deabbecc3fa7d747bc576d506e91}} 
+\index{strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}!updateSc@{updateSc}}
+\index{updateSc@{updateSc}!strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}}
+\doxysubsubsection{\texorpdfstring{updateSc()}{updateSc()}}
+{\footnotesize\ttfamily void update\+Sc (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{non\+Linear\+Part,  }\item[{const vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1SourceScheme_a4d53deabbecc3fa7d747bc576d506e91}{Source\+Scheme}}.
+
+
+
+Definition at line 42 of file strict\+Negative\+Sp\+Linear\+Implicit\+Scheme.\+C.
+
+
+
+References Source\+Scheme\+::\+Sc\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1strictNegativeSpLinearImplicitScheme_afbedde408444a4d4d78913d3596885e8}\label{classFoam_1_1strictNegativeSpLinearImplicitScheme_afbedde408444a4d4d78913d3596885e8}} 
+\index{strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}!updateSp@{updateSp}}
+\index{updateSp@{updateSp}!strictNegativeSpLinearImplicitScheme@{strictNegativeSpLinearImplicitScheme}}
+\doxysubsubsection{\texorpdfstring{updateSp()}{updateSp()}}
+{\footnotesize\ttfamily void update\+Sp (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{non\+Linear\+Part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1SourceScheme_afbedde408444a4d4d78913d3596885e8}{Source\+Scheme}}.
+
+
+
+Definition at line 51 of file strict\+Negative\+Sp\+Linear\+Implicit\+Scheme.\+C.
+
+
+
+References Source\+Scheme\+::\+Sp\+\_\+.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Source\+Scheme/\mbox{\hyperlink{strictNegativeSpLinearImplicitScheme_8H}{strict\+Negative\+Sp\+Linear\+Implicit\+Scheme.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Source\+Scheme/\mbox{\hyperlink{strictNegativeSpLinearImplicitScheme_8C}{strict\+Negative\+Sp\+Linear\+Implicit\+Scheme.\+C}}\end{DoxyCompactItemize}

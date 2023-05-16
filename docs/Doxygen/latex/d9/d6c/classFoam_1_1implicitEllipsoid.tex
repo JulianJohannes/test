@@ -1,0 +1,306 @@
+\hypertarget{classFoam_1_1implicitEllipsoid}{}\doxysection{implicit\+Ellipsoid Class Reference}
+\label{classFoam_1_1implicitEllipsoid}\index{implicitEllipsoid@{implicitEllipsoid}}
+
+
+Inheritance diagram for implicit\+Ellipsoid\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{d6/d73/classFoam_1_1implicitEllipsoid__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for implicit\+Ellipsoid\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{dd/d0d/classFoam_1_1implicitEllipsoid__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitEllipsoid_a6becf012add4f3a9be666923afd389f0}{Type\+Name}} (\char`\"{}implicit\+Ellipsoid\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitEllipsoid_a421c821c88731fcad70fa2c07fa3b064}{implicit\+Ellipsoid}} (vector \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_a6191677d21ecabf5e95280c1f28e2a6f}{center}}, vector \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_af3ae65cc6aa8bff9e7372f6a0c37a39e}{axes}})
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitEllipsoid_aaaccd039527480e0faae9e421f548e56}{implicit\+Ellipsoid}} (const dictionary \&dict)
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_a7c44ed1cfb9aee2adac3e1efa6bfb42d}{$\sim$implicit\+Ellipsoid}} ()=default
+\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_afd75110375d5a7f673003f5ca0949b8d}{value}} (const vector \&x) const
+\item 
+virtual vector \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_ae8a2dc10148707498bc4a7ec60335408}{grad}} (const vector \&x) const
+\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_a02f37321b8ac5b33ed606f38b97a2a8d}{curvature}} (const vector \&x) const
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_a6191677d21ecabf5e95280c1f28e2a6f}{center}} () const
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_af3ae65cc6aa8bff9e7372f6a0c37a39e}{axes}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_a31977917fb4d358b069538b5c626bbed}{set\+Axes\+Sqr}} (const vector \&\mbox{\hyperlink{classFoam_1_1implicitEllipsoid_af3ae65cc6aa8bff9e7372f6a0c37a39e}{axes}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_af4818b6350a3469b91442ade78ca779a}{center\+\_\+}}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_a26b2c0b678c69955c73deab4d8abf2ba}{axes\+\_\+}}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_a4749bbf16e9f63732b7ed68f77513205}{axes\+Sqr\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 194 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_a421c821c88731fcad70fa2c07fa3b064}\label{classFoam_1_1implicitEllipsoid_a421c821c88731fcad70fa2c07fa3b064}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!implicitEllipsoid@{implicitEllipsoid}}
+\index{implicitEllipsoid@{implicitEllipsoid}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{implicitEllipsoid()}{implicitEllipsoid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitEllipsoid}{implicit\+Ellipsoid}} (\begin{DoxyParamCaption}\item[{vector}]{center,  }\item[{vector}]{axes }\end{DoxyParamCaption})}
+
+
+
+Definition at line 309 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Ellipsoid\+::axes(), and implicit\+Ellipsoid\+::set\+Axes\+Sqr().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d6c/classFoam_1_1implicitEllipsoid_a421c821c88731fcad70fa2c07fa3b064_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_aaaccd039527480e0faae9e421f548e56}\label{classFoam_1_1implicitEllipsoid_aaaccd039527480e0faae9e421f548e56}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!implicitEllipsoid@{implicitEllipsoid}}
+\index{implicitEllipsoid@{implicitEllipsoid}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{implicitEllipsoid()}{implicitEllipsoid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitEllipsoid}{implicit\+Ellipsoid}} (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})}
+
+
+
+Definition at line 317 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Ellipsoid\+::axes\+\_\+, and implicit\+Ellipsoid\+::set\+Axes\+Sqr().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d6c/classFoam_1_1implicitEllipsoid_aaaccd039527480e0faae9e421f548e56_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_a7c44ed1cfb9aee2adac3e1efa6bfb42d}\label{classFoam_1_1implicitEllipsoid_a7c44ed1cfb9aee2adac3e1efa6bfb42d}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!````~implicitEllipsoid@{$\sim$implicitEllipsoid}}
+\index{````~implicitEllipsoid@{$\sim$implicitEllipsoid}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{$\sim$implicitEllipsoid()}{~implicitEllipsoid()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1implicitEllipsoid}{implicit\+Ellipsoid}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_a31977917fb4d358b069538b5c626bbed}\label{classFoam_1_1implicitEllipsoid_a31977917fb4d358b069538b5c626bbed}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!setAxesSqr@{setAxesSqr}}
+\index{setAxesSqr@{setAxesSqr}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{setAxesSqr()}{setAxesSqr()}}
+{\footnotesize\ttfamily void set\+Axes\+Sqr (\begin{DoxyParamCaption}\item[{const vector \&}]{axes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 327 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Ellipsoid\+::axes(), and implicit\+Ellipsoid\+::axes\+Sqr\+\_\+.
+
+
+
+Referenced by implicit\+Ellipsoid\+::implicit\+Ellipsoid().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{d9/d6c/classFoam_1_1implicitEllipsoid_a31977917fb4d358b069538b5c626bbed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{d9/d6c/classFoam_1_1implicitEllipsoid_a31977917fb4d358b069538b5c626bbed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_a6becf012add4f3a9be666923afd389f0}\label{classFoam_1_1implicitEllipsoid_a6becf012add4f3a9be666923afd389f0}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}implicit\+Ellipsoid\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_afd75110375d5a7f673003f5ca0949b8d}\label{classFoam_1_1implicitEllipsoid_afd75110375d5a7f673003f5ca0949b8d}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!value@{value}}
+\index{value@{value}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily scalar value (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_ab9b7881f27b19149252409d5d223e7e0}{implicit\+Surface}}.
+
+
+
+Definition at line 334 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Ellipsoid\+::axes\+Sqr\+\_\+, and implicit\+Ellipsoid\+::center\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_ae8a2dc10148707498bc4a7ec60335408}\label{classFoam_1_1implicitEllipsoid_ae8a2dc10148707498bc4a7ec60335408}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!grad@{grad}}
+\index{grad@{grad}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{grad()}{grad()}}
+{\footnotesize\ttfamily vector grad (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_a823b516683a702d5eb8eb344b2aaebd6}{implicit\+Surface}}.
+
+
+
+Definition at line 341 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Ellipsoid\+::axes\+Sqr\+\_\+, and implicit\+Ellipsoid\+::center\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_a02f37321b8ac5b33ed606f38b97a2a8d}\label{classFoam_1_1implicitEllipsoid_a02f37321b8ac5b33ed606f38b97a2a8d}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!curvature@{curvature}}
+\index{curvature@{curvature}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{curvature()}{curvature()}}
+{\footnotesize\ttfamily scalar curvature (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_af85f47a71c30a0914a934794c77a9943}{implicit\+Surface}}.
+
+
+
+Definition at line 361 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Ellipsoid\+::axes\+Sqr\+\_\+, and implicit\+Ellipsoid\+::center\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_a6191677d21ecabf5e95280c1f28e2a6f}\label{classFoam_1_1implicitEllipsoid_a6191677d21ecabf5e95280c1f28e2a6f}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!center@{center}}
+\index{center@{center}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily vector center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 351 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Ellipsoid\+::center\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_af3ae65cc6aa8bff9e7372f6a0c37a39e}\label{classFoam_1_1implicitEllipsoid_af3ae65cc6aa8bff9e7372f6a0c37a39e}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!axes@{axes}}
+\index{axes@{axes}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{axes()}{axes()}}
+{\footnotesize\ttfamily vector axes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 356 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Ellipsoid\+::axes\+\_\+.
+
+
+
+Referenced by implicit\+Ellipsoid\+::implicit\+Ellipsoid(), and implicit\+Ellipsoid\+::set\+Axes\+Sqr().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d6c/classFoam_1_1implicitEllipsoid_af3ae65cc6aa8bff9e7372f6a0c37a39e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_af4818b6350a3469b91442ade78ca779a}\label{classFoam_1_1implicitEllipsoid_af4818b6350a3469b91442ade78ca779a}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!center\_@{center\_}}
+\index{center\_@{center\_}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{center\_}{center\_}}
+{\footnotesize\ttfamily vector center\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 196 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Ellipsoid\+::center(), implicit\+Ellipsoid\+::curvature(), implicit\+Ellipsoid\+::grad(), and implicit\+Ellipsoid\+::value().
+
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_a26b2c0b678c69955c73deab4d8abf2ba}\label{classFoam_1_1implicitEllipsoid_a26b2c0b678c69955c73deab4d8abf2ba}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!axes\_@{axes\_}}
+\index{axes\_@{axes\_}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{axes\_}{axes\_}}
+{\footnotesize\ttfamily vector axes\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 197 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Ellipsoid\+::axes(), and implicit\+Ellipsoid\+::implicit\+Ellipsoid().
+
+\mbox{\Hypertarget{classFoam_1_1implicitEllipsoid_a4749bbf16e9f63732b7ed68f77513205}\label{classFoam_1_1implicitEllipsoid_a4749bbf16e9f63732b7ed68f77513205}} 
+\index{implicitEllipsoid@{implicitEllipsoid}!axesSqr\_@{axesSqr\_}}
+\index{axesSqr\_@{axesSqr\_}!implicitEllipsoid@{implicitEllipsoid}}
+\doxysubsubsection{\texorpdfstring{axesSqr\_}{axesSqr\_}}
+{\footnotesize\ttfamily vector axes\+Sqr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 198 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Ellipsoid\+::curvature(), implicit\+Ellipsoid\+::grad(), implicit\+Ellipsoid\+::set\+Axes\+Sqr(), and implicit\+Ellipsoid\+::value().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/level\+Set\+Implicit\+Surfaces/\mbox{\hyperlink{levelSetImplicitSurfaces_8H}{level\+Set\+Implicit\+Surfaces.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/level\+Set\+Implicit\+Surfaces/\mbox{\hyperlink{levelSetImplicitSurfaces_8C}{level\+Set\+Implicit\+Surfaces.\+C}}\end{DoxyCompactItemize}

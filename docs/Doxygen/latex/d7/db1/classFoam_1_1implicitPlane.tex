@@ -1,0 +1,223 @@
+\hypertarget{classFoam_1_1implicitPlane}{}\doxysection{implicit\+Plane Class Reference}
+\label{classFoam_1_1implicitPlane}\index{implicitPlane@{implicitPlane}}
+
+
+Inheritance diagram for implicit\+Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{d8/d06/classFoam_1_1implicitPlane__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for implicit\+Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{d1/d81/classFoam_1_1implicitPlane__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitPlane_a8700041d2585081afb8ece3afb4b847b}{Type\+Name}} (\char`\"{}implicit\+Plane\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitPlane_a949e9cb8d1bccf5239e1325dda3a5c59}{implicit\+Plane}} ()=default
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitPlane_a1208551e200420d1d2b06d2a45c3e384}{implicit\+Plane}} (vector \mbox{\hyperlink{classFoam_1_1implicitPlane_a67601a253726de6c12056e552292db52}{position}}, vector \mbox{\hyperlink{classFoam_1_1implicitPlane_a9e5e063dac5472a243c77297956d4364}{normal}})
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitPlane_ab948cb16047df2ef9c344ab235959f2a}{implicit\+Plane}} (const dictionary \&dict)
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1implicitPlane_a6a7932d8006dd0d5cc62a937029b71fd}{$\sim$implicit\+Plane}} ()=default
+\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1implicitPlane_afd75110375d5a7f673003f5ca0949b8d}{value}} (const vector \&x) const
+\item 
+virtual vector \mbox{\hyperlink{classFoam_1_1implicitPlane_ae8a2dc10148707498bc4a7ec60335408}{grad}} (const vector \&x) const
+\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1implicitPlane_a02f37321b8ac5b33ed606f38b97a2a8d}{curvature}} (const vector \&x) const
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitPlane_a67601a253726de6c12056e552292db52}{position}} () const
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitPlane_a9e5e063dac5472a243c77297956d4364}{normal}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitPlane_a9425ea6e6759c5d57dc76aac972f924a}{position\+\_\+}}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitPlane_a68ba936fed407e332ca1874fb1eb2856}{normal\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 69 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_a949e9cb8d1bccf5239e1325dda3a5c59}\label{classFoam_1_1implicitPlane_a949e9cb8d1bccf5239e1325dda3a5c59}} 
+\index{implicitPlane@{implicitPlane}!implicitPlane@{implicitPlane}}
+\index{implicitPlane@{implicitPlane}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{implicitPlane()}{implicitPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitPlane}{implicit\+Plane}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_a1208551e200420d1d2b06d2a45c3e384}\label{classFoam_1_1implicitPlane_a1208551e200420d1d2b06d2a45c3e384}} 
+\index{implicitPlane@{implicitPlane}!implicitPlane@{implicitPlane}}
+\index{implicitPlane@{implicitPlane}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{implicitPlane()}{implicitPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitPlane}{implicit\+Plane}} (\begin{DoxyParamCaption}\item[{vector}]{position,  }\item[{vector}]{normal }\end{DoxyParamCaption})}
+
+
+
+Definition at line 68 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Plane\+::normal\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_ab948cb16047df2ef9c344ab235959f2a}\label{classFoam_1_1implicitPlane_ab948cb16047df2ef9c344ab235959f2a}} 
+\index{implicitPlane@{implicitPlane}!implicitPlane@{implicitPlane}}
+\index{implicitPlane@{implicitPlane}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{implicitPlane()}{implicitPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitPlane}{implicit\+Plane}} (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})}
+
+
+
+Definition at line 76 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_a6a7932d8006dd0d5cc62a937029b71fd}\label{classFoam_1_1implicitPlane_a6a7932d8006dd0d5cc62a937029b71fd}} 
+\index{implicitPlane@{implicitPlane}!````~implicitPlane@{$\sim$implicitPlane}}
+\index{````~implicitPlane@{$\sim$implicitPlane}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{$\sim$implicitPlane()}{~implicitPlane()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1implicitPlane}{implicit\+Plane}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_a8700041d2585081afb8ece3afb4b847b}\label{classFoam_1_1implicitPlane_a8700041d2585081afb8ece3afb4b847b}} 
+\index{implicitPlane@{implicitPlane}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}implicit\+Plane\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_afd75110375d5a7f673003f5ca0949b8d}\label{classFoam_1_1implicitPlane_afd75110375d5a7f673003f5ca0949b8d}} 
+\index{implicitPlane@{implicitPlane}!value@{value}}
+\index{value@{value}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily scalar value (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_ab9b7881f27b19149252409d5d223e7e0}{implicit\+Surface}}.
+
+
+
+Definition at line 84 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Plane\+::normal\+\_\+, and implicit\+Plane\+::position\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_ae8a2dc10148707498bc4a7ec60335408}\label{classFoam_1_1implicitPlane_ae8a2dc10148707498bc4a7ec60335408}} 
+\index{implicitPlane@{implicitPlane}!grad@{grad}}
+\index{grad@{grad}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{grad()}{grad()}}
+{\footnotesize\ttfamily vector grad (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_a823b516683a702d5eb8eb344b2aaebd6}{implicit\+Surface}}.
+
+
+
+Definition at line 89 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Plane\+::normal\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_a02f37321b8ac5b33ed606f38b97a2a8d}\label{classFoam_1_1implicitPlane_a02f37321b8ac5b33ed606f38b97a2a8d}} 
+\index{implicitPlane@{implicitPlane}!curvature@{curvature}}
+\index{curvature@{curvature}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{curvature()}{curvature()}}
+{\footnotesize\ttfamily scalar curvature (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_af85f47a71c30a0914a934794c77a9943}{implicit\+Surface}}.
+
+
+
+Definition at line 104 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_a67601a253726de6c12056e552292db52}\label{classFoam_1_1implicitPlane_a67601a253726de6c12056e552292db52}} 
+\index{implicitPlane@{implicitPlane}!position@{position}}
+\index{position@{position}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily vector position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 94 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Plane\+::position\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_a9e5e063dac5472a243c77297956d4364}\label{classFoam_1_1implicitPlane_a9e5e063dac5472a243c77297956d4364}} 
+\index{implicitPlane@{implicitPlane}!normal@{normal}}
+\index{normal@{normal}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{normal()}{normal()}}
+{\footnotesize\ttfamily vector normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 99 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Plane\+::normal\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_a9425ea6e6759c5d57dc76aac972f924a}\label{classFoam_1_1implicitPlane_a9425ea6e6759c5d57dc76aac972f924a}} 
+\index{implicitPlane@{implicitPlane}!position\_@{position\_}}
+\index{position\_@{position\_}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{position\_}{position\_}}
+{\footnotesize\ttfamily vector position\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 71 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Plane\+::position(), and implicit\+Plane\+::value().
+
+\mbox{\Hypertarget{classFoam_1_1implicitPlane_a68ba936fed407e332ca1874fb1eb2856}\label{classFoam_1_1implicitPlane_a68ba936fed407e332ca1874fb1eb2856}} 
+\index{implicitPlane@{implicitPlane}!normal\_@{normal\_}}
+\index{normal\_@{normal\_}!implicitPlane@{implicitPlane}}
+\doxysubsubsection{\texorpdfstring{normal\_}{normal\_}}
+{\footnotesize\ttfamily vector normal\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Plane\+::grad(), implicit\+Plane\+::implicit\+Plane(), implicit\+Plane\+::normal(), and implicit\+Plane\+::value().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/level\+Set\+Implicit\+Surfaces/\mbox{\hyperlink{levelSetImplicitSurfaces_8H}{level\+Set\+Implicit\+Surfaces.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/level\+Set\+Implicit\+Surfaces/\mbox{\hyperlink{levelSetImplicitSurfaces_8C}{level\+Set\+Implicit\+Surfaces.\+C}}\end{DoxyCompactItemize}

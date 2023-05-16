@@ -1,0 +1,184 @@
+\hypertarget{classFoam_1_1EmptyNarrowBand}{}\doxysection{Empty\+Narrow\+Band Class Reference}
+\label{classFoam_1_1EmptyNarrowBand}\index{EmptyNarrowBand@{EmptyNarrowBand}}
+
+
+Abstract base class which starts the model hierachy for marking cells which are near the interface aka the \char`\"{}narrow\+Band\char`\"{}. Calculate a field with \{0,1\} which mark cells near the zero level-\/set interface.  
+
+
+
+
+Inheritance diagram for Empty\+Narrow\+Band\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d94/classFoam_1_1EmptyNarrowBand__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Empty\+Narrow\+Band\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{d1/d37/classFoam_1_1EmptyNarrowBand__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1EmptyNarrowBand_a233c6db350418fc6e5014a2cbbe35105}{Type\+Name}} (\char`\"{}empty\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1EmptyNarrowBand_a5365032e5467683f0a4fa0766245c019}{Empty\+Narrow\+Band}} (const dictionary \&dict, const vol\+Scalar\+Field \&\mbox{\hyperlink{classFoam_1_1NarrowBand_a55325765e6e6dc1d7fcf0d434633daee}{psi}})
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1EmptyNarrowBand_aa0efd717bb734d967151e524e6636ce7}{$\sim$\+Empty\+Narrow\+Band}} ()=default
+\item 
+const vol\+Scalar\+Field \& \mbox{\hyperlink{classFoam_1_1EmptyNarrowBand_a5a47f51766f2fb21d091740f233cae4e}{field}} () const
+\item 
+vol\+Scalar\+Field \& \mbox{\hyperlink{classFoam_1_1EmptyNarrowBand_a4f6da153ac8b6968a5ff685ec09e0ee7}{field}} ()
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1EmptyNarrowBand_a359617ae7b78900e2591e3eb5421951f}{write}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vol\+Scalar\+Field \mbox{\hyperlink{classFoam_1_1EmptyNarrowBand_a3b4cb69119556101fce8c960ee117893}{field\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class which starts the model hierachy for marking cells which are near the interface aka the \char`\"{}narrow\+Band\char`\"{}. Calculate a field with \{0,1\} which mark cells near the zero level-\/set interface. 
+
+\label{_Description}%
+
+
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/NarrowBand/EmptyNarrowBand.H}{\texttt{ Empty\+Narrow\+Band.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/NarrowBand/EmptyNarrowBand.C}{\texttt{ Empty\+Narrow\+Band.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 49 of file Empty\+Narrow\+Band.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1EmptyNarrowBand_a5365032e5467683f0a4fa0766245c019}\label{classFoam_1_1EmptyNarrowBand_a5365032e5467683f0a4fa0766245c019}} 
+\index{EmptyNarrowBand@{EmptyNarrowBand}!EmptyNarrowBand@{EmptyNarrowBand}}
+\index{EmptyNarrowBand@{EmptyNarrowBand}!EmptyNarrowBand@{EmptyNarrowBand}}
+\doxysubsubsection{\texorpdfstring{EmptyNarrowBand()}{EmptyNarrowBand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1EmptyNarrowBand}{Empty\+Narrow\+Band}} (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict,  }\item[{const vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file Empty\+Narrow\+Band.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1EmptyNarrowBand_aa0efd717bb734d967151e524e6636ce7}\label{classFoam_1_1EmptyNarrowBand_aa0efd717bb734d967151e524e6636ce7}} 
+\index{EmptyNarrowBand@{EmptyNarrowBand}!````~EmptyNarrowBand@{$\sim$EmptyNarrowBand}}
+\index{````~EmptyNarrowBand@{$\sim$EmptyNarrowBand}!EmptyNarrowBand@{EmptyNarrowBand}}
+\doxysubsubsection{\texorpdfstring{$\sim$EmptyNarrowBand()}{~EmptyNarrowBand()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1EmptyNarrowBand}{Empty\+Narrow\+Band}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1EmptyNarrowBand_a233c6db350418fc6e5014a2cbbe35105}\label{classFoam_1_1EmptyNarrowBand_a233c6db350418fc6e5014a2cbbe35105}} 
+\index{EmptyNarrowBand@{EmptyNarrowBand}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!EmptyNarrowBand@{EmptyNarrowBand}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}empty\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1EmptyNarrowBand_a5a47f51766f2fb21d091740f233cae4e}\label{classFoam_1_1EmptyNarrowBand_a5a47f51766f2fb21d091740f233cae4e}} 
+\index{EmptyNarrowBand@{EmptyNarrowBand}!field@{field}}
+\index{field@{field}!EmptyNarrowBand@{EmptyNarrowBand}}
+\doxysubsubsection{\texorpdfstring{field()}{field()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const vol\+Scalar\+Field \& field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 45 of file Empty\+Narrow\+Band.\+C.
+
+
+
+References Empty\+Narrow\+Band\+::field\+\_\+.
+
+
+
+Referenced by Distance\+Narrow\+Band\+::calc(), Neighbour\+Narrow\+Band\+::calc(), Sign\+Change\+Narrow\+Band\+::calc(), and Empty\+Narrow\+Band\+::write().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d41/classFoam_1_1EmptyNarrowBand_a5a47f51766f2fb21d091740f233cae4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1EmptyNarrowBand_a4f6da153ac8b6968a5ff685ec09e0ee7}\label{classFoam_1_1EmptyNarrowBand_a4f6da153ac8b6968a5ff685ec09e0ee7}} 
+\index{EmptyNarrowBand@{EmptyNarrowBand}!field@{field}}
+\index{field@{field}!EmptyNarrowBand@{EmptyNarrowBand}}
+\doxysubsubsection{\texorpdfstring{field()}{field()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily vol\+Scalar\+Field \& field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 50 of file Empty\+Narrow\+Band.\+C.
+
+
+
+References Empty\+Narrow\+Band\+::field\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1EmptyNarrowBand_a359617ae7b78900e2591e3eb5421951f}\label{classFoam_1_1EmptyNarrowBand_a359617ae7b78900e2591e3eb5421951f}} 
+\index{EmptyNarrowBand@{EmptyNarrowBand}!write@{write}}
+\index{write@{write}!EmptyNarrowBand@{EmptyNarrowBand}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1NarrowBand_a359617ae7b78900e2591e3eb5421951f}{Narrow\+Band}}.
+
+
+
+Definition at line 55 of file Empty\+Narrow\+Band.\+C.
+
+
+
+References Empty\+Narrow\+Band\+::field().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{dc/d41/classFoam_1_1EmptyNarrowBand_a359617ae7b78900e2591e3eb5421951f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1EmptyNarrowBand_a3b4cb69119556101fce8c960ee117893}\label{classFoam_1_1EmptyNarrowBand_a3b4cb69119556101fce8c960ee117893}} 
+\index{EmptyNarrowBand@{EmptyNarrowBand}!field\_@{field\_}}
+\index{field\_@{field\_}!EmptyNarrowBand@{EmptyNarrowBand}}
+\doxysubsubsection{\texorpdfstring{field\_}{field\_}}
+{\footnotesize\ttfamily vol\+Scalar\+Field field\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file Empty\+Narrow\+Band.\+H.
+
+
+
+Referenced by Empty\+Narrow\+Band\+::field().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+Narrow\+Band/\mbox{\hyperlink{EmptyNarrowBand_8H}{Empty\+Narrow\+Band.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+Narrow\+Band/\mbox{\hyperlink{EmptyNarrowBand_8C}{Empty\+Narrow\+Band.\+C}}\end{DoxyCompactItemize}

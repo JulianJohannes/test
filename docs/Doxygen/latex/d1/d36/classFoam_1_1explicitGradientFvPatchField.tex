@@ -1,0 +1,420 @@
+\hypertarget{classFoam_1_1explicitGradientFvPatchField}{}\doxysection{explicit\+Gradient\+Fv\+Patch\+Field Class Reference}
+\label{classFoam_1_1explicitGradientFvPatchField}\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+
+
+Sets the BC gradient to the gradient of the internal\+Field of the last time step.  
+
+
+
+
+Inheritance diagram for explicit\+Gradient\+Fv\+Patch\+Field\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{d5/dd1/classFoam_1_1explicitGradientFvPatchField__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for explicit\+Gradient\+Fv\+Patch\+Field\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d1/dd8/classFoam_1_1explicitGradientFvPatchField__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a7c0356f8beec558e20da4344acd0858a}{Type\+Name}} (\char`\"{}explicit\+Gradient\char`\"{})
+\begin{DoxyCompactList}\small\item\em Runtime type information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a96467afecea2dabb97f08b3266b9a9ae}{explicit\+Gradient\+Fv\+Patch\+Field}} (const fv\+Patch \&, const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&)
+\begin{DoxyCompactList}\small\item\em Construct from patch and internal field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a6a8db62feda076598b3771beee3fceec}{explicit\+Gradient\+Fv\+Patch\+Field}} (const fv\+Patch \&, const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&, const dictionary \&)
+\begin{DoxyCompactList}\small\item\em Construct from patch, internal field and dictionary. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a5cd8f2d0d99f67601d5da681068aed75}{explicit\+Gradient\+Fv\+Patch\+Field}} (const \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} \&, const fv\+Patch \&, const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&, const fv\+Patch\+Field\+Mapper \&)
+\begin{DoxyCompactList}\small\item\em Construct by mapping the given \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_aa58cbdc69014d40c08b4675fb61bcd7d}{explicit\+Gradient\+Fv\+Patch\+Field}} (const \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} \&)
+\begin{DoxyCompactList}\small\item\em Construct as copy. \end{DoxyCompactList}\item 
+virtual tmp$<$ \mbox{\hyperlink{classfvPatchField}{fv\+Patch\+Field}}$<$ scalar $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_ae58a0ffea0d308536c500f6a0125fe78}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Construct and return a clone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a7d721d5c3567c69f81e7cf19ac49d34f}{explicit\+Gradient\+Fv\+Patch\+Field}} (const \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} \&, const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&)
+\begin{DoxyCompactList}\small\item\em Construct as copy setting internal field reference. \end{DoxyCompactList}\item 
+virtual tmp$<$ \mbox{\hyperlink{classfvPatchField}{fv\+Patch\+Field}}$<$ scalar $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_aeb63be02eee4e7adcfc5bcad6983cdc2}{clone}} (const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&iF) const
+\begin{DoxyCompactList}\small\item\em Construct and return a clone setting internal field reference. \end{DoxyCompactList}\item 
+virtual tmp$<$ Field$<$ scalar $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a3655eca8eae3c7aa32cd7d5e1baeccbe}{sn\+Grad}} () const
+\begin{DoxyCompactList}\small\item\em Return gradient at boundary. \end{DoxyCompactList}\item 
+virtual tmp$<$ Field$<$ vector $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a5131bff005088169cbc51972be3bd280}{calc\+Gradient}} ()
+\item 
+virtual tmp$<$ Field$<$ scalar $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_ac0ffac093e2ccca7db370fb631638acd}{value\+Internal\+Coeffs}} (const tmp$<$ scalar\+Field $>$ \&) const
+\begin{DoxyCompactList}\small\item\em Return the matrix diagonal coefficients corresponding to the. \end{DoxyCompactList}\item 
+virtual tmp$<$ Field$<$ scalar $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a3ca4942a6ebdbc73a73e3b03b26673e0}{value\+Boundary\+Coeffs}} (const tmp$<$ scalar\+Field $>$ \&) const
+\begin{DoxyCompactList}\small\item\em Return the matrix source coefficients corresponding to the. \end{DoxyCompactList}\item 
+virtual tmp$<$ Field$<$ scalar $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a0ddd7ea2299890dfffbfffba0c0c60b9}{gradient\+Internal\+Coeffs}} () const
+\begin{DoxyCompactList}\small\item\em Return the matrix diagonal coefficients corresponding to the. \end{DoxyCompactList}\item 
+virtual tmp$<$ Field$<$ scalar $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_ac0dcc5d34163cce635773361d2501c4c}{gradient\+Boundary\+Coeffs}} () const
+\begin{DoxyCompactList}\small\item\em Return the matrix source coefficients corresponding to the. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a1a4ebfb8aa4dc581e54081a12bfbd0d3}{evaluate}} (const Pstream\+::comms\+Types comms\+Type=Pstream\+::comms\+Types\+::blocking)
+\begin{DoxyCompactList}\small\item\em Evaluate the patch field. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a78cec3e4ecac4a89a3ad8d38f2ad21f5}{write}} (Ostream \&os) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Field$<$ scalar $>$ \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a379d61126044a434e3b56315723aa4b7}{sn\+Grad\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sets the BC gradient to the gradient of the internal\+Field of the last time step. 
+
+\label{_Description}%
+
+
+\$\textbackslash{}nabla \textbackslash{}psi\+\_\+b$^\wedge$\{n+1\} = \textbackslash{}nabla \textbackslash{}psi\+\_\+c$^\wedge$\{n\} \$
+
+where \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+$ \nabla(x)$ &= &gradient (user-\/specified)  \\\cline{1-3}
+\end{longtabu}
+
+
+\begin{DoxyParagraph}{Usage}
+Example of the boundary condition specification\+: \begin{DoxyVerb}<patchName>
+{
+    type            explicitGradient;
+}
+\end{DoxyVerb}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/finiteVolume/fields/fvPatchFields/derived/explicitGradient/explicitGradientFvPatchField.H}{\texttt{ explicit\+Gradient\+Fv\+Patch\+Field.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/finiteVolume/fields/fvPatchFields/derived/explicitGradient/explicitGradientFvPatchField.C}{\texttt{ explicit\+Gradient\+Fv\+Patch\+Field.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 72 of file explicit\+Gradient\+Fv\+Patch\+Field.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a96467afecea2dabb97f08b3266b9a9ae}\label{classFoam_1_1explicitGradientFvPatchField_a96467afecea2dabb97f08b3266b9a9ae}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{explicitGradientFvPatchField()}{explicitGradientFvPatchField()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} (\begin{DoxyParamCaption}\item[{const fv\+Patch \&}]{p,  }\item[{const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&}]{iF }\end{DoxyParamCaption})}
+
+
+
+Construct from patch and internal field. 
+
+
+
+Definition at line 31 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+
+
+Referenced by explicit\+Gradient\+Fv\+Patch\+Field\+::clone().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{d1/d36/classFoam_1_1explicitGradientFvPatchField_a96467afecea2dabb97f08b3266b9a9ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a6a8db62feda076598b3771beee3fceec}\label{classFoam_1_1explicitGradientFvPatchField_a6a8db62feda076598b3771beee3fceec}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{explicitGradientFvPatchField()}{explicitGradientFvPatchField()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} (\begin{DoxyParamCaption}\item[{const fv\+Patch \&}]{p,  }\item[{const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&}]{iF,  }\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})}
+
+
+
+Construct from patch, internal field and dictionary. 
+
+
+
+Definition at line 55 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+
+
+References explicit\+Gradient\+Fv\+Patch\+Field\+::sn\+Grad\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a5cd8f2d0d99f67601d5da681068aed75}\label{classFoam_1_1explicitGradientFvPatchField_a5cd8f2d0d99f67601d5da681068aed75}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{explicitGradientFvPatchField()}{explicitGradientFvPatchField()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} \&}]{ptf,  }\item[{const fv\+Patch \&}]{p,  }\item[{const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&}]{iF,  }\item[{const fv\+Patch\+Field\+Mapper \&}]{mapper }\end{DoxyParamCaption})}
+
+
+
+Construct by mapping the given \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}}. 
+
+onto a new patch 
+
+Definition at line 73 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_aa58cbdc69014d40c08b4675fb61bcd7d}\label{classFoam_1_1explicitGradientFvPatchField_aa58cbdc69014d40c08b4675fb61bcd7d}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{explicitGradientFvPatchField()}{explicitGradientFvPatchField()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} \&}]{ptf }\end{DoxyParamCaption})}
+
+
+
+Construct as copy. 
+
+
+
+Definition at line 97 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a7d721d5c3567c69f81e7cf19ac49d34f}\label{classFoam_1_1explicitGradientFvPatchField_a7d721d5c3567c69f81e7cf19ac49d34f}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{explicitGradientFvPatchField()}{explicitGradientFvPatchField()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField}{explicit\+Gradient\+Fv\+Patch\+Field}} \&}]{ptf,  }\item[{const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&}]{iF }\end{DoxyParamCaption})}
+
+
+
+Construct as copy setting internal field reference. 
+
+
+
+Definition at line 109 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a7c0356f8beec558e20da4344acd0858a}\label{classFoam_1_1explicitGradientFvPatchField_a7c0356f8beec558e20da4344acd0858a}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}explicit\+Gradient\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Runtime type information. 
+
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_ae58a0ffea0d308536c500f6a0125fe78}\label{classFoam_1_1explicitGradientFvPatchField_ae58a0ffea0d308536c500f6a0125fe78}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!clone@{clone}}
+\index{clone@{clone}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual tmp$<$\mbox{\hyperlink{classfvPatchField}{fv\+Patch\+Field}}$<$scalar$>$ $>$ clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Construct and return a clone. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_ae58a0ffea0d308536c500f6a0125fe78}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}}.
+
+
+
+Definition at line 140 of file explicit\+Gradient\+Fv\+Patch\+Field.\+H.
+
+
+
+References explicit\+Gradient\+Fv\+Patch\+Field\+::explicit\+Gradient\+Fv\+Patch\+Field().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{d1/d36/classFoam_1_1explicitGradientFvPatchField_ae58a0ffea0d308536c500f6a0125fe78_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_aeb63be02eee4e7adcfc5bcad6983cdc2}\label{classFoam_1_1explicitGradientFvPatchField_aeb63be02eee4e7adcfc5bcad6983cdc2}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!clone@{clone}}
+\index{clone@{clone}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual tmp$<$\mbox{\hyperlink{classfvPatchField}{fv\+Patch\+Field}}$<$scalar$>$ $>$ clone (\begin{DoxyParamCaption}\item[{const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&}]{iF }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Construct and return a clone setting internal field reference. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_aeb63be02eee4e7adcfc5bcad6983cdc2}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}}.
+
+
+
+Definition at line 160 of file explicit\+Gradient\+Fv\+Patch\+Field.\+H.
+
+
+
+References explicit\+Gradient\+Fv\+Patch\+Field\+::explicit\+Gradient\+Fv\+Patch\+Field().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{d1/d36/classFoam_1_1explicitGradientFvPatchField_aeb63be02eee4e7adcfc5bcad6983cdc2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a3655eca8eae3c7aa32cd7d5e1baeccbe}\label{classFoam_1_1explicitGradientFvPatchField_a3655eca8eae3c7aa32cd7d5e1baeccbe}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!snGrad@{snGrad}}
+\index{snGrad@{snGrad}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{snGrad()}{snGrad()}}
+{\footnotesize\ttfamily Foam\+::tmp$<$ Foam\+::\+Field$<$ scalar $>$ $>$ sn\+Grad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return gradient at boundary. 
+
+
+
+Definition at line 132 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a5131bff005088169cbc51972be3bd280}\label{classFoam_1_1explicitGradientFvPatchField_a5131bff005088169cbc51972be3bd280}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!calcGradient@{calcGradient}}
+\index{calcGradient@{calcGradient}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{calcGradient()}{calcGradient()}}
+{\footnotesize\ttfamily tmp$<$ Field$<$ vector $>$ $>$ calc\+Gradient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_a5131bff005088169cbc51972be3bd280}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}}.
+
+
+
+Definition at line 124 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+
+
+Referenced by explicit\+Mag1\+Gradient\+Fv\+Patch\+Field\+::calc\+Gradient().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{d1/d36/classFoam_1_1explicitGradientFvPatchField_a5131bff005088169cbc51972be3bd280_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_ac0ffac093e2ccca7db370fb631638acd}\label{classFoam_1_1explicitGradientFvPatchField_ac0ffac093e2ccca7db370fb631638acd}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!valueInternalCoeffs@{valueInternalCoeffs}}
+\index{valueInternalCoeffs@{valueInternalCoeffs}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{valueInternalCoeffs()}{valueInternalCoeffs()}}
+{\footnotesize\ttfamily Foam\+::tmp$<$ Foam\+::\+Field$<$ scalar $>$ $>$ value\+Internal\+Coeffs (\begin{DoxyParamCaption}\item[{const tmp$<$ scalar\+Field $>$ \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the matrix diagonal coefficients corresponding to the. 
+
+evaluation of the value of this patch\+Field with given weights 
+
+Definition at line 158 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a3ca4942a6ebdbc73a73e3b03b26673e0}\label{classFoam_1_1explicitGradientFvPatchField_a3ca4942a6ebdbc73a73e3b03b26673e0}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!valueBoundaryCoeffs@{valueBoundaryCoeffs}}
+\index{valueBoundaryCoeffs@{valueBoundaryCoeffs}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{valueBoundaryCoeffs()}{valueBoundaryCoeffs()}}
+{\footnotesize\ttfamily Foam\+::tmp$<$ Foam\+::\+Field$<$ scalar $>$ $>$ value\+Boundary\+Coeffs (\begin{DoxyParamCaption}\item[{const tmp$<$ scalar\+Field $>$ \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the matrix source coefficients corresponding to the. 
+
+evaluation of the value of this patch\+Field with given weights 
+
+Definition at line 172 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a0ddd7ea2299890dfffbfffba0c0c60b9}\label{classFoam_1_1explicitGradientFvPatchField_a0ddd7ea2299890dfffbfffba0c0c60b9}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!gradientInternalCoeffs@{gradientInternalCoeffs}}
+\index{gradientInternalCoeffs@{gradientInternalCoeffs}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{gradientInternalCoeffs()}{gradientInternalCoeffs()}}
+{\footnotesize\ttfamily Foam\+::tmp$<$ Foam\+::\+Field$<$ scalar $>$ $>$ gradient\+Internal\+Coeffs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the matrix diagonal coefficients corresponding to the. 
+
+evaluation of the gradient of this patch\+Field 
+
+Definition at line 183 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_ac0dcc5d34163cce635773361d2501c4c}\label{classFoam_1_1explicitGradientFvPatchField_ac0dcc5d34163cce635773361d2501c4c}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!gradientBoundaryCoeffs@{gradientBoundaryCoeffs}}
+\index{gradientBoundaryCoeffs@{gradientBoundaryCoeffs}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{gradientBoundaryCoeffs()}{gradientBoundaryCoeffs()}}
+{\footnotesize\ttfamily Foam\+::tmp$<$ Foam\+::\+Field$<$ scalar $>$ $>$ gradient\+Boundary\+Coeffs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the matrix source coefficients corresponding to the. 
+
+evaluation of the gradient of this patch\+Field 
+
+Definition at line 194 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a1a4ebfb8aa4dc581e54081a12bfbd0d3}\label{classFoam_1_1explicitGradientFvPatchField_a1a4ebfb8aa4dc581e54081a12bfbd0d3}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily void evaluate (\begin{DoxyParamCaption}\item[{const Pstream\+::comms\+Types}]{comms\+Type = {\ttfamily Pstream\+:\+:commsTypes\+:\+:blocking} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Evaluate the patch field. 
+
+
+
+Definition at line 138 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a78cec3e4ecac4a89a3ad8d38f2ad21f5}\label{classFoam_1_1explicitGradientFvPatchField_a78cec3e4ecac4a89a3ad8d38f2ad21f5}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!write@{write}}
+\index{write@{write}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void write (\begin{DoxyParamCaption}\item[{Ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 199 of file explicit\+Gradient\+Fv\+Patch\+Field.\+C.
+
+
+
+References write().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{d1/d36/classFoam_1_1explicitGradientFvPatchField_a78cec3e4ecac4a89a3ad8d38f2ad21f5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1explicitGradientFvPatchField_a379d61126044a434e3b56315723aa4b7}\label{classFoam_1_1explicitGradientFvPatchField_a379d61126044a434e3b56315723aa4b7}} 
+\index{explicitGradientFvPatchField@{explicitGradientFvPatchField}!snGrad\_@{snGrad\_}}
+\index{snGrad\_@{snGrad\_}!explicitGradientFvPatchField@{explicitGradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{snGrad\_}{snGrad\_}}
+{\footnotesize\ttfamily Field$<$scalar$>$ sn\+Grad\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 77 of file explicit\+Gradient\+Fv\+Patch\+Field.\+H.
+
+
+
+Referenced by explicit\+Gradient\+Fv\+Patch\+Field\+::explicit\+Gradient\+Fv\+Patch\+Field().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/finite\+Volume/fields/fv\+Patch\+Fields/derived/explicit\+Gradient/\mbox{\hyperlink{explicitGradientFvPatchField_8H}{explicit\+Gradient\+Fv\+Patch\+Field.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/finite\+Volume/fields/fv\+Patch\+Fields/derived/explicit\+Gradient/\mbox{\hyperlink{explicitGradientFvPatchField_8C}{explicit\+Gradient\+Fv\+Patch\+Field.\+C}}\end{DoxyCompactItemize}

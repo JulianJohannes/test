@@ -1,0 +1,286 @@
+\hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV}{}\doxysection{TVerror\+CSV Class Reference}
+\label{classFoam_1_1functionObjects_1_1TVerrorCSV}\index{TVerrorCSV@{TVerrorCSV}}
+
+
+Calculates the Total\+Varation of a field \textbackslash{}psi and its absolute and relative error compared to the initial state. The calculates properties are written to a CSV file \char`\"{}\+TVerror.\+csv\char`\"{}.  
+
+
+
+
+Inheritance diagram for TVerror\+CSV\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{d6/d50/classFoam_1_1functionObjects_1_1TVerrorCSV__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for TVerror\+CSV\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dab/classFoam_1_1functionObjects_1_1TVerrorCSV__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_a78f5571a5c72b9ec739ca53023a1434b}{Type\+Name}} (\char`\"{}TVerror\+CSV\char`\"{})
+\begin{DoxyCompactList}\small\item\em Runtime type information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_aa8f3befd1274062807b3b7e98ef6f70d}{TVerror\+CSV}} (const word \&name, const Time \&run\+Time, const dictionary \&dict)
+\begin{DoxyCompactList}\small\item\em Construct from Time and dictionary. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_a9477f1df890ca9779e0f7a9c840f049a}{TVerror\+CSV}} (const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}} \&)=delete
+\begin{DoxyCompactList}\small\item\em No copy construct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_a2be0746539d558c42988d1b39bd1478d}{operator=}} (const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}} \&)=delete
+\begin{DoxyCompactList}\small\item\em No copy assignment. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_a304cfd64aa086af8de5829288d82c74d}{execute}} ()
+\item 
+virtual bool \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_ae8f6374e29a250261b3979bbd6e5cb40}{write}} ()
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_a360d1d780dbfa8590d30a2544aa9437d}{$\sim$\+TVerror\+CSV}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+scalar \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_a1d40cc3ae5d3edcf23bd422d7015d8d4}{calc\+TV}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const vol\+Scalar\+Field \& \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_a2cc4aa0fff6e95012c557b8afedb03cb}{field\+\_\+}}
+\item 
+scalar \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_a2f012d071124253c115733c93584ee29}{TV\+\_\+initial\+\_\+}}
+\item 
+OFstream \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV_a4034a69803a73c7bc5b64294d72a3909}{csv\+File\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Calculates the Total\+Varation of a field \textbackslash{}psi and its absolute and relative error compared to the initial state. The calculates properties are written to a CSV file \char`\"{}\+TVerror.\+csv\char`\"{}. 
+
+\label{_Description}%
+
+
+$<$equation$>$ \[ TV = \sum_f \psi_N - \psi_O \]
+
+\begin{DoxyParagraph}{Usage}
+Minimal example by using {\ttfamily system/control\+Dict.\+functions}\+: \begin{DoxyVerb}TVerrorCSV
+{
+    type            TVerrorCSV;
+    libs            ( leiaFunctionObjects );
+    writeControl    timeStep;
+    field           psi;
+}\end{DoxyVerb}
+
+\end{DoxyParagraph}
+The inherited entries are elaborated in\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{}{function\+Object.\+H}}
+\item \mbox{\hyperlink{}{field\+Expression.\+H}}
+\item \mbox{\hyperlink{}{fields\+Expression.\+H}}
+\item \mbox{\hyperlink{}{write\+File.\+H}} ...
+\end{DoxyItemize}
+
+$<$if {\ttfamily post\+Process} is applicable$>$ Minimal example by using the {\ttfamily post\+Process} utility\+: \begin{DoxyVerb}    postProcess -func TVerrorCSV
+\end{DoxyVerb}
+
+
+$<$if {\ttfamily post\+Process} is not applicable$>$ Usage by the {\ttfamily post\+Process} utility is not available.
+
+\begin{DoxySeeAlso}{See also}
+
+\begin{DoxyItemize}
+\item Foam\+::function\+Object
+\item Foam\+::function\+Objects\+::fv\+Mesh\+Function\+Object
+\item Extended\+Code\+Guide\+::function\+Objects\+::field\+::\+TVerror\+CSV ...
+\end{DoxyItemize}
+\end{DoxySeeAlso}
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/functionObjects/TVerrorCSV/TVerrorCSV.H}{\texttt{ TVerror\+CSV.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/functionObjects/TVerrorCSV/TVerrorCSV.C}{\texttt{ TVerror\+CSV.\+C}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/functionObjects/TVerrorCSV/TVerrorCSVTEMPLATES.C}{\texttt{ TVerror\+CSVTEMPLATES.\+C}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/functionObjects/TVerrorCSV/.}{\texttt{ .}}.. 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 95 of file TVerror\+CSV.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_aa8f3befd1274062807b3b7e98ef6f70d}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_aa8f3befd1274062807b3b7e98ef6f70d}} 
+\index{TVerrorCSV@{TVerrorCSV}!TVerrorCSV@{TVerrorCSV}}
+\index{TVerrorCSV@{TVerrorCSV}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{TVerrorCSV()}{TVerrorCSV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}} (\begin{DoxyParamCaption}\item[{const word \&}]{name,  }\item[{const Time \&}]{run\+Time,  }\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})}
+
+
+
+Construct from Time and dictionary. 
+
+
+
+Definition at line 40 of file TVerror\+CSV.\+C.
+
+
+
+References TVerror\+CSV\+::calc\+TV(), TVerror\+CSV\+::csv\+File\+\_\+, TVerror\+CSV\+::\+TV\+\_\+initial\+\_\+, and TVerror\+CSV\+::write().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{d6/d34/classFoam_1_1functionObjects_1_1TVerrorCSV_aa8f3befd1274062807b3b7e98ef6f70d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_a9477f1df890ca9779e0f7a9c840f049a}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_a9477f1df890ca9779e0f7a9c840f049a}} 
+\index{TVerrorCSV@{TVerrorCSV}!TVerrorCSV@{TVerrorCSV}}
+\index{TVerrorCSV@{TVerrorCSV}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{TVerrorCSV()}{TVerrorCSV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+No copy construct. 
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_a360d1d780dbfa8590d30a2544aa9437d}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_a360d1d780dbfa8590d30a2544aa9437d}} 
+\index{TVerrorCSV@{TVerrorCSV}!````~TVerrorCSV@{$\sim$TVerrorCSV}}
+\index{````~TVerrorCSV@{$\sim$TVerrorCSV}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{$\sim$TVerrorCSV()}{~TVerrorCSV()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_a1d40cc3ae5d3edcf23bd422d7015d8d4}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_a1d40cc3ae5d3edcf23bd422d7015d8d4}} 
+\index{TVerrorCSV@{TVerrorCSV}!calcTV@{calcTV}}
+\index{calcTV@{calcTV}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{calcTV()}{calcTV()}}
+{\footnotesize\ttfamily scalar calc\+TV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 85 of file TVerror\+CSV.\+C.
+
+
+
+Referenced by TVerror\+CSV\+::\+TVerror\+CSV().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{d6/d34/classFoam_1_1functionObjects_1_1TVerrorCSV_a1d40cc3ae5d3edcf23bd422d7015d8d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_a78f5571a5c72b9ec739ca53023a1434b}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_a78f5571a5c72b9ec739ca53023a1434b}} 
+\index{TVerrorCSV@{TVerrorCSV}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}TVerror\+CSV\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Runtime type information. 
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_a2be0746539d558c42988d1b39bd1478d}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_a2be0746539d558c42988d1b39bd1478d}} 
+\index{TVerrorCSV@{TVerrorCSV}!operator=@{operator=}}
+\index{operator=@{operator=}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+No copy assignment. 
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_a304cfd64aa086af8de5829288d82c74d}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_a304cfd64aa086af8de5829288d82c74d}} 
+\index{TVerrorCSV@{TVerrorCSV}!execute@{execute}}
+\index{execute@{execute}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual bool execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 135 of file TVerror\+CSV.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_ae8f6374e29a250261b3979bbd6e5cb40}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_ae8f6374e29a250261b3979bbd6e5cb40}} 
+\index{TVerrorCSV@{TVerrorCSV}!write@{write}}
+\index{write@{write}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily bool write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 66 of file TVerror\+CSV.\+C.
+
+
+
+Referenced by TVerror\+CSV\+::\+TVerror\+CSV().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{d6/d34/classFoam_1_1functionObjects_1_1TVerrorCSV_ae8f6374e29a250261b3979bbd6e5cb40_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_a2cc4aa0fff6e95012c557b8afedb03cb}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_a2cc4aa0fff6e95012c557b8afedb03cb}} 
+\index{TVerrorCSV@{TVerrorCSV}!field\_@{field\_}}
+\index{field\_@{field\_}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{field\_}{field\_}}
+{\footnotesize\ttfamily const vol\+Scalar\+Field\& field\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 100 of file TVerror\+CSV.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_a2f012d071124253c115733c93584ee29}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_a2f012d071124253c115733c93584ee29}} 
+\index{TVerrorCSV@{TVerrorCSV}!TV\_initial\_@{TV\_initial\_}}
+\index{TV\_initial\_@{TV\_initial\_}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{TV\_initial\_}{TV\_initial\_}}
+{\footnotesize\ttfamily scalar TV\+\_\+initial\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 101 of file TVerror\+CSV.\+H.
+
+
+
+Referenced by TVerror\+CSV\+::\+TVerror\+CSV().
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1TVerrorCSV_a4034a69803a73c7bc5b64294d72a3909}\label{classFoam_1_1functionObjects_1_1TVerrorCSV_a4034a69803a73c7bc5b64294d72a3909}} 
+\index{TVerrorCSV@{TVerrorCSV}!csvFile\_@{csvFile\_}}
+\index{csvFile\_@{csvFile\_}!TVerrorCSV@{TVerrorCSV}}
+\doxysubsubsection{\texorpdfstring{csvFile\_}{csvFile\_}}
+{\footnotesize\ttfamily OFstream csv\+File\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 102 of file TVerror\+CSV.\+H.
+
+
+
+Referenced by TVerror\+CSV\+::\+TVerror\+CSV().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/function\+Objects/\+TVerror\+CSV/\mbox{\hyperlink{TVerrorCSV_8H}{TVerror\+CSV.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/function\+Objects/\+TVerror\+CSV/\mbox{\hyperlink{TVerrorCSV_8C}{TVerror\+CSV.\+C}}\end{DoxyCompactItemize}

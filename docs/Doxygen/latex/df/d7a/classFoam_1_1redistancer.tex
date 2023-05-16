@@ -1,0 +1,173 @@
+\hypertarget{classFoam_1_1redistancer}{}\doxysection{redistancer Class Reference}
+\label{classFoam_1_1redistancer}\index{redistancer@{redistancer}}
+
+
+Inheritance diagram for redistancer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{d0/db5/classFoam_1_1redistancer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for redistancer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d5/daf/classFoam_1_1redistancer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1redistancer_a3e5b2313f83fb3742c4ea0190b1cdaac}{Type\+Name}} (\char`\"{}no\+Redistancing\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1redistancer_ab38066e91c54c6bdf68e1d1a823a8a62}{declare\+Run\+Time\+Selection\+Table}} (auto\+Ptr, \mbox{\hyperlink{classFoam_1_1redistancer}{redistancer}}, Mesh,(const fv\+Mesh \&mesh),(mesh))
+\item 
+\mbox{\hyperlink{classFoam_1_1redistancer_a4555404de0e899db6425f29a491e80c2}{redistancer}} (const fv\+Mesh \&mesh)
+\begin{DoxyCompactList}\small\item\em Construct from components. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFoam_1_1redistancer_ae8dd8824446d0ede70d6a72cf2f04611}{$\sim$redistancer}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFoam_1_1redistancer_a565cea601b5cdaf7b2ad7fe010714e53}{redistance}} (vol\+Scalar\+Field \&psi)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1redistancer}{redistancer}} $>$ \mbox{\hyperlink{classFoam_1_1redistancer_aabdb7c3f0a758df1866806157d5e8181}{New}} (const fv\+Mesh \&mesh)
+\begin{DoxyCompactList}\small\item\em Select default constructed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const fv\+Solution \& \mbox{\hyperlink{classFoam_1_1redistancer_af11be4d850f43e196ccb23ecb919374e}{fv\+Solution\+\_\+}}
+\item 
+const dictionary \& \mbox{\hyperlink{classFoam_1_1redistancer_a61c34a87a9968843addd05b5243c791c}{level\+Set\+Dict\+\_\+}}
+\item 
+const dictionary \& \mbox{\hyperlink{classFoam_1_1redistancer_ab303cb7404fa1e98779a82bcf4b483c7}{redist\+Dict\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\label{_Description}%
+ \begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/redistancer/redistancer.H}{\texttt{ redistancer.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/redistancer/redistancer.C}{\texttt{ redistancer.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 51 of file redistancer.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1redistancer_a4555404de0e899db6425f29a491e80c2}\label{classFoam_1_1redistancer_a4555404de0e899db6425f29a491e80c2}} 
+\index{redistancer@{redistancer}!redistancer@{redistancer}}
+\index{redistancer@{redistancer}!redistancer@{redistancer}}
+\doxysubsubsection{\texorpdfstring{redistancer()}{redistancer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1redistancer}{redistancer}} (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh }\end{DoxyParamCaption})}
+
+
+
+Construct from components. 
+
+
+
+Definition at line 35 of file redistancer.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1redistancer_ae8dd8824446d0ede70d6a72cf2f04611}\label{classFoam_1_1redistancer_ae8dd8824446d0ede70d6a72cf2f04611}} 
+\index{redistancer@{redistancer}!````~redistancer@{$\sim$redistancer}}
+\index{````~redistancer@{$\sim$redistancer}!redistancer@{redistancer}}
+\doxysubsubsection{\texorpdfstring{$\sim$redistancer()}{~redistancer()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1redistancer}{redistancer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1redistancer_a3e5b2313f83fb3742c4ea0190b1cdaac}\label{classFoam_1_1redistancer_a3e5b2313f83fb3742c4ea0190b1cdaac}} 
+\index{redistancer@{redistancer}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!redistancer@{redistancer}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}no\+Redistancing\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1redistancer_ab38066e91c54c6bdf68e1d1a823a8a62}\label{classFoam_1_1redistancer_ab38066e91c54c6bdf68e1d1a823a8a62}} 
+\index{redistancer@{redistancer}!declareRunTimeSelectionTable@{declareRunTimeSelectionTable}}
+\index{declareRunTimeSelectionTable@{declareRunTimeSelectionTable}!redistancer@{redistancer}}
+\doxysubsubsection{\texorpdfstring{declareRunTimeSelectionTable()}{declareRunTimeSelectionTable()}}
+{\footnotesize\ttfamily declare\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{auto\+Ptr}]{,  }\item[{\mbox{\hyperlink{classFoam_1_1redistancer}{redistancer}}}]{,  }\item[{Mesh}]{,  }\item[{(const fv\+Mesh \&mesh)}]{,  }\item[{(mesh)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1redistancer_aabdb7c3f0a758df1866806157d5e8181}\label{classFoam_1_1redistancer_aabdb7c3f0a758df1866806157d5e8181}} 
+\index{redistancer@{redistancer}!New@{New}}
+\index{New@{New}!redistancer@{redistancer}}
+\doxysubsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1redistancer}{Foam\+::redistancer}} $>$ New (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Select default constructed. 
+
+
+
+Definition at line 44 of file redistancer.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1redistancer_a565cea601b5cdaf7b2ad7fe010714e53}\label{classFoam_1_1redistancer_a565cea601b5cdaf7b2ad7fe010714e53}} 
+\index{redistancer@{redistancer}!redistance@{redistance}}
+\index{redistance@{redistance}!redistancer@{redistancer}}
+\doxysubsubsection{\texorpdfstring{redistance()}{redistance()}}
+{\footnotesize\ttfamily virtual void redistance (\begin{DoxyParamCaption}\item[{vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classFoam_1_1lsqRedistancer_aeaf820620248724f02e044dba94ac102}{lsq\+Redistancer}}.
+
+
+
+Definition at line 99 of file redistancer.\+H.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1redistancer_af11be4d850f43e196ccb23ecb919374e}\label{classFoam_1_1redistancer_af11be4d850f43e196ccb23ecb919374e}} 
+\index{redistancer@{redistancer}!fvSolution\_@{fvSolution\_}}
+\index{fvSolution\_@{fvSolution\_}!redistancer@{redistancer}}
+\doxysubsubsection{\texorpdfstring{fvSolution\_}{fvSolution\_}}
+{\footnotesize\ttfamily const fv\+Solution\& fv\+Solution\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 56 of file redistancer.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1redistancer_a61c34a87a9968843addd05b5243c791c}\label{classFoam_1_1redistancer_a61c34a87a9968843addd05b5243c791c}} 
+\index{redistancer@{redistancer}!levelSetDict\_@{levelSetDict\_}}
+\index{levelSetDict\_@{levelSetDict\_}!redistancer@{redistancer}}
+\doxysubsubsection{\texorpdfstring{levelSetDict\_}{levelSetDict\_}}
+{\footnotesize\ttfamily const dictionary\& level\+Set\+Dict\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 57 of file redistancer.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1redistancer_ab303cb7404fa1e98779a82bcf4b483c7}\label{classFoam_1_1redistancer_ab303cb7404fa1e98779a82bcf4b483c7}} 
+\index{redistancer@{redistancer}!redistDict\_@{redistDict\_}}
+\index{redistDict\_@{redistDict\_}!redistancer@{redistancer}}
+\doxysubsubsection{\texorpdfstring{redistDict\_}{redistDict\_}}
+{\footnotesize\ttfamily const dictionary\& redist\+Dict\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 58 of file redistancer.\+H.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/redistancer/\mbox{\hyperlink{redistancer_8H}{redistancer.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/redistancer/\mbox{\hyperlink{redistancer_8C}{redistancer.\+C}}\end{DoxyCompactItemize}

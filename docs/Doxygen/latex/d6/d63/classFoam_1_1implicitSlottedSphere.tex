@@ -1,0 +1,279 @@
+\hypertarget{classFoam_1_1implicitSlottedSphere}{}\doxysection{implicit\+Slotted\+Sphere Class Reference}
+\label{classFoam_1_1implicitSlottedSphere}\index{implicitSlottedSphere@{implicitSlottedSphere}}
+
+
+Inheritance diagram for implicit\+Slotted\+Sphere\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{d4/d3a/classFoam_1_1implicitSlottedSphere__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for implicit\+Slotted\+Sphere\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{dc/d5f/classFoam_1_1implicitSlottedSphere__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a61e71b2ad8e3539c3600fb37e9c72a55}{Type\+Name}} (\char`\"{}slotted\+Sphere\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a9383b459434837956c2257e05ad7767d}{implicit\+Slotted\+Sphere}} ()=default
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_afb3363e523d3a9a41f8d45ffb9cd3245}{implicit\+Slotted\+Sphere}} (vector \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a6191677d21ecabf5e95280c1f28e2a6f}{center}}, scalar \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a0da9f4ce1490896cf2e75bfb4db34fa6}{radius}}, vector \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a3a140e94206b5566cc6a71ec350680f9}{min\+Slot\+Corner}}, vector \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a6d597b70eabd756e731483e78f0a0dd7}{max\+Slot\+Corner}})
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a99b4af40c8bc0edb8a05bf0380cbe525}{implicit\+Slotted\+Sphere}} (const dictionary \&dict)
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a09cec3a6a9162d86d80cab3f085a99b5}{$\sim$implicit\+Slotted\+Sphere}} ()=default
+\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_afd75110375d5a7f673003f5ca0949b8d}{value}} (const vector \&x) const
+\item 
+virtual vector \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_ae8a2dc10148707498bc4a7ec60335408}{grad}} (const vector \&x) const
+\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a02f37321b8ac5b33ed606f38b97a2a8d}{curvature}} (const vector \&x) const
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a6191677d21ecabf5e95280c1f28e2a6f}{center}} () const
+\item 
+scalar \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a0da9f4ce1490896cf2e75bfb4db34fa6}{radius}} () const
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a3a140e94206b5566cc6a71ec350680f9}{min\+Slot\+Corner}} () const
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a6d597b70eabd756e731483e78f0a0dd7}{max\+Slot\+Corner}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_af4818b6350a3469b91442ade78ca779a}{center\+\_\+}}
+\item 
+scalar \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a98baaba6ae38f3c7129cdb6bb38bc547}{radius\+\_\+}}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a41c0ed7112b9f3ed587fbcc83935e82b}{min\+Slot\+Corner\+\_\+}}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a5b76d261e6a80719f8086c8252217e3e}{max\+Slot\+Corner\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 149 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a9383b459434837956c2257e05ad7767d}\label{classFoam_1_1implicitSlottedSphere_a9383b459434837956c2257e05ad7767d}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!implicitSlottedSphere@{implicitSlottedSphere}}
+\index{implicitSlottedSphere@{implicitSlottedSphere}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{implicitSlottedSphere()}{implicitSlottedSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere}{implicit\+Slotted\+Sphere}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_afb3363e523d3a9a41f8d45ffb9cd3245}\label{classFoam_1_1implicitSlottedSphere_afb3363e523d3a9a41f8d45ffb9cd3245}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!implicitSlottedSphere@{implicitSlottedSphere}}
+\index{implicitSlottedSphere@{implicitSlottedSphere}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{implicitSlottedSphere()}{implicitSlottedSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere}{implicit\+Slotted\+Sphere}} (\begin{DoxyParamCaption}\item[{vector}]{center,  }\item[{scalar}]{radius,  }\item[{vector}]{min\+Slot\+Corner,  }\item[{vector}]{max\+Slot\+Corner }\end{DoxyParamCaption})}
+
+
+
+Definition at line 214 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a99b4af40c8bc0edb8a05bf0380cbe525}\label{classFoam_1_1implicitSlottedSphere_a99b4af40c8bc0edb8a05bf0380cbe525}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!implicitSlottedSphere@{implicitSlottedSphere}}
+\index{implicitSlottedSphere@{implicitSlottedSphere}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{implicitSlottedSphere()}{implicitSlottedSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere}{implicit\+Slotted\+Sphere}} (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})}
+
+
+
+Definition at line 227 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a09cec3a6a9162d86d80cab3f085a99b5}\label{classFoam_1_1implicitSlottedSphere_a09cec3a6a9162d86d80cab3f085a99b5}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!````~implicitSlottedSphere@{$\sim$implicitSlottedSphere}}
+\index{````~implicitSlottedSphere@{$\sim$implicitSlottedSphere}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{$\sim$implicitSlottedSphere()}{~implicitSlottedSphere()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1implicitSlottedSphere}{implicit\+Slotted\+Sphere}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a61e71b2ad8e3539c3600fb37e9c72a55}\label{classFoam_1_1implicitSlottedSphere_a61e71b2ad8e3539c3600fb37e9c72a55}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}slotted\+Sphere\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_afd75110375d5a7f673003f5ca0949b8d}\label{classFoam_1_1implicitSlottedSphere_afd75110375d5a7f673003f5ca0949b8d}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!value@{value}}
+\index{value@{value}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily scalar value (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_ab9b7881f27b19149252409d5d223e7e0}{implicit\+Surface}}.
+
+
+
+Definition at line 242 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Slotted\+Sphere\+::center\+\_\+, implicit\+Slotted\+Sphere\+::max\+Slot\+Corner\+\_\+, implicit\+Slotted\+Sphere\+::min\+Slot\+Corner\+\_\+, and implicit\+Slotted\+Sphere\+::radius\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_ae8a2dc10148707498bc4a7ec60335408}\label{classFoam_1_1implicitSlottedSphere_ae8a2dc10148707498bc4a7ec60335408}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!grad@{grad}}
+\index{grad@{grad}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{grad()}{grad()}}
+{\footnotesize\ttfamily vector grad (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_a823b516683a702d5eb8eb344b2aaebd6}{implicit\+Surface}}.
+
+
+
+Definition at line 270 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a02f37321b8ac5b33ed606f38b97a2a8d}\label{classFoam_1_1implicitSlottedSphere_a02f37321b8ac5b33ed606f38b97a2a8d}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!curvature@{curvature}}
+\index{curvature@{curvature}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{curvature()}{curvature()}}
+{\footnotesize\ttfamily scalar curvature (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_af85f47a71c30a0914a934794c77a9943}{implicit\+Surface}}.
+
+
+
+Definition at line 295 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a6191677d21ecabf5e95280c1f28e2a6f}\label{classFoam_1_1implicitSlottedSphere_a6191677d21ecabf5e95280c1f28e2a6f}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!center@{center}}
+\index{center@{center}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily vector center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 275 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Slotted\+Sphere\+::center\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a0da9f4ce1490896cf2e75bfb4db34fa6}\label{classFoam_1_1implicitSlottedSphere_a0da9f4ce1490896cf2e75bfb4db34fa6}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!radius@{radius}}
+\index{radius@{radius}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{radius()}{radius()}}
+{\footnotesize\ttfamily scalar radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 280 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Slotted\+Sphere\+::radius\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a3a140e94206b5566cc6a71ec350680f9}\label{classFoam_1_1implicitSlottedSphere_a3a140e94206b5566cc6a71ec350680f9}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!minSlotCorner@{minSlotCorner}}
+\index{minSlotCorner@{minSlotCorner}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{minSlotCorner()}{minSlotCorner()}}
+{\footnotesize\ttfamily vector min\+Slot\+Corner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 285 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Slotted\+Sphere\+::min\+Slot\+Corner\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a6d597b70eabd756e731483e78f0a0dd7}\label{classFoam_1_1implicitSlottedSphere_a6d597b70eabd756e731483e78f0a0dd7}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!maxSlotCorner@{maxSlotCorner}}
+\index{maxSlotCorner@{maxSlotCorner}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{maxSlotCorner()}{maxSlotCorner()}}
+{\footnotesize\ttfamily vector max\+Slot\+Corner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 290 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Slotted\+Sphere\+::max\+Slot\+Corner\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_af4818b6350a3469b91442ade78ca779a}\label{classFoam_1_1implicitSlottedSphere_af4818b6350a3469b91442ade78ca779a}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!center\_@{center\_}}
+\index{center\_@{center\_}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{center\_}{center\_}}
+{\footnotesize\ttfamily vector center\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 157 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Slotted\+Sphere\+::center(), and implicit\+Slotted\+Sphere\+::value().
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a98baaba6ae38f3c7129cdb6bb38bc547}\label{classFoam_1_1implicitSlottedSphere_a98baaba6ae38f3c7129cdb6bb38bc547}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!radius\_@{radius\_}}
+\index{radius\_@{radius\_}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{radius\_}{radius\_}}
+{\footnotesize\ttfamily scalar radius\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 158 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Slotted\+Sphere\+::radius(), and implicit\+Slotted\+Sphere\+::value().
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a41c0ed7112b9f3ed587fbcc83935e82b}\label{classFoam_1_1implicitSlottedSphere_a41c0ed7112b9f3ed587fbcc83935e82b}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!minSlotCorner\_@{minSlotCorner\_}}
+\index{minSlotCorner\_@{minSlotCorner\_}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{minSlotCorner\_}{minSlotCorner\_}}
+{\footnotesize\ttfamily vector min\+Slot\+Corner\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 159 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Slotted\+Sphere\+::min\+Slot\+Corner(), and implicit\+Slotted\+Sphere\+::value().
+
+\mbox{\Hypertarget{classFoam_1_1implicitSlottedSphere_a5b76d261e6a80719f8086c8252217e3e}\label{classFoam_1_1implicitSlottedSphere_a5b76d261e6a80719f8086c8252217e3e}} 
+\index{implicitSlottedSphere@{implicitSlottedSphere}!maxSlotCorner\_@{maxSlotCorner\_}}
+\index{maxSlotCorner\_@{maxSlotCorner\_}!implicitSlottedSphere@{implicitSlottedSphere}}
+\doxysubsubsection{\texorpdfstring{maxSlotCorner\_}{maxSlotCorner\_}}
+{\footnotesize\ttfamily vector max\+Slot\+Corner\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 160 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Slotted\+Sphere\+::max\+Slot\+Corner(), and implicit\+Slotted\+Sphere\+::value().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/level\+Set\+Implicit\+Surfaces/\mbox{\hyperlink{levelSetImplicitSurfaces_8H}{level\+Set\+Implicit\+Surfaces.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/level\+Set\+Implicit\+Surfaces/\mbox{\hyperlink{levelSetImplicitSurfaces_8C}{level\+Set\+Implicit\+Surfaces.\+C}}\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+\hypertarget{classFoam_1_1explicitScheme}{}\doxysection{explicit\+Scheme Class Reference}
+\label{classFoam_1_1explicitScheme}\index{explicitScheme@{explicitScheme}}
+
+
+The class \mbox{\hyperlink{classFoam_1_1explicitScheme}{explicit\+Scheme}} implements the explicit discretization of the source term.  
+
+
+
+
+Inheritance diagram for explicit\+Scheme\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{de/d87/classFoam_1_1explicitScheme__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for explicit\+Scheme\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{dc/d90/classFoam_1_1explicitScheme__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1explicitScheme_a0b0f5335d4a67a0d5aa5a062d49cd813}{Type\+Name}} (\char`\"{}explicit\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1explicitScheme_a585b3bd1a84b1c22ceeea5059a967830}{explicit\+Scheme}} ()
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1explicitScheme_ab764730ff13717af317d6788b82f1eae}{$\sim$explicit\+Scheme}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1explicitScheme_a4d53deabbecc3fa7d747bc576d506e91}{update\+Sc}} (const vol\+Scalar\+Field \&non\+Linear\+Part, const vol\+Scalar\+Field \&psi)
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1explicitScheme_afbedde408444a4d4d78913d3596885e8}{update\+Sp}} (const vol\+Scalar\+Field \&non\+Linear\+Part)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The class \mbox{\hyperlink{classFoam_1_1explicitScheme}{explicit\+Scheme}} implements the explicit discretization of the source term. 
+
+\label{_Description}%
+
+
+The linearization constants are calculated as \begin{equation} \begin{aligned} S_{explicit,\,c} &= f_{nl}(\psi^n) \psi^n_c\\ S_{explicit,\,p} &= 0 \end{aligned} \end{equation} where the constant $S_c$ explicitly evaluates the entire SDPLS source term. With this, the explicit source is written as \begin{equation} S_{explicit}(\psi^{n+1}) = f_{nl}(\psi^n) \psi^n \end{equation} Without any implicit part, this discretized source term only contributes to the r.\+h.\+s. of the resulting algebraic linear system.
+
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/SDPLSSource/SourceScheme/explicitScheme.H}{\texttt{ explicit\+Scheme.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/SDPLSSource/SourceScheme/explicitScheme.C}{\texttt{ explicit\+Scheme.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 62 of file explicit\+Scheme.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1explicitScheme_a585b3bd1a84b1c22ceeea5059a967830}\label{classFoam_1_1explicitScheme_a585b3bd1a84b1c22ceeea5059a967830}} 
+\index{explicitScheme@{explicitScheme}!explicitScheme@{explicitScheme}}
+\index{explicitScheme@{explicitScheme}!explicitScheme@{explicitScheme}}
+\doxysubsubsection{\texorpdfstring{explicitScheme()}{explicitScheme()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitScheme}{explicit\+Scheme}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file explicit\+Scheme.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitScheme_ab764730ff13717af317d6788b82f1eae}\label{classFoam_1_1explicitScheme_ab764730ff13717af317d6788b82f1eae}} 
+\index{explicitScheme@{explicitScheme}!````~explicitScheme@{$\sim$explicitScheme}}
+\index{````~explicitScheme@{$\sim$explicitScheme}!explicitScheme@{explicitScheme}}
+\doxysubsubsection{\texorpdfstring{$\sim$explicitScheme()}{~explicitScheme()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1explicitScheme}{explicit\+Scheme}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1explicitScheme_a0b0f5335d4a67a0d5aa5a062d49cd813}\label{classFoam_1_1explicitScheme_a0b0f5335d4a67a0d5aa5a062d49cd813}} 
+\index{explicitScheme@{explicitScheme}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!explicitScheme@{explicitScheme}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}explicit\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1explicitScheme_a4d53deabbecc3fa7d747bc576d506e91}\label{classFoam_1_1explicitScheme_a4d53deabbecc3fa7d747bc576d506e91}} 
+\index{explicitScheme@{explicitScheme}!updateSc@{updateSc}}
+\index{updateSc@{updateSc}!explicitScheme@{explicitScheme}}
+\doxysubsubsection{\texorpdfstring{updateSc()}{updateSc()}}
+{\footnotesize\ttfamily void update\+Sc (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{non\+Linear\+Part,  }\item[{const vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1SourceScheme_a4d53deabbecc3fa7d747bc576d506e91}{Source\+Scheme}}.
+
+
+
+Definition at line 42 of file explicit\+Scheme.\+C.
+
+
+
+References Source\+Scheme\+::\+Sc\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1explicitScheme_afbedde408444a4d4d78913d3596885e8}\label{classFoam_1_1explicitScheme_afbedde408444a4d4d78913d3596885e8}} 
+\index{explicitScheme@{explicitScheme}!updateSp@{updateSp}}
+\index{updateSp@{updateSp}!explicitScheme@{explicitScheme}}
+\doxysubsubsection{\texorpdfstring{updateSp()}{updateSp()}}
+{\footnotesize\ttfamily void update\+Sp (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{non\+Linear\+Part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1SourceScheme_afbedde408444a4d4d78913d3596885e8}{Source\+Scheme}}.
+
+
+
+Definition at line 47 of file explicit\+Scheme.\+C.
+
+
+
+References Source\+Scheme\+::\+Sp\+\_\+.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Source\+Scheme/\mbox{\hyperlink{explicitScheme_8H}{explicit\+Scheme.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Source\+Scheme/\mbox{\hyperlink{explicitScheme_8C}{explicit\+Scheme.\+C}}\end{DoxyCompactItemize}

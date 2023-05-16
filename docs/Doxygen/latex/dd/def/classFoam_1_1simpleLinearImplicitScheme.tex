@@ -1,0 +1,139 @@
+\hypertarget{classFoam_1_1simpleLinearImplicitScheme}{}\doxysection{simple\+Linear\+Implicit\+Scheme Class Reference}
+\label{classFoam_1_1simpleLinearImplicitScheme}\index{simpleLinearImplicitScheme@{simpleLinearImplicitScheme}}
+
+
+The class \mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme}{simple\+Linear\+Implicit\+Scheme}} implements an implicit discretization of the source term in the most simplest way.  
+
+
+
+
+Inheritance diagram for simple\+Linear\+Implicit\+Scheme\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{de/deb/classFoam_1_1simpleLinearImplicitScheme__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for simple\+Linear\+Implicit\+Scheme\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{df/d5c/classFoam_1_1simpleLinearImplicitScheme__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme_af57f0593d41076defd451d7673261264}{Type\+Name}} (\char`\"{}simple\+Linear\+Implicit\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme_a0cf9f6ceddb4f64b5559c7632b6e3d49}{simple\+Linear\+Implicit\+Scheme}} ()
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme_a117aa95e093ebe9dd11fb8c6be439268}{$\sim$simple\+Linear\+Implicit\+Scheme}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme_a4d53deabbecc3fa7d747bc576d506e91}{update\+Sc}} (const vol\+Scalar\+Field \&non\+Linear\+Part, const vol\+Scalar\+Field \&psi)
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme_afbedde408444a4d4d78913d3596885e8}{update\+Sp}} (const vol\+Scalar\+Field \&non\+Linear\+Part)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The class \mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme}{simple\+Linear\+Implicit\+Scheme}} implements an implicit discretization of the source term in the most simplest way. 
+
+\label{_Description}%
+
+
+The linearization constants are calculated as \begin{equation} \begin{aligned} S_{simpleLinearImplicit,\,c} &= 0\\ S_{simpleLinearImplicit,\,p} &= f_{nl}(\psi^n), \end{aligned} \end{equation} resulting in the simple\+Linear\+Implicit source \begin{equation} S_{simpleLinearImplicit}(\psi^{n+1}) = f_{nl}(\psi^n)\psi^{n+1}_c. \end{equation}
+
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/SDPLSSource/SourceScheme/simpleLinearImplicitScheme.H}{\texttt{ simple\+Linear\+Implicit\+Scheme.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/SDPLSSource/SourceScheme/simpleLinearImplicitScheme.C}{\texttt{ simple\+Linear\+Implicit\+Scheme.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 62 of file simple\+Linear\+Implicit\+Scheme.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1simpleLinearImplicitScheme_a0cf9f6ceddb4f64b5559c7632b6e3d49}\label{classFoam_1_1simpleLinearImplicitScheme_a0cf9f6ceddb4f64b5559c7632b6e3d49}} 
+\index{simpleLinearImplicitScheme@{simpleLinearImplicitScheme}!simpleLinearImplicitScheme@{simpleLinearImplicitScheme}}
+\index{simpleLinearImplicitScheme@{simpleLinearImplicitScheme}!simpleLinearImplicitScheme@{simpleLinearImplicitScheme}}
+\doxysubsubsection{\texorpdfstring{simpleLinearImplicitScheme()}{simpleLinearImplicitScheme()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme}{simple\+Linear\+Implicit\+Scheme}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file simple\+Linear\+Implicit\+Scheme.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1simpleLinearImplicitScheme_a117aa95e093ebe9dd11fb8c6be439268}\label{classFoam_1_1simpleLinearImplicitScheme_a117aa95e093ebe9dd11fb8c6be439268}} 
+\index{simpleLinearImplicitScheme@{simpleLinearImplicitScheme}!````~simpleLinearImplicitScheme@{$\sim$simpleLinearImplicitScheme}}
+\index{````~simpleLinearImplicitScheme@{$\sim$simpleLinearImplicitScheme}!simpleLinearImplicitScheme@{simpleLinearImplicitScheme}}
+\doxysubsubsection{\texorpdfstring{$\sim$simpleLinearImplicitScheme()}{~simpleLinearImplicitScheme()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme}{simple\+Linear\+Implicit\+Scheme}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1simpleLinearImplicitScheme_af57f0593d41076defd451d7673261264}\label{classFoam_1_1simpleLinearImplicitScheme_af57f0593d41076defd451d7673261264}} 
+\index{simpleLinearImplicitScheme@{simpleLinearImplicitScheme}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!simpleLinearImplicitScheme@{simpleLinearImplicitScheme}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}simple\+Linear\+Implicit\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1simpleLinearImplicitScheme_a4d53deabbecc3fa7d747bc576d506e91}\label{classFoam_1_1simpleLinearImplicitScheme_a4d53deabbecc3fa7d747bc576d506e91}} 
+\index{simpleLinearImplicitScheme@{simpleLinearImplicitScheme}!updateSc@{updateSc}}
+\index{updateSc@{updateSc}!simpleLinearImplicitScheme@{simpleLinearImplicitScheme}}
+\doxysubsubsection{\texorpdfstring{updateSc()}{updateSc()}}
+{\footnotesize\ttfamily void update\+Sc (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{non\+Linear\+Part,  }\item[{const vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1SourceScheme_a4d53deabbecc3fa7d747bc576d506e91}{Source\+Scheme}}.
+
+
+
+Definition at line 42 of file simple\+Linear\+Implicit\+Scheme.\+C.
+
+
+
+References Source\+Scheme\+::\+Sc\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1simpleLinearImplicitScheme_afbedde408444a4d4d78913d3596885e8}\label{classFoam_1_1simpleLinearImplicitScheme_afbedde408444a4d4d78913d3596885e8}} 
+\index{simpleLinearImplicitScheme@{simpleLinearImplicitScheme}!updateSp@{updateSp}}
+\index{updateSp@{updateSp}!simpleLinearImplicitScheme@{simpleLinearImplicitScheme}}
+\doxysubsubsection{\texorpdfstring{updateSp()}{updateSp()}}
+{\footnotesize\ttfamily void update\+Sp (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{non\+Linear\+Part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1SourceScheme_afbedde408444a4d4d78913d3596885e8}{Source\+Scheme}}.
+
+
+
+Definition at line 47 of file simple\+Linear\+Implicit\+Scheme.\+C.
+
+
+
+References Source\+Scheme\+::\+Sp\+\_\+.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Source\+Scheme/\mbox{\hyperlink{simpleLinearImplicitScheme_8H}{simple\+Linear\+Implicit\+Scheme.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Source\+Scheme/\mbox{\hyperlink{simpleLinearImplicitScheme_8C}{simple\+Linear\+Implicit\+Scheme.\+C}}\end{DoxyCompactItemize}

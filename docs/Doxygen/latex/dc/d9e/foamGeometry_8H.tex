@@ -1,0 +1,57 @@
+\hypertarget{foamGeometry_8H}{}\doxysection{/home/julian/\+Open\+FOAM/leia2/src/vof/foam\+Geometry.H File Reference}
+\label{foamGeometry_8H}\index{/home/julian/OpenFOAM/leia2/src/vof/foamGeometry.H@{/home/julian/OpenFOAM/leia2/src/vof/foamGeometry.H}}
+
+
+Volume fraction of the phase \textbackslash{}\+Omega$^\wedge$-\/1 given by an implicit planeace \textbackslash{}psi(x)\+: R$^\wedge$3 -\/$>$ R,.  
+
+
+Include dependency graph for foam\+Geometry.\+H\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d16/foamGeometry_8H__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d37/foamGeometry_8H__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structFoam_1_1volumeArea}{volume\+Area}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceFoam}{Foam}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Point\+Sequence $>$ }\\scalar \mbox{\hyperlink{namespaceFoam_a20db5da3f6defbd554bcd5bb8cb5b9e6}{normal\+Area}} (Point\+Sequence const \&points, const vector \&normal)
+\item 
+{\footnotesize template$<$typename Point\+Sequence $>$ }\\point \mbox{\hyperlink{namespaceFoam_a8b4ba40675df057a5c26a6ffbba2a522}{centroid}} (Point\+Sequence const \&points)
+\item 
+{\footnotesize template$<$typename Point\+Sequence $>$ }\\vector \mbox{\hyperlink{namespaceFoam_ab703af1c40feef368baf3751afc13ec6}{centroid\+Area\+Normal}} (Point\+Sequence const \&points, const point \&centroid)
+\item 
+{\footnotesize template$<$typename Oriented\+Point\+Sequence $>$ }\\vector \mbox{\hyperlink{namespaceFoam_ad30a84b8f52b633342470f1de7a82d28}{oriented\+Area\+Normal}} (Oriented\+Point\+Sequence const \&points)
+\item 
+{\footnotesize template$<$typename Intersection  = volume\+Area, typename Implicit\+Plane $>$ }\\Intersection \mbox{\hyperlink{namespaceFoam_a6487d960ee71cfbffadefec226202205}{intersect\+Cell}} (label cellL, const fv\+Mesh \&mesh, Implicit\+Plane plane)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Volume fraction of the phase \textbackslash{}\+Omega$^\wedge$-\/1 given by an implicit planeace \textbackslash{}psi(x)\+: R$^\wedge$3 -\/$>$ R,. 
+
+{\bfseries{Original source file}} \href{/home/julian/OpenFOAM/leia2/src/vof/foamGeometry.H}{\texttt{ foam\+Geometry.\+H}}
+
+\label{_Description}%
+
+
+\textbackslash{}\+Omega$^\wedge$-\/ \+:=x, x \textbackslash{}psi(x) $<$ 0 

@@ -1,0 +1,158 @@
+\hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H}{}\doxysection{/home/julian/\+Open\+FOAM/leia2/applications/solvers/leia\+Level\+Set\+Foam/create\+Fields.H File Reference}
+\label{solvers_2leiaLevelSetFoam_2createFields_8H}\index{/home/julian/OpenFOAM/leia2/applications/solvers/leiaLevelSetFoam/createFields.H@{/home/julian/OpenFOAM/leia2/applications/solvers/leiaLevelSetFoam/createFields.H}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}{narrow\+Band}} \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_a50fcb94469b8bd68d3a0c652ff1b9ea7}{calc}} ()
+\item 
+\mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}{narrow\+Band}} \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_ac5370a3f202de84040d5e2d2c7b3a0bd}{write}} ()
+\item 
+\mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}{phase\+Ind}} \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_aa6d9d96081f854e676244ca6ea288be9}{calc\+Phase\+Indicator}} (alpha, psi)
+\item 
+\mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_a2ab5d269fadb740ea701771e8b59d7da}{source}} \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_a94deb4a6975ae695185325402f283cf6}{update}} (psi, U)
+\item 
+\mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_aefb73d6da5d51e9bee19c7a0fff922b7}{velocity\+Model}} \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_a2b85fb477b831927c3cfeb8facef4ec1}{set\+Volumetric\+Flux}} (phi)
+\item 
+\mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_aa8740e48500d7e8ed14c84ded320af9a}{if}} (args.\+found(\char`\"{}flux\+Correction\char`\"{})) correct\+Flux(phi)
+\item 
+\mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_aefb73d6da5d51e9bee19c7a0fff922b7}{velocity\+Model}} \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_a9d7f4f90a066f440cd2f7e3873cad045}{set\+Velocity}} (U)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Info$<$$<$ \char`\"{}Reading field psi\textbackslash{}n\char`\"{}$<$$<$ endl;vol\+Scalar\+Field psi(IOobject(\char`\"{}psi\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+MUST\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE), mesh);Info$<$$<$ \char`\"{}Reading field alpha\textbackslash{}n\char`\"{}$<$$<$ endl;vol\+Scalar\+Field alpha(IOobject(\char`\"{}alpha\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+MUST\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE), mesh);Info$<$$<$ \char`\"{}Reading field phi\textbackslash{}n\char`\"{}$<$$<$ endl;surface\+Scalar\+Field phi(IOobject(\char`\"{}phi\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+NO\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE), mesh, dimensioned\+Scalar(\char`\"{}phi\char`\"{}, dim\+Volume/dim\+Time, 0));Info$<$$<$ \char`\"{}Initializing field U (visualization)\textbackslash{}n\char`\"{}$<$$<$ endl;vol\+Vector\+Field U(IOobject(\char`\"{}U\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+NO\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE), mesh, dimensioned\+Vector(\char`\"{}U\char`\"{}, dim\+Velocity, vector(0, 0, 0)));auto\+Ptr$<$ redistancer $>$ \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_a180b2f5ae1306bd76acec2600557772e}{redist}} = redistancer\+::\+New(mesh)
+\item 
+auto\+Ptr$<$ Narrow\+Band $>$ \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}{narrow\+Band}} = Narrow\+Band\+::\+New(mesh, psi)
+\item 
+auto\+Ptr$<$ phase\+Indicator $>$ \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}{phase\+Ind}} = phase\+Indicator\+::\+New(mesh)
+\item 
+auto\+Ptr$<$ SDPLSSource $>$ \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_a2ab5d269fadb740ea701771e8b59d7da}{source}} = SDPLSSource\+::\+New(mesh)
+\item 
+auto\+Ptr$<$ velocity\+Model $>$ \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_aefb73d6da5d51e9bee19c7a0fff922b7}{velocity\+Model}} = velocity\+Model\+::\+New(mesh)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_a50fcb94469b8bd68d3a0c652ff1b9ea7}\label{solvers_2leiaLevelSetFoam_2createFields_8H_a50fcb94469b8bd68d3a0c652ff1b9ea7}} 
+\index{createFields.H@{createFields.H}!calc@{calc}}
+\index{calc@{calc}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}{narrow\+Band}} calc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_ac5370a3f202de84040d5e2d2c7b3a0bd}\label{solvers_2leiaLevelSetFoam_2createFields_8H_ac5370a3f202de84040d5e2d2c7b3a0bd}} 
+\index{createFields.H@{createFields.H}!write@{write}}
+\index{write@{write}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily U write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by grad\+Psi\+Error\+::grad\+Psi\+Error(), and explicit\+Gradient\+Fv\+Patch\+Field\+::write().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{d0/ded/solvers_2leiaLevelSetFoam_2createFields_8H_ac5370a3f202de84040d5e2d2c7b3a0bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_aa6d9d96081f854e676244ca6ea288be9}\label{solvers_2leiaLevelSetFoam_2createFields_8H_aa6d9d96081f854e676244ca6ea288be9}} 
+\index{createFields.H@{createFields.H}!calcPhaseIndicator@{calcPhaseIndicator}}
+\index{calcPhaseIndicator@{calcPhaseIndicator}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{calcPhaseIndicator()}{calcPhaseIndicator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}{phase\+Ind}} calc\+Phase\+Indicator (\begin{DoxyParamCaption}\item[{alpha}]{,  }\item[{psi}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_a94deb4a6975ae695185325402f283cf6}\label{solvers_2leiaLevelSetFoam_2createFields_8H_a94deb4a6975ae695185325402f283cf6}} 
+\index{createFields.H@{createFields.H}!update@{update}}
+\index{update@{update}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_a2ab5d269fadb740ea701771e8b59d7da}{source}} update (\begin{DoxyParamCaption}\item[{psi}]{,  }\item[{U}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_a2b85fb477b831927c3cfeb8facef4ec1}\label{solvers_2leiaLevelSetFoam_2createFields_8H_a2b85fb477b831927c3cfeb8facef4ec1}} 
+\index{createFields.H@{createFields.H}!setVolumetricFlux@{setVolumetricFlux}}
+\index{setVolumetricFlux@{setVolumetricFlux}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{setVolumetricFlux()}{setVolumetricFlux()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_aefb73d6da5d51e9bee19c7a0fff922b7}{velocity\+Model}} set\+Volumetric\+Flux (\begin{DoxyParamCaption}\item[{phi}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_aa8740e48500d7e8ed14c84ded320af9a}\label{solvers_2leiaLevelSetFoam_2createFields_8H_aa8740e48500d7e8ed14c84ded320af9a}} 
+\index{createFields.H@{createFields.H}!if@{if}}
+\index{if@{if}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{args.}]{found\char`\"{}flux\+Correction\char`\"{} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_a9d7f4f90a066f440cd2f7e3873cad045}\label{solvers_2leiaLevelSetFoam_2createFields_8H_a9d7f4f90a066f440cd2f7e3873cad045}} 
+\index{createFields.H@{createFields.H}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{solvers_2leiaLevelSetFoam_2createFields_8H_aefb73d6da5d51e9bee19c7a0fff922b7}{velocity\+Model}} set\+Velocity (\begin{DoxyParamCaption}\item[{U}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_a180b2f5ae1306bd76acec2600557772e}\label{solvers_2leiaLevelSetFoam_2createFields_8H_a180b2f5ae1306bd76acec2600557772e}} 
+\index{createFields.H@{createFields.H}!redist@{redist}}
+\index{redist@{redist}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{redist}{redist}}
+{\footnotesize\ttfamily Info$<$$<$ \char`\"{}Reading field psi\textbackslash{}n\char`\"{} $<$$<$ endl;vol\+Scalar\+Field psi ( IOobject ( \char`\"{}psi\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+MUST\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE ), mesh);Info$<$$<$ \char`\"{}Reading field alpha\textbackslash{}n\char`\"{} $<$$<$ endl;vol\+Scalar\+Field alpha( IOobject ( \char`\"{}alpha\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+MUST\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE ), mesh);Info$<$$<$ \char`\"{}Reading field phi\textbackslash{}n\char`\"{} $<$$<$ endl;surface\+Scalar\+Field phi ( IOobject ( \char`\"{}phi\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+NO\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE ), mesh, dimensioned\+Scalar (\char`\"{}phi\char`\"{}, dim\+Volume / dim\+Time, 0));Info$<$$<$ \char`\"{}Initializing field U (visualization)\textbackslash{}n\char`\"{} $<$$<$ endl;vol\+Vector\+Field U ( IOobject ( \char`\"{}U\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+NO\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE ), mesh, dimensioned\+Vector(\char`\"{}U\char`\"{}, dim\+Velocity, vector(0,0,0)));auto\+Ptr$<$redistancer$>$ redist = redistancer\+::\+New(mesh)}
+
+
+
+Definition at line 65 of file create\+Fields.\+H.
+
+
+
+Referenced by main(), and redistanced\+Plane\+Is\+Unchanged().
+
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}\label{solvers_2leiaLevelSetFoam_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}} 
+\index{createFields.H@{createFields.H}!narrowBand@{narrowBand}}
+\index{narrowBand@{narrowBand}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{narrowBand}{narrowBand}}
+{\footnotesize\ttfamily auto\+Ptr$<$Narrow\+Band$>$ narrow\+Band = Narrow\+Band\+::\+New(mesh, psi)}
+
+
+
+Definition at line 68 of file create\+Fields.\+H.
+
+
+
+Referenced by geometric\+Phase\+Indicator\+::calc\+Phase\+Indicator(), and grad\+Psi\+Error\+CSV\+::write().
+
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}\label{solvers_2leiaLevelSetFoam_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}} 
+\index{createFields.H@{createFields.H}!phaseInd@{phaseInd}}
+\index{phaseInd@{phaseInd}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{phaseInd}{phaseInd}}
+{\footnotesize\ttfamily auto\+Ptr$<$phase\+Indicator$>$ phase\+Ind = phase\+Indicator\+::\+New(mesh)}
+
+
+
+Definition at line 73 of file create\+Fields.\+H.
+
+
+
+Referenced by main(), and phase\+Indicator\+Is\+Bounded().
+
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_a2ab5d269fadb740ea701771e8b59d7da}\label{solvers_2leiaLevelSetFoam_2createFields_8H_a2ab5d269fadb740ea701771e8b59d7da}} 
+\index{createFields.H@{createFields.H}!source@{source}}
+\index{source@{source}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily auto\+Ptr$<$SDPLSSource$>$ source = SDPLSSource\+::\+New(mesh)}
+
+
+
+Definition at line 78 of file create\+Fields.\+H.
+
+
+
+Referenced by geometric\+Phase\+Indicator\+::calc\+Phase\+Indicator().
+
+\mbox{\Hypertarget{solvers_2leiaLevelSetFoam_2createFields_8H_aefb73d6da5d51e9bee19c7a0fff922b7}\label{solvers_2leiaLevelSetFoam_2createFields_8H_aefb73d6da5d51e9bee19c7a0fff922b7}} 
+\index{createFields.H@{createFields.H}!velocityModel@{velocityModel}}
+\index{velocityModel@{velocityModel}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{velocityModel}{velocityModel}}
+{\footnotesize\ttfamily auto\+Ptr$<$velocity\+Model$>$ velocity\+Model = velocity\+Model\+::\+New(mesh)}
+
+
+
+Definition at line 83 of file create\+Fields.\+H.
+

@@ -1,0 +1,202 @@
+\hypertarget{classFoam_1_1profile}{}\doxysection{profile Class Reference}
+\label{classFoam_1_1profile}\index{profile@{profile}}
+
+
+Abstract base class which starts the hierachy for different level-\/set profile fields, typically \mbox{\hyperlink{classFoam_1_1signedDistance}{signed\+Distance}} or tanh variants.  
+
+
+
+
+Inheritance diagram for profile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{dc/d33/classFoam_1_1profile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for profile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d5c/classFoam_1_1profile__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1profile_a660172304dfa1b418cc1bded338b9fd9}{Type\+Name}} (\char`\"{}none\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1profile_afd56228ecf29bd7e8d162fd998433bef}{declare\+Run\+Time\+Selection\+Table}} (auto\+Ptr, \mbox{\hyperlink{classFoam_1_1profile}{profile}}, Mesh,(const fv\+Mesh \&mesh, const \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} \&surface),(mesh, surface))
+\item 
+\mbox{\hyperlink{classFoam_1_1profile_a9249b8b8c560be95915635bceec0897d}{profile}} (const fv\+Mesh \&mesh, const \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} \&surface)
+\begin{DoxyCompactList}\small\item\em Construct from components. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFoam_1_1profile_a03a087c1cd4c0b89ccb0224804cb4bc6}{$\sim$profile}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1profile_abcf3ad36ba96239704fc930f6cf094fd}{value}} (const vector point) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1profile}{profile}} $>$ \mbox{\hyperlink{classFoam_1_1profile_ac96feecbccdd551742875754256f2746}{New}} (const fv\+Mesh \&mesh, const \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} \&surface)
+\begin{DoxyCompactList}\small\item\em Select default constructed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const fv\+Solution \& \mbox{\hyperlink{classFoam_1_1profile_af11be4d850f43e196ccb23ecb919374e}{fv\+Solution\+\_\+}}
+\item 
+const dictionary \& \mbox{\hyperlink{classFoam_1_1profile_a61c34a87a9968843addd05b5243c791c}{level\+Set\+Dict\+\_\+}}
+\item 
+const dictionary \& \mbox{\hyperlink{classFoam_1_1profile_af9e979fd5fb92f357ddd6b521d8fffb6}{profile\+Dict\+\_\+}}
+\item 
+const \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} \& \mbox{\hyperlink{classFoam_1_1profile_a6a9c3df49b656107208bfe974f31f523}{surface\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class which starts the hierachy for different level-\/set profile fields, typically \mbox{\hyperlink{classFoam_1_1signedDistance}{signed\+Distance}} or tanh variants. 
+
+\label{_Description}%
+
+
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/profile/profile.H}{\texttt{ profile.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/profile/profile.C}{\texttt{ profile.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 53 of file profile.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1profile_a9249b8b8c560be95915635bceec0897d}\label{classFoam_1_1profile_a9249b8b8c560be95915635bceec0897d}} 
+\index{profile@{profile}!profile@{profile}}
+\index{profile@{profile}!profile@{profile}}
+\doxysubsubsection{\texorpdfstring{profile()}{profile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1profile}{profile}} (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh,  }\item[{const \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} \&}]{surface }\end{DoxyParamCaption})}
+
+
+
+Construct from components. 
+
+
+
+Definition at line 34 of file profile.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1profile_a03a087c1cd4c0b89ccb0224804cb4bc6}\label{classFoam_1_1profile_a03a087c1cd4c0b89ccb0224804cb4bc6}} 
+\index{profile@{profile}!````~profile@{$\sim$profile}}
+\index{````~profile@{$\sim$profile}!profile@{profile}}
+\doxysubsubsection{\texorpdfstring{$\sim$profile()}{~profile()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1profile}{profile}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1profile_a660172304dfa1b418cc1bded338b9fd9}\label{classFoam_1_1profile_a660172304dfa1b418cc1bded338b9fd9}} 
+\index{profile@{profile}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!profile@{profile}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}none\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1profile_afd56228ecf29bd7e8d162fd998433bef}\label{classFoam_1_1profile_afd56228ecf29bd7e8d162fd998433bef}} 
+\index{profile@{profile}!declareRunTimeSelectionTable@{declareRunTimeSelectionTable}}
+\index{declareRunTimeSelectionTable@{declareRunTimeSelectionTable}!profile@{profile}}
+\doxysubsubsection{\texorpdfstring{declareRunTimeSelectionTable()}{declareRunTimeSelectionTable()}}
+{\footnotesize\ttfamily declare\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{auto\+Ptr}]{,  }\item[{\mbox{\hyperlink{classFoam_1_1profile}{profile}}}]{,  }\item[{Mesh}]{,  }\item[{(const fv\+Mesh \&mesh, const \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} \&surface)}]{,  }\item[{(mesh, surface)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1profile_ac96feecbccdd551742875754256f2746}\label{classFoam_1_1profile_ac96feecbccdd551742875754256f2746}} 
+\index{profile@{profile}!New@{New}}
+\index{New@{New}!profile@{profile}}
+\doxysubsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1profile}{Foam\+::profile}} $>$ New (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh,  }\item[{const \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} \&}]{surface }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Select default constructed. 
+
+
+
+Definition at line 44 of file profile.\+C.
+
+
+
+References profile\+Dict.
+
+\mbox{\Hypertarget{classFoam_1_1profile_abcf3ad36ba96239704fc930f6cf094fd}\label{classFoam_1_1profile_abcf3ad36ba96239704fc930f6cf094fd}} 
+\index{profile@{profile}!value@{value}}
+\index{value@{value}!profile@{profile}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily virtual scalar value (\begin{DoxyParamCaption}\item[{const vector}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classFoam_1_1tanhProfile_aafa67c9c9084d5a9679e7b187c8caa86}{tanh\+Profile}}, and \mbox{\hyperlink{classFoam_1_1signedDistance_aafa67c9c9084d5a9679e7b187c8caa86}{signed\+Distance}}.
+
+
+
+Definition at line 100 of file profile.\+H.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1profile_af11be4d850f43e196ccb23ecb919374e}\label{classFoam_1_1profile_af11be4d850f43e196ccb23ecb919374e}} 
+\index{profile@{profile}!fvSolution\_@{fvSolution\_}}
+\index{fvSolution\_@{fvSolution\_}!profile@{profile}}
+\doxysubsubsection{\texorpdfstring{fvSolution\_}{fvSolution\_}}
+{\footnotesize\ttfamily const fv\+Solution\& fv\+Solution\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 57 of file profile.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1profile_a61c34a87a9968843addd05b5243c791c}\label{classFoam_1_1profile_a61c34a87a9968843addd05b5243c791c}} 
+\index{profile@{profile}!levelSetDict\_@{levelSetDict\_}}
+\index{levelSetDict\_@{levelSetDict\_}!profile@{profile}}
+\doxysubsubsection{\texorpdfstring{levelSetDict\_}{levelSetDict\_}}
+{\footnotesize\ttfamily const dictionary\& level\+Set\+Dict\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 58 of file profile.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1profile_af9e979fd5fb92f357ddd6b521d8fffb6}\label{classFoam_1_1profile_af9e979fd5fb92f357ddd6b521d8fffb6}} 
+\index{profile@{profile}!profileDict\_@{profileDict\_}}
+\index{profileDict\_@{profileDict\_}!profile@{profile}}
+\doxysubsubsection{\texorpdfstring{profileDict\_}{profileDict\_}}
+{\footnotesize\ttfamily const dictionary\& profile\+Dict\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 59 of file profile.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1profile_a6a9c3df49b656107208bfe974f31f523}\label{classFoam_1_1profile_a6a9c3df49b656107208bfe974f31f523}} 
+\index{profile@{profile}!surface\_@{surface\_}}
+\index{surface\_@{surface\_}!profile@{profile}}
+\doxysubsubsection{\texorpdfstring{surface\_}{surface\_}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}}\& surface\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 60 of file profile.\+H.
+
+
+
+Referenced by signed\+Distance\+::value().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/profile/\mbox{\hyperlink{profile_8H}{profile.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/profile/\mbox{\hyperlink{profile_8C}{profile.\+C}}\end{DoxyCompactItemize}

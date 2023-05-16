@@ -1,0 +1,243 @@
+\hypertarget{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{}\doxysection{grad\+Psi\+Error\+CSV Class Reference}
+\label{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}\index{gradPsiErrorCSV@{gradPsiErrorCSV}}
+
+
+Looks up a signed\+Distance-\/error field (from \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}} function\+Object for example). Calculates further properties and writes them to a CSV file \char`\"{}grad\+Psi\+Error.\+csv\char`\"{} The following properties a written in every row. \char`\"{}\+TIME,\char`\"{} \char`\"{}\+MAX\+\_\+\+DELTA\+\_\+\+X,\char`\"{} \char`\"{}\+MEAN\+\_\+\+DELTA\+\_\+\+X,\char`\"{} \char`\"{}\+E\+\_\+\+MAX\+\_\+\+GRAD\+\_\+\+PSI,\char`\"{} \char`\"{}\+E\+\_\+\+MEAN\+\_\+\+GRAD\+\_\+\+PSI,\char`\"{} \char`\"{}\+E\+\_\+\+NARROW\+\_\+\+MAX\+\_\+\+GRAD\+\_\+\+PSI,\char`\"{} \char`\"{}\+E\+\_\+\+NARROW\+\_\+\+MEAN\+\_\+\+GRAD\+\_\+\+PSI\textbackslash{}n\char`\"{}.  
+
+
+
+
+Inheritance diagram for grad\+Psi\+Error\+CSV\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{d9/dfe/classFoam_1_1functionObjects_1_1gradPsiErrorCSV__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for grad\+Psi\+Error\+CSV\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/de0/classFoam_1_1functionObjects_1_1gradPsiErrorCSV__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_abe93236a4cc2e1345ec5923ef10d7731}{Type\+Name}} (\char`\"{}grad\+Psi\+Error\+CSV\char`\"{})
+\begin{DoxyCompactList}\small\item\em Runtime type information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_aa310ff6ca6ce914bd05489e4137ef6c5}{grad\+Psi\+Error\+CSV}} (const word \&name, const Time \&run\+Time, const dictionary \&dict)
+\begin{DoxyCompactList}\small\item\em Construct from Time and dictionary. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a1b0b31de9485385db71093f84d176aba}{grad\+Psi\+Error\+CSV}} (const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}} \&)=delete
+\begin{DoxyCompactList}\small\item\em No copy construct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a7e2ed5619acedff2bd6454a36a1c9e8e}{operator=}} (const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}} \&)=delete
+\begin{DoxyCompactList}\small\item\em No copy assignment. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a304cfd64aa086af8de5829288d82c74d}{execute}} ()
+\item 
+virtual bool \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_ae8f6374e29a250261b3979bbd6e5cb40}{write}} ()
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a0b2e4fd12717c83d1ff3a98d8f22bdf1}{$\sim$grad\+Psi\+Error\+CSV}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const vol\+Scalar\+Field \& \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a2cc4aa0fff6e95012c557b8afedb03cb}{field\+\_\+}}
+\item 
+OFstream \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a4034a69803a73c7bc5b64294d72a3909}{csv\+File\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Looks up a signed\+Distance-\/error field (from \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}} function\+Object for example). Calculates further properties and writes them to a CSV file \char`\"{}grad\+Psi\+Error.\+csv\char`\"{} The following properties a written in every row. \char`\"{}\+TIME,\char`\"{} \char`\"{}\+MAX\+\_\+\+DELTA\+\_\+\+X,\char`\"{} \char`\"{}\+MEAN\+\_\+\+DELTA\+\_\+\+X,\char`\"{} \char`\"{}\+E\+\_\+\+MAX\+\_\+\+GRAD\+\_\+\+PSI,\char`\"{} \char`\"{}\+E\+\_\+\+MEAN\+\_\+\+GRAD\+\_\+\+PSI,\char`\"{} \char`\"{}\+E\+\_\+\+NARROW\+\_\+\+MAX\+\_\+\+GRAD\+\_\+\+PSI,\char`\"{} \char`\"{}\+E\+\_\+\+NARROW\+\_\+\+MEAN\+\_\+\+GRAD\+\_\+\+PSI\textbackslash{}n\char`\"{}. 
+
+\label{_Description}%
+
+
+\begin{DoxyParagraph}{Usage}
+Minimal example by using {\ttfamily system/control\+Dict.\+functions}\+: \begin{DoxyVerb}gradPsiErrorCSV
+{
+    type            gradPsiErrorCSV;
+    libs            ( leiaFunctionObjects );
+    writeControl    timeStep;
+    field           gradPsiError;
+}\end{DoxyVerb}
+
+\end{DoxyParagraph}
+The inherited entries are elaborated in\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{}{function\+Object.\+H}}
+\item \mbox{\hyperlink{}{field\+Expression.\+H}}
+\item \mbox{\hyperlink{}{fields\+Expression.\+H}}
+\item \mbox{\hyperlink{}{write\+File.\+H}} ...
+\end{DoxyItemize}
+
+$<$if {\ttfamily post\+Process} is applicable$>$ Minimal example by using the {\ttfamily post\+Process} utility\+: \begin{DoxyVerb}    postProcess -func gradPsiErrorCSV
+\end{DoxyVerb}
+
+
+$<$if {\ttfamily post\+Process} is not applicable$>$ Usage by the {\ttfamily post\+Process} utility is not available.
+
+\begin{DoxySeeAlso}{See also}
+
+\begin{DoxyItemize}
+\item Foam\+::function\+Object
+\item Foam\+::function\+Objects\+::fv\+Mesh\+Function\+Object
+\item Extended\+Code\+Guide\+::function\+Objects\+::field\+::grad\+Psi\+Error\+CSV ...
+\end{DoxyItemize}
+\end{DoxySeeAlso}
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/functionObjects/gradPsiErrorCSV/gradPsiErrorCSV.H}{\texttt{ grad\+Psi\+Error\+CSV.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/functionObjects/gradPsiErrorCSV/gradPsiErrorCSV.C}{\texttt{ grad\+Psi\+Error\+CSV.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 98 of file grad\+Psi\+Error\+CSV.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_aa310ff6ca6ce914bd05489e4137ef6c5}\label{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_aa310ff6ca6ce914bd05489e4137ef6c5}} 
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\doxysubsubsection{\texorpdfstring{gradPsiErrorCSV()}{gradPsiErrorCSV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}} (\begin{DoxyParamCaption}\item[{const word \&}]{name,  }\item[{const Time \&}]{run\+Time,  }\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})}
+
+
+
+Construct from Time and dictionary. 
+
+
+
+Definition at line 40 of file grad\+Psi\+Error\+CSV.\+C.
+
+
+
+References grad\+Psi\+Error\+CSV\+::csv\+File\+\_\+, and grad\+Psi\+Error\+CSV\+::write().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{d3/d5b/classFoam_1_1functionObjects_1_1gradPsiErrorCSV_aa310ff6ca6ce914bd05489e4137ef6c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a1b0b31de9485385db71093f84d176aba}\label{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a1b0b31de9485385db71093f84d176aba}} 
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\doxysubsubsection{\texorpdfstring{gradPsiErrorCSV()}{gradPsiErrorCSV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+No copy construct. 
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a0b2e4fd12717c83d1ff3a98d8f22bdf1}\label{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a0b2e4fd12717c83d1ff3a98d8f22bdf1}} 
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!````~gradPsiErrorCSV@{$\sim$gradPsiErrorCSV}}
+\index{````~gradPsiErrorCSV@{$\sim$gradPsiErrorCSV}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\doxysubsubsection{\texorpdfstring{$\sim$gradPsiErrorCSV()}{~gradPsiErrorCSV()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_abe93236a4cc2e1345ec5923ef10d7731}\label{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_abe93236a4cc2e1345ec5923ef10d7731}} 
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}grad\+Psi\+Error\+CSV\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Runtime type information. 
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a7e2ed5619acedff2bd6454a36a1c9e8e}\label{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a7e2ed5619acedff2bd6454a36a1c9e8e}} 
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!operator=@{operator=}}
+\index{operator=@{operator=}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+No copy assignment. 
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a304cfd64aa086af8de5829288d82c74d}\label{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a304cfd64aa086af8de5829288d82c74d}} 
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!execute@{execute}}
+\index{execute@{execute}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual bool execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 136 of file grad\+Psi\+Error\+CSV.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_ae8f6374e29a250261b3979bbd6e5cb40}\label{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_ae8f6374e29a250261b3979bbd6e5cb40}} 
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!write@{write}}
+\index{write@{write}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily bool write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 66 of file grad\+Psi\+Error\+CSV.\+C.
+
+
+
+References narrow\+Band.
+
+
+
+Referenced by grad\+Psi\+Error\+CSV\+::grad\+Psi\+Error\+CSV().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{d3/d5b/classFoam_1_1functionObjects_1_1gradPsiErrorCSV_ae8f6374e29a250261b3979bbd6e5cb40_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a2cc4aa0fff6e95012c557b8afedb03cb}\label{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a2cc4aa0fff6e95012c557b8afedb03cb}} 
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!field\_@{field\_}}
+\index{field\_@{field\_}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\doxysubsubsection{\texorpdfstring{field\_}{field\_}}
+{\footnotesize\ttfamily const vol\+Scalar\+Field\& field\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 103 of file grad\+Psi\+Error\+CSV.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a4034a69803a73c7bc5b64294d72a3909}\label{classFoam_1_1functionObjects_1_1gradPsiErrorCSV_a4034a69803a73c7bc5b64294d72a3909}} 
+\index{gradPsiErrorCSV@{gradPsiErrorCSV}!csvFile\_@{csvFile\_}}
+\index{csvFile\_@{csvFile\_}!gradPsiErrorCSV@{gradPsiErrorCSV}}
+\doxysubsubsection{\texorpdfstring{csvFile\_}{csvFile\_}}
+{\footnotesize\ttfamily OFstream csv\+File\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 104 of file grad\+Psi\+Error\+CSV.\+H.
+
+
+
+Referenced by grad\+Psi\+Error\+CSV\+::grad\+Psi\+Error\+CSV().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/function\+Objects/grad\+Psi\+Error\+CSV/\mbox{\hyperlink{gradPsiErrorCSV_8H}{grad\+Psi\+Error\+CSV.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/function\+Objects/grad\+Psi\+Error\+CSV/\mbox{\hyperlink{gradPsiErrorCSV_8C}{grad\+Psi\+Error\+CSV.\+C}}\end{DoxyCompactItemize}

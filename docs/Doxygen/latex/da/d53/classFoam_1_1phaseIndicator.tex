@@ -1,0 +1,173 @@
+\hypertarget{classFoam_1_1phaseIndicator}{}\doxysection{phase\+Indicator Class Reference}
+\label{classFoam_1_1phaseIndicator}\index{phaseIndicator@{phaseIndicator}}
+
+
+Inheritance diagram for phase\+Indicator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/classFoam_1_1phaseIndicator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for phase\+Indicator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d6/d32/classFoam_1_1phaseIndicator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1phaseIndicator_a660172304dfa1b418cc1bded338b9fd9}{Type\+Name}} (\char`\"{}none\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1phaseIndicator_acec44bc1a943918db2ac6fb468c78cb6}{declare\+Run\+Time\+Selection\+Table}} (auto\+Ptr, \mbox{\hyperlink{classFoam_1_1phaseIndicator}{phase\+Indicator}}, Mesh,(const fv\+Mesh \&mesh),(mesh))
+\item 
+\mbox{\hyperlink{classFoam_1_1phaseIndicator_abed1425d29cf782dfb1be031f3749840}{phase\+Indicator}} (const fv\+Mesh \&mesh)
+\begin{DoxyCompactList}\small\item\em Construct from components. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFoam_1_1phaseIndicator_a48b15d6744519ed2abe2600e7509116b}{$\sim$phase\+Indicator}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFoam_1_1phaseIndicator_a7796d12b53a99da16798c780ba063f05}{calc\+Phase\+Indicator}} (vol\+Scalar\+Field \&alpha, const vol\+Scalar\+Field \&psi)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1phaseIndicator}{phase\+Indicator}} $>$ \mbox{\hyperlink{classFoam_1_1phaseIndicator_afa2128e3d67045bd72b57fc5818ddbc1}{New}} (const fv\+Mesh \&mesh)
+\begin{DoxyCompactList}\small\item\em Select default constructed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const fv\+Solution \& \mbox{\hyperlink{classFoam_1_1phaseIndicator_af11be4d850f43e196ccb23ecb919374e}{fv\+Solution\+\_\+}}
+\item 
+const dictionary \& \mbox{\hyperlink{classFoam_1_1phaseIndicator_a61c34a87a9968843addd05b5243c791c}{level\+Set\+Dict\+\_\+}}
+\item 
+const dictionary \& \mbox{\hyperlink{classFoam_1_1phaseIndicator_a7bb2788d71bf00ab73903aa639a5299a}{phase\+Ind\+Dict\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\label{_Description}%
+ \begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/phaseIndicator/phaseIndicator.H}{\texttt{ phase\+Indicator.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/phaseIndicator/phaseIndicator.C}{\texttt{ phase\+Indicator.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 50 of file phase\+Indicator.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1phaseIndicator_abed1425d29cf782dfb1be031f3749840}\label{classFoam_1_1phaseIndicator_abed1425d29cf782dfb1be031f3749840}} 
+\index{phaseIndicator@{phaseIndicator}!phaseIndicator@{phaseIndicator}}
+\index{phaseIndicator@{phaseIndicator}!phaseIndicator@{phaseIndicator}}
+\doxysubsubsection{\texorpdfstring{phaseIndicator()}{phaseIndicator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1phaseIndicator}{phase\+Indicator}} (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh }\end{DoxyParamCaption})}
+
+
+
+Construct from components. 
+
+
+
+Definition at line 34 of file phase\+Indicator.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1phaseIndicator_a48b15d6744519ed2abe2600e7509116b}\label{classFoam_1_1phaseIndicator_a48b15d6744519ed2abe2600e7509116b}} 
+\index{phaseIndicator@{phaseIndicator}!````~phaseIndicator@{$\sim$phaseIndicator}}
+\index{````~phaseIndicator@{$\sim$phaseIndicator}!phaseIndicator@{phaseIndicator}}
+\doxysubsubsection{\texorpdfstring{$\sim$phaseIndicator()}{~phaseIndicator()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1phaseIndicator}{phase\+Indicator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1phaseIndicator_a660172304dfa1b418cc1bded338b9fd9}\label{classFoam_1_1phaseIndicator_a660172304dfa1b418cc1bded338b9fd9}} 
+\index{phaseIndicator@{phaseIndicator}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!phaseIndicator@{phaseIndicator}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}none\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1phaseIndicator_acec44bc1a943918db2ac6fb468c78cb6}\label{classFoam_1_1phaseIndicator_acec44bc1a943918db2ac6fb468c78cb6}} 
+\index{phaseIndicator@{phaseIndicator}!declareRunTimeSelectionTable@{declareRunTimeSelectionTable}}
+\index{declareRunTimeSelectionTable@{declareRunTimeSelectionTable}!phaseIndicator@{phaseIndicator}}
+\doxysubsubsection{\texorpdfstring{declareRunTimeSelectionTable()}{declareRunTimeSelectionTable()}}
+{\footnotesize\ttfamily declare\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{auto\+Ptr}]{,  }\item[{\mbox{\hyperlink{classFoam_1_1phaseIndicator}{phase\+Indicator}}}]{,  }\item[{Mesh}]{,  }\item[{(const fv\+Mesh \&mesh)}]{,  }\item[{(mesh)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1phaseIndicator_afa2128e3d67045bd72b57fc5818ddbc1}\label{classFoam_1_1phaseIndicator_afa2128e3d67045bd72b57fc5818ddbc1}} 
+\index{phaseIndicator@{phaseIndicator}!New@{New}}
+\index{New@{New}!phaseIndicator@{phaseIndicator}}
+\doxysubsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1phaseIndicator}{Foam\+::phase\+Indicator}} $>$ New (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Select default constructed. 
+
+
+
+Definition at line 43 of file phase\+Indicator.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1phaseIndicator_a7796d12b53a99da16798c780ba063f05}\label{classFoam_1_1phaseIndicator_a7796d12b53a99da16798c780ba063f05}} 
+\index{phaseIndicator@{phaseIndicator}!calcPhaseIndicator@{calcPhaseIndicator}}
+\index{calcPhaseIndicator@{calcPhaseIndicator}!phaseIndicator@{phaseIndicator}}
+\doxysubsubsection{\texorpdfstring{calcPhaseIndicator()}{calcPhaseIndicator()}}
+{\footnotesize\ttfamily virtual void calc\+Phase\+Indicator (\begin{DoxyParamCaption}\item[{vol\+Scalar\+Field \&}]{alpha,  }\item[{const vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classFoam_1_1sharpJumpPhaseIndicator_aea83bfccc67e19568c96a435b6e1cad5}{sharp\+Jump\+Phase\+Indicator}}, \mbox{\hyperlink{classFoam_1_1heavisidePhaseIndicator_aea83bfccc67e19568c96a435b6e1cad5}{heaviside\+Phase\+Indicator}}, and \mbox{\hyperlink{classFoam_1_1geometricPhaseIndicator_aea83bfccc67e19568c96a435b6e1cad5}{geometric\+Phase\+Indicator}}.
+
+
+
+Definition at line 96 of file phase\+Indicator.\+H.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1phaseIndicator_af11be4d850f43e196ccb23ecb919374e}\label{classFoam_1_1phaseIndicator_af11be4d850f43e196ccb23ecb919374e}} 
+\index{phaseIndicator@{phaseIndicator}!fvSolution\_@{fvSolution\_}}
+\index{fvSolution\_@{fvSolution\_}!phaseIndicator@{phaseIndicator}}
+\doxysubsubsection{\texorpdfstring{fvSolution\_}{fvSolution\_}}
+{\footnotesize\ttfamily const fv\+Solution\& fv\+Solution\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file phase\+Indicator.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1phaseIndicator_a61c34a87a9968843addd05b5243c791c}\label{classFoam_1_1phaseIndicator_a61c34a87a9968843addd05b5243c791c}} 
+\index{phaseIndicator@{phaseIndicator}!levelSetDict\_@{levelSetDict\_}}
+\index{levelSetDict\_@{levelSetDict\_}!phaseIndicator@{phaseIndicator}}
+\doxysubsubsection{\texorpdfstring{levelSetDict\_}{levelSetDict\_}}
+{\footnotesize\ttfamily const dictionary\& level\+Set\+Dict\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 55 of file phase\+Indicator.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1phaseIndicator_a7bb2788d71bf00ab73903aa639a5299a}\label{classFoam_1_1phaseIndicator_a7bb2788d71bf00ab73903aa639a5299a}} 
+\index{phaseIndicator@{phaseIndicator}!phaseIndDict\_@{phaseIndDict\_}}
+\index{phaseIndDict\_@{phaseIndDict\_}!phaseIndicator@{phaseIndicator}}
+\doxysubsubsection{\texorpdfstring{phaseIndDict\_}{phaseIndDict\_}}
+{\footnotesize\ttfamily const dictionary\& phase\+Ind\+Dict\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 56 of file phase\+Indicator.\+H.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/phase\+Indicator/\mbox{\hyperlink{phaseIndicator_8H}{phase\+Indicator.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/phase\+Indicator/\mbox{\hyperlink{phaseIndicator_8C}{phase\+Indicator.\+C}}\end{DoxyCompactItemize}

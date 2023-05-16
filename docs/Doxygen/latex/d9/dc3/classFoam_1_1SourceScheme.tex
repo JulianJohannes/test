@@ -1,0 +1,259 @@
+\hypertarget{classFoam_1_1SourceScheme}{}\doxysection{Source\+Scheme Class Reference}
+\label{classFoam_1_1SourceScheme}\index{SourceScheme@{SourceScheme}}
+
+
+The base class \mbox{\hyperlink{classFoam_1_1SourceScheme}{Source\+Scheme}} forms the root for the discretization hierarchy of the SDPLS source term implemented in \mbox{\hyperlink{classFoam_1_1SDPLSSource}{SDPLSSource}}.  
+
+
+
+
+Inheritance diagram for Source\+Scheme\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/de4/classFoam_1_1SourceScheme__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Source\+Scheme\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{d1/de0/classFoam_1_1SourceScheme__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1SourceScheme_a660172304dfa1b418cc1bded338b9fd9}{Type\+Name}} (\char`\"{}none\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1SourceScheme_acd031e02fe4082114d3494d9aa0be4ea}{declare\+Run\+Time\+Selection\+Table}} (auto\+Ptr, \mbox{\hyperlink{classFoam_1_1SourceScheme}{Source\+Scheme}}, Dictionary,(),())
+\item 
+\mbox{\hyperlink{classFoam_1_1SourceScheme_af0f330b51f3af30f0a70c233a88ba960}{Source\+Scheme}} ()
+\begin{DoxyCompactList}\small\item\em Construct from components. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFoam_1_1SourceScheme_a85fce3289219c6cb849537cde6b5ab29}{$\sim$\+Source\+Scheme}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+tmp$<$ fv\+Scalar\+Matrix $>$ \mbox{\hyperlink{classFoam_1_1SourceScheme_afe5c06fbfaef382705462a2f32d8ffe0}{discretize}} (const vol\+Scalar\+Field \&non\+Linear\+Part, const vol\+Scalar\+Field \&psi)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1SourceScheme}{Source\+Scheme}} $>$ \mbox{\hyperlink{classFoam_1_1SourceScheme_a88ad7caca1f24b1dec0a53d00a330492}{New}} (const word type)
+\begin{DoxyCompactList}\small\item\em Select default constructed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1SourceScheme_a4d53deabbecc3fa7d747bc576d506e91}{update\+Sc}} (const vol\+Scalar\+Field \&non\+Linear\+Part, const vol\+Scalar\+Field \&psi)
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1SourceScheme_afbedde408444a4d4d78913d3596885e8}{update\+Sp}} (const vol\+Scalar\+Field \&non\+Linear\+Part)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+scalar\+Field \mbox{\hyperlink{classFoam_1_1SourceScheme_a3dfe28b19f87dcabc40f4f3bbff69a97}{Sc\+\_\+}}
+\item 
+scalar\+Field \mbox{\hyperlink{classFoam_1_1SourceScheme_a33eec0337ba814a407ef322f9ebbec46}{Sp\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class \mbox{\hyperlink{classFoam_1_1SourceScheme}{Source\+Scheme}} forms the root for the discretization hierarchy of the SDPLS source term implemented in \mbox{\hyperlink{classFoam_1_1SDPLSSource}{SDPLSSource}}. 
+
+\label{_Description}%
+
+
+For the discretization, the non-\/linear SDPLS source term $S_{SDPLS}$ is linearized as \begin{equation} S_{SDPLS}(\psi^{n+1}) \approx S_c + S_{p} \psi^{n+1}_c, \end{equation} where $S_c$ is a constant and $S_{p}$ is the proportionality constant for the linear part. Initializing the discretization and returning the tmp$<$fv\+Scalar\+Matrix$>$ is done by the public method
+
+discretize(non\+Linear\+Part, psi),
+
+which takes the non\+Linear\+Part and the LS field psi from the source term implementing the class \mbox{\hyperlink{classFoam_1_1SDPLSSource}{SDPLSSource}}. Inheriting classes are responsible for implementing \mbox{\hyperlink{classFoam_1_1SourceScheme_a4d53deabbecc3fa7d747bc576d506e91}{update\+Sc()}} for $S_c$ and \mbox{\hyperlink{classFoam_1_1SourceScheme_afbedde408444a4d4d78913d3596885e8}{update\+Sp()}} for $S_p$, which are called by \mbox{\hyperlink{classFoam_1_1SourceScheme_afe5c06fbfaef382705462a2f32d8ffe0}{discretize()}}. This base class implements the case of no discretization with \begin{equation} S_{noSource}(\psi^{n+1})=0. \end{equation}
+
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/SDPLSSource/SourceScheme/SourceScheme.H}{\texttt{ Source\+Scheme.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/SDPLSSource/SourceScheme/SourceScheme.C}{\texttt{ Source\+Scheme.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 77 of file Source\+Scheme.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1SourceScheme_af0f330b51f3af30f0a70c233a88ba960}\label{classFoam_1_1SourceScheme_af0f330b51f3af30f0a70c233a88ba960}} 
+\index{SourceScheme@{SourceScheme}!SourceScheme@{SourceScheme}}
+\index{SourceScheme@{SourceScheme}!SourceScheme@{SourceScheme}}
+\doxysubsubsection{\texorpdfstring{SourceScheme()}{SourceScheme()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1SourceScheme}{Source\+Scheme}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct from components. 
+
+
+
+Definition at line 58 of file Source\+Scheme.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1SourceScheme_a85fce3289219c6cb849537cde6b5ab29}\label{classFoam_1_1SourceScheme_a85fce3289219c6cb849537cde6b5ab29}} 
+\index{SourceScheme@{SourceScheme}!````~SourceScheme@{$\sim$SourceScheme}}
+\index{````~SourceScheme@{$\sim$SourceScheme}!SourceScheme@{SourceScheme}}
+\doxysubsubsection{\texorpdfstring{$\sim$SourceScheme()}{~SourceScheme()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1SourceScheme}{Source\+Scheme}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1SourceScheme_a660172304dfa1b418cc1bded338b9fd9}\label{classFoam_1_1SourceScheme_a660172304dfa1b418cc1bded338b9fd9}} 
+\index{SourceScheme@{SourceScheme}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!SourceScheme@{SourceScheme}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}none\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1SourceScheme_acd031e02fe4082114d3494d9aa0be4ea}\label{classFoam_1_1SourceScheme_acd031e02fe4082114d3494d9aa0be4ea}} 
+\index{SourceScheme@{SourceScheme}!declareRunTimeSelectionTable@{declareRunTimeSelectionTable}}
+\index{declareRunTimeSelectionTable@{declareRunTimeSelectionTable}!SourceScheme@{SourceScheme}}
+\doxysubsubsection{\texorpdfstring{declareRunTimeSelectionTable()}{declareRunTimeSelectionTable()}}
+{\footnotesize\ttfamily declare\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{auto\+Ptr}]{,  }\item[{\mbox{\hyperlink{classFoam_1_1SourceScheme}{Source\+Scheme}}}]{,  }\item[{Dictionary}]{,  }\item[{()}]{,  }\item[{()}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1SourceScheme_a88ad7caca1f24b1dec0a53d00a330492}\label{classFoam_1_1SourceScheme_a88ad7caca1f24b1dec0a53d00a330492}} 
+\index{SourceScheme@{SourceScheme}!New@{New}}
+\index{New@{New}!SourceScheme@{SourceScheme}}
+\doxysubsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily Foam\+::auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1SourceScheme}{Source\+Scheme}} $>$ New (\begin{DoxyParamCaption}\item[{const word}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Select default constructed. 
+
+
+
+Definition at line 40 of file Source\+Scheme.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1SourceScheme_afe5c06fbfaef382705462a2f32d8ffe0}\label{classFoam_1_1SourceScheme_afe5c06fbfaef382705462a2f32d8ffe0}} 
+\index{SourceScheme@{SourceScheme}!discretize@{discretize}}
+\index{discretize@{discretize}!SourceScheme@{SourceScheme}}
+\doxysubsubsection{\texorpdfstring{discretize()}{discretize()}}
+{\footnotesize\ttfamily tmp$<$ fv\+Scalar\+Matrix $>$ discretize (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{non\+Linear\+Part,  }\item[{const vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file Source\+Scheme.\+C.
+
+
+
+References Source\+Scheme\+::\+Sc\+\_\+, Source\+Scheme\+::\+Sp\+\_\+, Source\+Scheme\+::update\+Sc(), and Source\+Scheme\+::update\+Sp().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{d9/dc3/classFoam_1_1SourceScheme_afe5c06fbfaef382705462a2f32d8ffe0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1SourceScheme_a4d53deabbecc3fa7d747bc576d506e91}\label{classFoam_1_1SourceScheme_a4d53deabbecc3fa7d747bc576d506e91}} 
+\index{SourceScheme@{SourceScheme}!updateSc@{updateSc}}
+\index{updateSc@{updateSc}!SourceScheme@{SourceScheme}}
+\doxysubsubsection{\texorpdfstring{updateSc()}{updateSc()}}
+{\footnotesize\ttfamily void update\+Sc (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{non\+Linear\+Part,  }\item[{const vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme_a4d53deabbecc3fa7d747bc576d506e91}{strict\+Negative\+Sp\+Linear\+Implicit\+Scheme}}, \mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme_a4d53deabbecc3fa7d747bc576d506e91}{simple\+Linear\+Implicit\+Scheme}}, and \mbox{\hyperlink{classFoam_1_1explicitScheme_a4d53deabbecc3fa7d747bc576d506e91}{explicit\+Scheme}}.
+
+
+
+Definition at line 88 of file Source\+Scheme.\+C.
+
+
+
+References Source\+Scheme\+::\+Sc\+\_\+.
+
+
+
+Referenced by Source\+Scheme\+::discretize().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{d9/dc3/classFoam_1_1SourceScheme_a4d53deabbecc3fa7d747bc576d506e91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1SourceScheme_afbedde408444a4d4d78913d3596885e8}\label{classFoam_1_1SourceScheme_afbedde408444a4d4d78913d3596885e8}} 
+\index{SourceScheme@{SourceScheme}!updateSp@{updateSp}}
+\index{updateSp@{updateSp}!SourceScheme@{SourceScheme}}
+\doxysubsubsection{\texorpdfstring{updateSp()}{updateSp()}}
+{\footnotesize\ttfamily void update\+Sp (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{non\+Linear\+Part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classFoam_1_1strictNegativeSpLinearImplicitScheme_afbedde408444a4d4d78913d3596885e8}{strict\+Negative\+Sp\+Linear\+Implicit\+Scheme}}, \mbox{\hyperlink{classFoam_1_1simpleLinearImplicitScheme_afbedde408444a4d4d78913d3596885e8}{simple\+Linear\+Implicit\+Scheme}}, and \mbox{\hyperlink{classFoam_1_1explicitScheme_afbedde408444a4d4d78913d3596885e8}{explicit\+Scheme}}.
+
+
+
+Definition at line 93 of file Source\+Scheme.\+C.
+
+
+
+References Source\+Scheme\+::\+Sp\+\_\+.
+
+
+
+Referenced by Source\+Scheme\+::discretize().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{d9/dc3/classFoam_1_1SourceScheme_afbedde408444a4d4d78913d3596885e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1SourceScheme_a3dfe28b19f87dcabc40f4f3bbff69a97}\label{classFoam_1_1SourceScheme_a3dfe28b19f87dcabc40f4f3bbff69a97}} 
+\index{SourceScheme@{SourceScheme}!Sc\_@{Sc\_}}
+\index{Sc\_@{Sc\_}!SourceScheme@{SourceScheme}}
+\doxysubsubsection{\texorpdfstring{Sc\_}{Sc\_}}
+{\footnotesize\ttfamily scalar\+Field Sc\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 81 of file Source\+Scheme.\+H.
+
+
+
+Referenced by Source\+Scheme\+::discretize(), explicit\+Scheme\+::update\+Sc(), simple\+Linear\+Implicit\+Scheme\+::update\+Sc(), Source\+Scheme\+::update\+Sc(), and strict\+Negative\+Sp\+Linear\+Implicit\+Scheme\+::update\+Sc().
+
+\mbox{\Hypertarget{classFoam_1_1SourceScheme_a33eec0337ba814a407ef322f9ebbec46}\label{classFoam_1_1SourceScheme_a33eec0337ba814a407ef322f9ebbec46}} 
+\index{SourceScheme@{SourceScheme}!Sp\_@{Sp\_}}
+\index{Sp\_@{Sp\_}!SourceScheme@{SourceScheme}}
+\doxysubsubsection{\texorpdfstring{Sp\_}{Sp\_}}
+{\footnotesize\ttfamily scalar\+Field Sp\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 82 of file Source\+Scheme.\+H.
+
+
+
+Referenced by Source\+Scheme\+::discretize(), explicit\+Scheme\+::update\+Sp(), simple\+Linear\+Implicit\+Scheme\+::update\+Sp(), Source\+Scheme\+::update\+Sp(), and strict\+Negative\+Sp\+Linear\+Implicit\+Scheme\+::update\+Sp().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Source\+Scheme/\mbox{\hyperlink{SourceScheme_8H}{Source\+Scheme.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Source\+Scheme/\mbox{\hyperlink{SourceScheme_8C}{Source\+Scheme.\+C}}\end{DoxyCompactItemize}

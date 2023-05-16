@@ -1,0 +1,316 @@
+\hypertarget{classFoam_1_1velocityModel}{}\doxysection{velocity\+Model Class Reference}
+\label{classFoam_1_1velocityModel}\index{velocityModel@{velocityModel}}
+
+
+Inheritance diagram for velocity\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/da9/classFoam_1_1velocityModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for velocity\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d55/classFoam_1_1velocityModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1velocityModel_a660172304dfa1b418cc1bded338b9fd9}{Type\+Name}} (\char`\"{}none\char`\"{})
+\begin{DoxyCompactList}\small\item\em Runtime type information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1velocityModel_a473c85bdb630f81e0fb169e04bc0eff1}{declare\+Run\+Time\+Selection\+Table}} (auto\+Ptr, \mbox{\hyperlink{classFoam_1_1velocityModel}{velocity\+Model}}, Mesh,(const fv\+Mesh \&mesh),(mesh))
+\item 
+\mbox{\hyperlink{classFoam_1_1velocityModel_a7c73a1b548eff4262719ee2659c0904f}{velocity\+Model}} (const fv\+Mesh \&mesh)
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1velocityModel_a616b252f6258e86d1d7a331b7bdaf850}{$\sim$velocity\+Model}} ()=default
+\item 
+Switch \mbox{\hyperlink{classFoam_1_1velocityModel_ad6a612438051c2dc7a194a404c5038f3}{is\+Oscillating}} () const
+\item 
+scalar \mbox{\hyperlink{classFoam_1_1velocityModel_a9e973ae6144bf90782969f072685e11b}{oscillation\+Factor}} (scalar const time, const scalar tau) const
+\item 
+void \mbox{\hyperlink{classFoam_1_1velocityModel_a2289c8291610e9bd8cdec04181a309f3}{oscillate\+Velocity}} (vol\+Vector\+Field \&U, const vol\+Vector\+Field \&\mbox{\hyperlink{errorCalculation_8H_aeb0573dd00ad67c50010e8f01877cc2c}{U0}}, surface\+Scalar\+Field \&phi, const surface\+Scalar\+Field \&\mbox{\hyperlink{errorCalculation_8H_a9d823340daf7973efdb2806c95879888}{phi0}}, const Time \&run\+Time) const
+\item 
+virtual Foam\+::vector \mbox{\hyperlink{classFoam_1_1velocityModel_a422e328320401e29d3e16eb91acce206}{velocity}} (const vector \&x) const
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1velocityModel_affa92936b9d4019687869906f15716b6}{set\+Velocity}} (vol\+Vector\+Field \&U) const
+\item 
+virtual void \mbox{\hyperlink{classFoam_1_1velocityModel_a90020fda7136a51f3402192db9677298}{set\+Volumetric\+Flux}} (surface\+Scalar\+Field \&phi) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1velocityModel}{velocity\+Model}} $>$ \mbox{\hyperlink{classFoam_1_1velocityModel_a9ce0c432bd1404f703b7fa01294eb690}{New}} (const fv\+Mesh \&mesh)
+\begin{DoxyCompactList}\small\item\em Return a reference to the selected viscosity model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const fv\+Solution \& \mbox{\hyperlink{classFoam_1_1velocityModel_af11be4d850f43e196ccb23ecb919374e}{fv\+Solution\+\_\+}}
+\item 
+const dictionary \& \mbox{\hyperlink{classFoam_1_1velocityModel_af9d556a544af87558fcd15bb3b73f20f}{velocity\+Dict\+\_\+}}
+\item 
+Switch \mbox{\hyperlink{classFoam_1_1velocityModel_ad73c56cc4cbb27620fe0358627fd8f2b}{is\+Oscillating\+\_\+}}
+\item 
+const scalar \mbox{\hyperlink{classFoam_1_1velocityModel_ac7b18c7f8e221c954255f6b26fd139d2}{tau\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 49 of file advection\+Verification.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1velocityModel_a7c73a1b548eff4262719ee2659c0904f}\label{classFoam_1_1velocityModel_a7c73a1b548eff4262719ee2659c0904f}} 
+\index{velocityModel@{velocityModel}!velocityModel@{velocityModel}}
+\index{velocityModel@{velocityModel}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{velocityModel()}{velocityModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1velocityModel}{velocity\+Model}} (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file advection\+Verification.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1velocityModel_a616b252f6258e86d1d7a331b7bdaf850}\label{classFoam_1_1velocityModel_a616b252f6258e86d1d7a331b7bdaf850}} 
+\index{velocityModel@{velocityModel}!````~velocityModel@{$\sim$velocityModel}}
+\index{````~velocityModel@{$\sim$velocityModel}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$velocityModel()}{~velocityModel()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1velocityModel}{velocity\+Model}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1velocityModel_a660172304dfa1b418cc1bded338b9fd9}\label{classFoam_1_1velocityModel_a660172304dfa1b418cc1bded338b9fd9}} 
+\index{velocityModel@{velocityModel}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}none\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Runtime type information. 
+
+\mbox{\Hypertarget{classFoam_1_1velocityModel_a473c85bdb630f81e0fb169e04bc0eff1}\label{classFoam_1_1velocityModel_a473c85bdb630f81e0fb169e04bc0eff1}} 
+\index{velocityModel@{velocityModel}!declareRunTimeSelectionTable@{declareRunTimeSelectionTable}}
+\index{declareRunTimeSelectionTable@{declareRunTimeSelectionTable}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{declareRunTimeSelectionTable()}{declareRunTimeSelectionTable()}}
+{\footnotesize\ttfamily declare\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{auto\+Ptr}]{,  }\item[{\mbox{\hyperlink{classFoam_1_1velocityModel}{velocity\+Model}}}]{,  }\item[{Mesh}]{,  }\item[{(const fv\+Mesh \&mesh)}]{,  }\item[{(mesh)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1velocityModel_a9ce0c432bd1404f703b7fa01294eb690}\label{classFoam_1_1velocityModel_a9ce0c432bd1404f703b7fa01294eb690}} 
+\index{velocityModel@{velocityModel}!New@{New}}
+\index{New@{New}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1velocityModel}{velocity\+Model}} $>$ New (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return a reference to the selected viscosity model. 
+
+
+
+Definition at line 204 of file advection\+Verification.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1velocityModel_ad6a612438051c2dc7a194a404c5038f3}\label{classFoam_1_1velocityModel_ad6a612438051c2dc7a194a404c5038f3}} 
+\index{velocityModel@{velocityModel}!isOscillating@{isOscillating}}
+\index{isOscillating@{isOscillating}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{isOscillating()}{isOscillating()}}
+{\footnotesize\ttfamily Switch is\+Oscillating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 108 of file advection\+Verification.\+H.
+
+
+
+References velocity\+Model\+::is\+Oscillating\+\_\+.
+
+
+
+Referenced by velocity\+Model\+::oscillate\+Velocity().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{dd/dc4/classFoam_1_1velocityModel_ad6a612438051c2dc7a194a404c5038f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1velocityModel_a9e973ae6144bf90782969f072685e11b}\label{classFoam_1_1velocityModel_a9e973ae6144bf90782969f072685e11b}} 
+\index{velocityModel@{velocityModel}!oscillationFactor@{oscillationFactor}}
+\index{oscillationFactor@{oscillationFactor}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{oscillationFactor()}{oscillationFactor()}}
+{\footnotesize\ttfamily scalar oscillation\+Factor (\begin{DoxyParamCaption}\item[{scalar const}]{time,  }\item[{const scalar}]{tau }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 113 of file advection\+Verification.\+H.
+
+
+
+Referenced by velocity\+Model\+::oscillate\+Velocity().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{dd/dc4/classFoam_1_1velocityModel_a9e973ae6144bf90782969f072685e11b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1velocityModel_a2289c8291610e9bd8cdec04181a309f3}\label{classFoam_1_1velocityModel_a2289c8291610e9bd8cdec04181a309f3}} 
+\index{velocityModel@{velocityModel}!oscillateVelocity@{oscillateVelocity}}
+\index{oscillateVelocity@{oscillateVelocity}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{oscillateVelocity()}{oscillateVelocity()}}
+{\footnotesize\ttfamily void oscillate\+Velocity (\begin{DoxyParamCaption}\item[{vol\+Vector\+Field \&}]{U,  }\item[{const vol\+Vector\+Field \&}]{U0,  }\item[{surface\+Scalar\+Field \&}]{phi,  }\item[{const surface\+Scalar\+Field \&}]{phi0,  }\item[{const Time \&}]{run\+Time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 118 of file advection\+Verification.\+H.
+
+
+
+References velocity\+Model\+::is\+Oscillating(), velocity\+Model\+::oscillation\+Factor(), phi0(), velocity\+Model\+::tau\+\_\+, and U0().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{dd/dc4/classFoam_1_1velocityModel_a2289c8291610e9bd8cdec04181a309f3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1velocityModel_a422e328320401e29d3e16eb91acce206}\label{classFoam_1_1velocityModel_a422e328320401e29d3e16eb91acce206}} 
+\index{velocityModel@{velocityModel}!velocity@{velocity}}
+\index{velocity@{velocity}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{velocity()}{velocity()}}
+{\footnotesize\ttfamily virtual Foam\+::vector velocity (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classFoam_1_1periodic2D_a3fc90a57304aca8d4f216e9d33dc2d42}{periodic2D}}, \mbox{\hyperlink{classFoam_1_1vortex2D_a3fc90a57304aca8d4f216e9d33dc2d42}{vortex2D}}, \mbox{\hyperlink{classFoam_1_1rotation_a3fc90a57304aca8d4f216e9d33dc2d42}{rotation}}, \mbox{\hyperlink{classFoam_1_1translation_a3fc90a57304aca8d4f216e9d33dc2d42}{translation}}, \mbox{\hyperlink{classFoam_1_1shear3D_a3fc90a57304aca8d4f216e9d33dc2d42}{shear3D}}, \mbox{\hyperlink{classFoam_1_1deformation3D_a3fc90a57304aca8d4f216e9d33dc2d42}{deformation3D}}, and \mbox{\hyperlink{classFoam_1_1shear2D_a3fc90a57304aca8d4f216e9d33dc2d42}{shear2D}}.
+
+
+
+Definition at line 135 of file advection\+Verification.\+H.
+
+
+
+Referenced by velocity\+Model\+::set\+Velocity(), and velocity\+Model\+::set\+Volumetric\+Flux().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{dd/dc4/classFoam_1_1velocityModel_a422e328320401e29d3e16eb91acce206_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1velocityModel_affa92936b9d4019687869906f15716b6}\label{classFoam_1_1velocityModel_affa92936b9d4019687869906f15716b6}} 
+\index{velocityModel@{velocityModel}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily virtual void set\+Velocity (\begin{DoxyParamCaption}\item[{vol\+Vector\+Field \&}]{U }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 141 of file advection\+Verification.\+H.
+
+
+
+References velocity\+Model\+::velocity().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{dd/dc4/classFoam_1_1velocityModel_affa92936b9d4019687869906f15716b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1velocityModel_a90020fda7136a51f3402192db9677298}\label{classFoam_1_1velocityModel_a90020fda7136a51f3402192db9677298}} 
+\index{velocityModel@{velocityModel}!setVolumetricFlux@{setVolumetricFlux}}
+\index{setVolumetricFlux@{setVolumetricFlux}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{setVolumetricFlux()}{setVolumetricFlux()}}
+{\footnotesize\ttfamily virtual void set\+Volumetric\+Flux (\begin{DoxyParamCaption}\item[{surface\+Scalar\+Field \&}]{phi }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 167 of file advection\+Verification.\+H.
+
+
+
+References velocity\+Model\+::velocity().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{dd/dc4/classFoam_1_1velocityModel_a90020fda7136a51f3402192db9677298_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1velocityModel_af11be4d850f43e196ccb23ecb919374e}\label{classFoam_1_1velocityModel_af11be4d850f43e196ccb23ecb919374e}} 
+\index{velocityModel@{velocityModel}!fvSolution\_@{fvSolution\_}}
+\index{fvSolution\_@{fvSolution\_}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{fvSolution\_}{fvSolution\_}}
+{\footnotesize\ttfamily const fv\+Solution\& fv\+Solution\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 53 of file advection\+Verification.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1velocityModel_af9d556a544af87558fcd15bb3b73f20f}\label{classFoam_1_1velocityModel_af9d556a544af87558fcd15bb3b73f20f}} 
+\index{velocityModel@{velocityModel}!velocityDict\_@{velocityDict\_}}
+\index{velocityDict\_@{velocityDict\_}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{velocityDict\_}{velocityDict\_}}
+{\footnotesize\ttfamily const dictionary\& velocity\+Dict\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file advection\+Verification.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1velocityModel_ad73c56cc4cbb27620fe0358627fd8f2b}\label{classFoam_1_1velocityModel_ad73c56cc4cbb27620fe0358627fd8f2b}} 
+\index{velocityModel@{velocityModel}!isOscillating\_@{isOscillating\_}}
+\index{isOscillating\_@{isOscillating\_}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{isOscillating\_}{isOscillating\_}}
+{\footnotesize\ttfamily Switch is\+Oscillating\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 55 of file advection\+Verification.\+H.
+
+
+
+Referenced by velocity\+Model\+::is\+Oscillating().
+
+\mbox{\Hypertarget{classFoam_1_1velocityModel_ac7b18c7f8e221c954255f6b26fd139d2}\label{classFoam_1_1velocityModel_ac7b18c7f8e221c954255f6b26fd139d2}} 
+\index{velocityModel@{velocityModel}!tau\_@{tau\_}}
+\index{tau\_@{tau\_}!velocityModel@{velocityModel}}
+\doxysubsubsection{\texorpdfstring{tau\_}{tau\_}}
+{\footnotesize\ttfamily const scalar tau\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 56 of file advection\+Verification.\+H.
+
+
+
+Referenced by velocity\+Model\+::oscillate\+Velocity().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/applications/solvers/leia\+Level\+Set\+Foam/\mbox{\hyperlink{advectionVerification_8H}{advection\+Verification.\+H}}\end{DoxyCompactItemize}

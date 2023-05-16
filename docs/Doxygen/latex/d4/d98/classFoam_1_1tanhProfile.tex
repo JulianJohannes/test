@@ -1,0 +1,147 @@
+\hypertarget{classFoam_1_1tanhProfile}{}\doxysection{tanh\+Profile Class Reference}
+\label{classFoam_1_1tanhProfile}\index{tanhProfile@{tanhProfile}}
+
+
+Inheritance diagram for tanh\+Profile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{d6/da3/classFoam_1_1tanhProfile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tanh\+Profile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d00/classFoam_1_1tanhProfile__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1tanhProfile_ab0769c0c04e71ac2470da4b7d8b20c23}{Type\+Name}} (\char`\"{}tanh\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1tanhProfile_afa8a29d1e50f05320fff7b7215c16316}{tanh\+Profile}} (const fv\+Mesh \&mesh, const \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} \&surface)
+\begin{DoxyCompactList}\small\item\em Construct from components. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFoam_1_1tanhProfile_a77c850f15e7aade91990fcebb90a3a27}{$\sim$tanh\+Profile}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1tanhProfile_aafa67c9c9084d5a9679e7b187c8caa86}{value}} (const vector point) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+scalar const \mbox{\hyperlink{classFoam_1_1tanhProfile_aa66665512a06d4497f52a0eefb9f0746}{eps\+\_\+}}
+\item 
+scalar const \mbox{\hyperlink{classFoam_1_1tanhProfile_aad1b4e4e3db0434c71c5e6f15a2b5977}{limit\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 47 of file tanh.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1tanhProfile_afa8a29d1e50f05320fff7b7215c16316}\label{classFoam_1_1tanhProfile_afa8a29d1e50f05320fff7b7215c16316}} 
+\index{tanhProfile@{tanhProfile}!tanhProfile@{tanhProfile}}
+\index{tanhProfile@{tanhProfile}!tanhProfile@{tanhProfile}}
+\doxysubsubsection{\texorpdfstring{tanhProfile()}{tanhProfile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1tanhProfile}{tanh\+Profile}} (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh,  }\item[{const \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} \&}]{surface }\end{DoxyParamCaption})}
+
+
+
+Construct from components. 
+
+
+
+Definition at line 36 of file tanh.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1tanhProfile_a77c850f15e7aade91990fcebb90a3a27}\label{classFoam_1_1tanhProfile_a77c850f15e7aade91990fcebb90a3a27}} 
+\index{tanhProfile@{tanhProfile}!````~tanhProfile@{$\sim$tanhProfile}}
+\index{````~tanhProfile@{$\sim$tanhProfile}!tanhProfile@{tanhProfile}}
+\doxysubsubsection{\texorpdfstring{$\sim$tanhProfile()}{~tanhProfile()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1tanhProfile}{tanh\+Profile}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1tanhProfile_ab0769c0c04e71ac2470da4b7d8b20c23}\label{classFoam_1_1tanhProfile_ab0769c0c04e71ac2470da4b7d8b20c23}} 
+\index{tanhProfile@{tanhProfile}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!tanhProfile@{tanhProfile}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}tanh\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1tanhProfile_aafa67c9c9084d5a9679e7b187c8caa86}\label{classFoam_1_1tanhProfile_aafa67c9c9084d5a9679e7b187c8caa86}} 
+\index{tanhProfile@{tanhProfile}!value@{value}}
+\index{value@{value}!tanhProfile@{tanhProfile}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily scalar value (\begin{DoxyParamCaption}\item[{const vector}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1signedDistance_aafa67c9c9084d5a9679e7b187c8caa86}{signed\+Distance}}.
+
+
+
+Definition at line 43 of file tanh.\+C.
+
+
+
+References tanh\+Profile\+::eps\+\_\+, tanh\+Profile\+::limit\+\_\+, and signed\+Distance\+::value().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d98/classFoam_1_1tanhProfile_aafa67c9c9084d5a9679e7b187c8caa86_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1tanhProfile_aa66665512a06d4497f52a0eefb9f0746}\label{classFoam_1_1tanhProfile_aa66665512a06d4497f52a0eefb9f0746}} 
+\index{tanhProfile@{tanhProfile}!eps\_@{eps\_}}
+\index{eps\_@{eps\_}!tanhProfile@{tanhProfile}}
+\doxysubsubsection{\texorpdfstring{eps\_}{eps\_}}
+{\footnotesize\ttfamily scalar const eps\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 52 of file tanh.\+H.
+
+
+
+Referenced by tanh\+Profile\+::value().
+
+\mbox{\Hypertarget{classFoam_1_1tanhProfile_aad1b4e4e3db0434c71c5e6f15a2b5977}\label{classFoam_1_1tanhProfile_aad1b4e4e3db0434c71c5e6f15a2b5977}} 
+\index{tanhProfile@{tanhProfile}!limit\_@{limit\_}}
+\index{limit\_@{limit\_}!tanhProfile@{tanhProfile}}
+\doxysubsubsection{\texorpdfstring{limit\_}{limit\_}}
+{\footnotesize\ttfamily scalar const limit\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file tanh.\+H.
+
+
+
+Referenced by tanh\+Profile\+::value().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/profile/\mbox{\hyperlink{tanh_8H}{tanh.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/profile/\mbox{\hyperlink{tanh_8C}{tanh.\+C}}\end{DoxyCompactItemize}

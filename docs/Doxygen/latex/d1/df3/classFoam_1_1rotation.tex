@@ -1,0 +1,134 @@
+\hypertarget{classFoam_1_1rotation}{}\doxysection{rotation Class Reference}
+\label{classFoam_1_1rotation}\index{rotation@{rotation}}
+
+
+Inheritance diagram for rotation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{d6/d78/classFoam_1_1rotation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rotation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d38/classFoam_1_1rotation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1rotation_ac7a0eb9b6feb0f21a99f4be6cd253d18}{Type\+Name}} (\char`\"{}rotation\char`\"{})
+\begin{DoxyCompactList}\small\item\em Runtime type information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1rotation_aa671b8c56d6a0d7e1ed417ff28fe6936}{rotation}} (const fv\+Mesh \&mesh)
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1rotation_a1cf1adbf19e07966b9675e5351087015}{$\sim$rotation}} ()=default
+\item 
+virtual vector \mbox{\hyperlink{classFoam_1_1rotation_a3fc90a57304aca8d4f216e9d33dc2d42}{velocity}} (const vector \&p) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1rotation_a47a2edc1f8a40bab4931aa0295648c6c}{point\+\_\+}}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1rotation_a22c60b5fd2021a351fd634db335b55dd}{omega\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 368 of file advection\+Verification.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1rotation_aa671b8c56d6a0d7e1ed417ff28fe6936}\label{classFoam_1_1rotation_aa671b8c56d6a0d7e1ed417ff28fe6936}} 
+\index{rotation@{rotation}!rotation@{rotation}}
+\index{rotation@{rotation}!rotation@{rotation}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1rotation}{rotation}} (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 382 of file advection\+Verification.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1rotation_a1cf1adbf19e07966b9675e5351087015}\label{classFoam_1_1rotation_a1cf1adbf19e07966b9675e5351087015}} 
+\index{rotation@{rotation}!````~rotation@{$\sim$rotation}}
+\index{````~rotation@{$\sim$rotation}!rotation@{rotation}}
+\doxysubsubsection{\texorpdfstring{$\sim$rotation()}{~rotation()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1rotation}{rotation}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1rotation_ac7a0eb9b6feb0f21a99f4be6cd253d18}\label{classFoam_1_1rotation_ac7a0eb9b6feb0f21a99f4be6cd253d18}} 
+\index{rotation@{rotation}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!rotation@{rotation}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}rotation\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Runtime type information. 
+
+\mbox{\Hypertarget{classFoam_1_1rotation_a3fc90a57304aca8d4f216e9d33dc2d42}\label{classFoam_1_1rotation_a3fc90a57304aca8d4f216e9d33dc2d42}} 
+\index{rotation@{rotation}!velocity@{velocity}}
+\index{velocity@{velocity}!rotation@{rotation}}
+\doxysubsubsection{\texorpdfstring{velocity()}{velocity()}}
+{\footnotesize\ttfamily virtual vector velocity (\begin{DoxyParamCaption}\item[{const vector \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1velocityModel_a422e328320401e29d3e16eb91acce206}{velocity\+Model}}.
+
+
+
+Definition at line 391 of file advection\+Verification.\+H.
+
+
+
+References rotation\+::omega\+\_\+, and rotation\+::point\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1rotation_a47a2edc1f8a40bab4931aa0295648c6c}\label{classFoam_1_1rotation_a47a2edc1f8a40bab4931aa0295648c6c}} 
+\index{rotation@{rotation}!point\_@{point\_}}
+\index{point\_@{point\_}!rotation@{rotation}}
+\doxysubsubsection{\texorpdfstring{point\_}{point\_}}
+{\footnotesize\ttfamily vector point\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 372 of file advection\+Verification.\+H.
+
+
+
+Referenced by rotation\+::velocity().
+
+\mbox{\Hypertarget{classFoam_1_1rotation_a22c60b5fd2021a351fd634db335b55dd}\label{classFoam_1_1rotation_a22c60b5fd2021a351fd634db335b55dd}} 
+\index{rotation@{rotation}!omega\_@{omega\_}}
+\index{omega\_@{omega\_}!rotation@{rotation}}
+\doxysubsubsection{\texorpdfstring{omega\_}{omega\_}}
+{\footnotesize\ttfamily vector omega\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 373 of file advection\+Verification.\+H.
+
+
+
+Referenced by rotation\+::velocity().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/applications/solvers/leia\+Level\+Set\+Foam/\mbox{\hyperlink{advectionVerification_8H}{advection\+Verification.\+H}}\end{DoxyCompactItemize}

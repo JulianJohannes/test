@@ -1,0 +1,140 @@
+\hypertarget{utilities_2preProcessing_2leiaSetFields_2createFields_8H}{}\doxysection{/home/julian/\+Open\+FOAM/leia2/applications/utilities/pre\+Processing/leia\+Set\+Fields/create\+Fields.H File Reference}
+\label{utilities_2preProcessing_2leiaSetFields_2createFields_8H}\index{/home/julian/OpenFOAM/leia2/applications/utilities/preProcessing/leiaSetFields/createFields.H@{/home/julian/OpenFOAM/leia2/applications/utilities/preProcessing/leiaSetFields/createFields.H}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_aa521ac4ede76706eb2efdad76ef1253c}{Info$<$$<$ \char`\"{}\+Reading field psi\textbackslash{}n\char`\"{}$<$$<$ endl;vol\+Scalar\+Field psi(\+IOobject(\char`\"{}psi\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+MUST\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE), mesh);\+Info$<$$<$ \char`\"{}\+Reading field alpha\textbackslash{}n\char`\"{}$<$$<$ endl;vol\+Scalar\+Field alpha(\+IOobject(\char`\"{}alpha\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+MUST\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE), mesh);const fv\+Solution \&fv\+Solution(mesh);const dictionary \&level\+Set\+Dict=fv\+Solution.\+sub\+Dict(\char`\"{}level\+Set\char`\"{});const dictionary \&impl\+Surf\+Dict=level\+Set\+Dict.\+sub\+Dict(\char`\"{}implicit\+Surface\char`\"{});const word impl\+Surf\+Type=impl\+Surf\+Dict.\+get$<$ word $>$}} (\char`\"{}type\char`\"{})
+\item 
+\mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}{narrow\+Band}} \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a50fcb94469b8bd68d3a0c652ff1b9ea7}{calc}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+auto\+Ptr$<$ implicit\+Surface $>$ \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_aa0e859aeb80623a0586191f11f32e47d}{impl\+Surf}}
+\item 
+const dictionary \& \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a8c59e5037e8db5708a3d29918d945c78}{profile\+Dict}} = level\+Set\+Dict.\+sub\+Dict(\char`\"{}profile\char`\"{})
+\item 
+const word \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_aaf86183d176d7283da747060c8c87682}{profile\+Type}} = profile\+Dict.\+get$<$word$>$(\char`\"{}type\char`\"{})
+\item 
+auto\+Ptr$<$ profile $>$ \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_adc8829bb960f0666efce53bf5351fc70}{LSprofile\+\_\+ptr}}
+\item 
+profile \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a6ae37e3d6d52fb70e6f46e984442f21e}{LSprofile}} = LSprofile\+\_\+ptr.\+ref()
+\item 
+auto\+Ptr$<$ Narrow\+Band $>$ \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}{narrow\+Band}} = Narrow\+Band\+::\+New(mesh, psi)
+\item 
+auto\+Ptr$<$ phase\+Indicator $>$ \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}{phase\+Ind}} = phase\+Indicator\+::\+New(mesh)
+\begin{DoxyCompactList}\small\item\em RTS of the phase indicator model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utilities_2preProcessing_2leiaSetFields_2createFields_8H_aa521ac4ede76706eb2efdad76ef1253c}\label{utilities_2preProcessing_2leiaSetFields_2createFields_8H_aa521ac4ede76706eb2efdad76ef1253c}} 
+\index{createFields.H@{createFields.H}!Info$<$$<$ \char`\"{}Reading field psi\textbackslash{}n\char`\"{}$<$$<$ endl;volScalarField psi(IOobject(\char`\"{}psi\char`\"{}, runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);Info$<$$<$ \char`\"{}Reading field alpha\textbackslash{}n\char`\"{}$<$$<$ endl;volScalarField alpha(IOobject(\char`\"{}alpha\char`\"{}, runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);const fvSolution \&fvSolution(mesh);const dictionary \&levelSetDict=fvSolution.subDict(\char`\"{}levelSet\char`\"{});const dictionary \&implSurfDict=levelSetDict.subDict(\char`\"{}implicitSurface\char`\"{});const word implSurfType=implSurfDict.get$<$ word $>$@{Info$<$$<$ ""Reading field psi\textbackslash{}n""$<$$<$ endl;volScalarField psi(IOobject(""psi"", runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);Info$<$$<$ ""Reading field alpha\textbackslash{}n""$<$$<$ endl;volScalarField alpha(IOobject(""alpha"", runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);const fvSolution \&fvSolution(mesh);const dictionary \&levelSetDict=fvSolution.subDict(""levelSet"");const dictionary \&implSurfDict=levelSetDict.subDict(""implicitSurface"");const word implSurfType=implSurfDict.get$<$ word $>$}}
+\index{Info$<$$<$ \char`\"{}Reading field psi\textbackslash{}n\char`\"{}$<$$<$ endl;volScalarField psi(IOobject(\char`\"{}psi\char`\"{}, runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);Info$<$$<$ \char`\"{}Reading field alpha\textbackslash{}n\char`\"{}$<$$<$ endl;volScalarField alpha(IOobject(\char`\"{}alpha\char`\"{}, runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);const fvSolution \&fvSolution(mesh);const dictionary \&levelSetDict=fvSolution.subDict(\char`\"{}levelSet\char`\"{});const dictionary \&implSurfDict=levelSetDict.subDict(\char`\"{}implicitSurface\char`\"{});const word implSurfType=implSurfDict.get$<$ word $>$@{Info$<$$<$ ""Reading field psi\textbackslash{}n""$<$$<$ endl;volScalarField psi(IOobject(""psi"", runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);Info$<$$<$ ""Reading field alpha\textbackslash{}n""$<$$<$ endl;volScalarField alpha(IOobject(""alpha"", runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);const fvSolution \&fvSolution(mesh);const dictionary \&levelSetDict=fvSolution.subDict(""levelSet"");const dictionary \&implSurfDict=levelSetDict.subDict(""implicitSurface"");const word implSurfType=implSurfDict.get$<$ word $>$}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{Info$<$$<$ ""Reading field psi\textbackslash{}n""$<$$<$ endl;volScalarField psi(IOobject(""psi"", runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);Info$<$$<$ ""Reading field alpha\textbackslash{}n""$<$$<$ endl;volScalarField alpha(IOobject(""alpha"", runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);const fvSolution \&fvSolution(mesh);const dictionary \&levelSetDict=fvSolution.subDict(""levelSet"");const dictionary \&implSurfDict=levelSetDict.subDict(""implicitSurface"");const word implSurfType=implSurfDict.get$<$ word $>$()}{Info<< "Reading field psi\textbackslash{}n"<< endl;volScalarField psi(IOobject("psi", runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);Info<< "Reading field alpha\textbackslash{}n"<< endl;volScalarField alpha(IOobject("alpha", runTime.timeName(), mesh, IOobject::MUST\_READ, IOobject::AUTO\_WRITE), mesh);const fvSolution \&fvSolution(mesh);const dictionary \&levelSetDict=fvSolution.subDict("levelSet");const dictionary \&implSurfDict=levelSetDict.subDict("implicitSurface");const word implSurfType=implSurfDict.get< word >()}}
+{\footnotesize\ttfamily Info$<$$<$ \char`\"{}Reading field psi\textbackslash{}n\char`\"{}$<$$<$ endl;vol\+Scalar\+Field psi(IOobject(\char`\"{}psi\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+MUST\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE), mesh);Info$<$$<$ \char`\"{}Reading field alpha\textbackslash{}n\char`\"{}$<$$<$ endl;vol\+Scalar\+Field alpha(IOobject(\char`\"{}alpha\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+MUST\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE), mesh);const fv\+Solution \&fv\+Solution(mesh);const dictionary \&level\+Set\+Dict=fv\+Solution.\+sub\+Dict(\char`\"{}level\+Set\char`\"{});const dictionary \&impl\+Surf\+Dict=level\+Set\+Dict.\+sub\+Dict(\char`\"{}implicit\+Surface\char`\"{});const word impl\+Surf\+Type=impl\+Surf\+Dict.\+get$<$ word $>$ (\begin{DoxyParamCaption}\item[{\char`\"{}type\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a50fcb94469b8bd68d3a0c652ff1b9ea7}\label{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a50fcb94469b8bd68d3a0c652ff1b9ea7}} 
+\index{createFields.H@{createFields.H}!calc@{calc}}
+\index{calc@{calc}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}{narrow\+Band}} calc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{utilities_2preProcessing_2leiaSetFields_2createFields_8H_aa0e859aeb80623a0586191f11f32e47d}\label{utilities_2preProcessing_2leiaSetFields_2createFields_8H_aa0e859aeb80623a0586191f11f32e47d}} 
+\index{createFields.H@{createFields.H}!implSurf@{implSurf}}
+\index{implSurf@{implSurf}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{implSurf}{implSurf}}
+{\footnotesize\ttfamily auto\+Ptr$<$implicit\+Surface$>$ impl\+Surf}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= implicitSurface::New}
+\DoxyCodeLine{(}
+\DoxyCodeLine{    implSurfType, }
+\DoxyCodeLine{    implSurfDict }
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+
+
+Definition at line 37 of file create\+Fields.\+H.
+
+\mbox{\Hypertarget{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a8c59e5037e8db5708a3d29918d945c78}\label{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a8c59e5037e8db5708a3d29918d945c78}} 
+\index{createFields.H@{createFields.H}!profileDict@{profileDict}}
+\index{profileDict@{profileDict}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{profileDict}{profileDict}}
+{\footnotesize\ttfamily const dictionary\& profile\+Dict = level\+Set\+Dict.\+sub\+Dict(\char`\"{}profile\char`\"{})}
+
+
+
+Definition at line 44 of file create\+Fields.\+H.
+
+
+
+Referenced by profile\+::\+New().
+
+\mbox{\Hypertarget{utilities_2preProcessing_2leiaSetFields_2createFields_8H_aaf86183d176d7283da747060c8c87682}\label{utilities_2preProcessing_2leiaSetFields_2createFields_8H_aaf86183d176d7283da747060c8c87682}} 
+\index{createFields.H@{createFields.H}!profileType@{profileType}}
+\index{profileType@{profileType}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{profileType}{profileType}}
+{\footnotesize\ttfamily const word profile\+Type = profile\+Dict.\+get$<$word$>$(\char`\"{}type\char`\"{})}
+
+
+
+Definition at line 45 of file create\+Fields.\+H.
+
+\mbox{\Hypertarget{utilities_2preProcessing_2leiaSetFields_2createFields_8H_adc8829bb960f0666efce53bf5351fc70}\label{utilities_2preProcessing_2leiaSetFields_2createFields_8H_adc8829bb960f0666efce53bf5351fc70}} 
+\index{createFields.H@{createFields.H}!LSprofile\_ptr@{LSprofile\_ptr}}
+\index{LSprofile\_ptr@{LSprofile\_ptr}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{LSprofile\_ptr}{LSprofile\_ptr}}
+{\footnotesize\ttfamily auto\+Ptr$<$profile$>$ LSprofile\+\_\+ptr}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= profile::New}
+\DoxyCodeLine{(}
+\DoxyCodeLine{    mesh, }
+\DoxyCodeLine{    \mbox{\hyperlink{utilities_2preProcessing_2leiaSetFields_2createFields_8H_aa0e859aeb80623a0586191f11f32e47d}{implSurf}}.ref() }
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+
+
+Definition at line 46 of file create\+Fields.\+H.
+
+\mbox{\Hypertarget{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a6ae37e3d6d52fb70e6f46e984442f21e}\label{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a6ae37e3d6d52fb70e6f46e984442f21e}} 
+\index{createFields.H@{createFields.H}!LSprofile@{LSprofile}}
+\index{LSprofile@{LSprofile}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{LSprofile}{LSprofile}}
+{\footnotesize\ttfamily profile LSprofile = LSprofile\+\_\+ptr.\+ref()}
+
+
+
+Definition at line 51 of file create\+Fields.\+H.
+
+\mbox{\Hypertarget{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}\label{utilities_2preProcessing_2leiaSetFields_2createFields_8H_a5a58c1d0dd05316c45043970fbf98bfa}} 
+\index{createFields.H@{createFields.H}!narrowBand@{narrowBand}}
+\index{narrowBand@{narrowBand}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{narrowBand}{narrowBand}}
+{\footnotesize\ttfamily auto\+Ptr$<$Narrow\+Band$>$ narrow\+Band = Narrow\+Band\+::\+New(mesh, psi)}
+
+
+
+Definition at line 54 of file create\+Fields.\+H.
+
+\mbox{\Hypertarget{utilities_2preProcessing_2leiaSetFields_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}\label{utilities_2preProcessing_2leiaSetFields_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}} 
+\index{createFields.H@{createFields.H}!phaseInd@{phaseInd}}
+\index{phaseInd@{phaseInd}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{phaseInd}{phaseInd}}
+{\footnotesize\ttfamily auto\+Ptr$<$phase\+Indicator$>$ phase\+Ind = phase\+Indicator\+::\+New(mesh)}
+
+
+
+RTS of the phase indicator model. 
+
+
+
+Definition at line 60 of file create\+Fields.\+H.
+

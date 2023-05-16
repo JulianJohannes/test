@@ -1,0 +1,223 @@
+\hypertarget{classFoam_1_1implicitSphere}{}\doxysection{implicit\+Sphere Class Reference}
+\label{classFoam_1_1implicitSphere}\index{implicitSphere@{implicitSphere}}
+
+
+Inheritance diagram for implicit\+Sphere\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{db/db2/classFoam_1_1implicitSphere__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for implicit\+Sphere\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{d4/d0e/classFoam_1_1implicitSphere__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSphere_a23c6d292b079d41257c6c23d12ae43f5}{Type\+Name}} (\char`\"{}implicit\+Sphere\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSphere_a607eb2e9beb7489c723b4a5e23d713be}{implicit\+Sphere}} ()=default
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSphere_a5e6f117dd0bae1bb92ed20b91da76f4b}{implicit\+Sphere}} (vector \mbox{\hyperlink{classFoam_1_1implicitSphere_a6191677d21ecabf5e95280c1f28e2a6f}{center}}, scalar \mbox{\hyperlink{classFoam_1_1implicitSphere_a0da9f4ce1490896cf2e75bfb4db34fa6}{radius}})
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSphere_ad32d9644b9329dd404f2d65e06189f2e}{implicit\+Sphere}} (const dictionary \&dict)
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1implicitSphere_abfe93f56c756c8f8c4f61ba6936f51b1}{$\sim$implicit\+Sphere}} ()=default
+\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1implicitSphere_afd75110375d5a7f673003f5ca0949b8d}{value}} (const vector \&x) const
+\item 
+virtual vector \mbox{\hyperlink{classFoam_1_1implicitSphere_ae8a2dc10148707498bc4a7ec60335408}{grad}} (const vector \&x) const
+\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1implicitSphere_a02f37321b8ac5b33ed606f38b97a2a8d}{curvature}} (const vector \&x) const
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitSphere_a6191677d21ecabf5e95280c1f28e2a6f}{center}} () const
+\item 
+scalar \mbox{\hyperlink{classFoam_1_1implicitSphere_a0da9f4ce1490896cf2e75bfb4db34fa6}{radius}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector \mbox{\hyperlink{classFoam_1_1implicitSphere_af4818b6350a3469b91442ade78ca779a}{center\+\_\+}}
+\item 
+scalar \mbox{\hyperlink{classFoam_1_1implicitSphere_a98baaba6ae38f3c7129cdb6bb38bc547}{radius\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 121 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_a607eb2e9beb7489c723b4a5e23d713be}\label{classFoam_1_1implicitSphere_a607eb2e9beb7489c723b4a5e23d713be}} 
+\index{implicitSphere@{implicitSphere}!implicitSphere@{implicitSphere}}
+\index{implicitSphere@{implicitSphere}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{implicitSphere()}{implicitSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitSphere}{implicit\+Sphere}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_a5e6f117dd0bae1bb92ed20b91da76f4b}\label{classFoam_1_1implicitSphere_a5e6f117dd0bae1bb92ed20b91da76f4b}} 
+\index{implicitSphere@{implicitSphere}!implicitSphere@{implicitSphere}}
+\index{implicitSphere@{implicitSphere}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{implicitSphere()}{implicitSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitSphere}{implicit\+Sphere}} (\begin{DoxyParamCaption}\item[{vector}]{center,  }\item[{scalar}]{radius }\end{DoxyParamCaption})}
+
+
+
+Definition at line 161 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_ad32d9644b9329dd404f2d65e06189f2e}\label{classFoam_1_1implicitSphere_ad32d9644b9329dd404f2d65e06189f2e}} 
+\index{implicitSphere@{implicitSphere}!implicitSphere@{implicitSphere}}
+\index{implicitSphere@{implicitSphere}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{implicitSphere()}{implicitSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitSphere}{implicit\+Sphere}} (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})}
+
+
+
+Definition at line 167 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_abfe93f56c756c8f8c4f61ba6936f51b1}\label{classFoam_1_1implicitSphere_abfe93f56c756c8f8c4f61ba6936f51b1}} 
+\index{implicitSphere@{implicitSphere}!````~implicitSphere@{$\sim$implicitSphere}}
+\index{````~implicitSphere@{$\sim$implicitSphere}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{$\sim$implicitSphere()}{~implicitSphere()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1implicitSphere}{implicit\+Sphere}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_a23c6d292b079d41257c6c23d12ae43f5}\label{classFoam_1_1implicitSphere_a23c6d292b079d41257c6c23d12ae43f5}} 
+\index{implicitSphere@{implicitSphere}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}implicit\+Sphere\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_afd75110375d5a7f673003f5ca0949b8d}\label{classFoam_1_1implicitSphere_afd75110375d5a7f673003f5ca0949b8d}} 
+\index{implicitSphere@{implicitSphere}!value@{value}}
+\index{value@{value}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily scalar value (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_ab9b7881f27b19149252409d5d223e7e0}{implicit\+Surface}}.
+
+
+
+Definition at line 175 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Sphere\+::center\+\_\+, and implicit\+Sphere\+::radius\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_ae8a2dc10148707498bc4a7ec60335408}\label{classFoam_1_1implicitSphere_ae8a2dc10148707498bc4a7ec60335408}} 
+\index{implicitSphere@{implicitSphere}!grad@{grad}}
+\index{grad@{grad}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{grad()}{grad()}}
+{\footnotesize\ttfamily vector grad (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_a823b516683a702d5eb8eb344b2aaebd6}{implicit\+Surface}}.
+
+
+
+Definition at line 180 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Sphere\+::center\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_a02f37321b8ac5b33ed606f38b97a2a8d}\label{classFoam_1_1implicitSphere_a02f37321b8ac5b33ed606f38b97a2a8d}} 
+\index{implicitSphere@{implicitSphere}!curvature@{curvature}}
+\index{curvature@{curvature}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{curvature()}{curvature()}}
+{\footnotesize\ttfamily scalar curvature (\begin{DoxyParamCaption}\item[{const vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFoam_1_1implicitSurface_af85f47a71c30a0914a934794c77a9943}{implicit\+Surface}}.
+
+
+
+Definition at line 200 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Sphere\+::radius\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_a6191677d21ecabf5e95280c1f28e2a6f}\label{classFoam_1_1implicitSphere_a6191677d21ecabf5e95280c1f28e2a6f}} 
+\index{implicitSphere@{implicitSphere}!center@{center}}
+\index{center@{center}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily vector center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 190 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Sphere\+::center\+\_\+.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_a0da9f4ce1490896cf2e75bfb4db34fa6}\label{classFoam_1_1implicitSphere_a0da9f4ce1490896cf2e75bfb4db34fa6}} 
+\index{implicitSphere@{implicitSphere}!radius@{radius}}
+\index{radius@{radius}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{radius()}{radius()}}
+{\footnotesize\ttfamily scalar radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 195 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+
+
+References implicit\+Sphere\+::radius\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_af4818b6350a3469b91442ade78ca779a}\label{classFoam_1_1implicitSphere_af4818b6350a3469b91442ade78ca779a}} 
+\index{implicitSphere@{implicitSphere}!center\_@{center\_}}
+\index{center\_@{center\_}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{center\_}{center\_}}
+{\footnotesize\ttfamily vector center\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 123 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Sphere\+::center(), implicit\+Sphere\+::grad(), and implicit\+Sphere\+::value().
+
+\mbox{\Hypertarget{classFoam_1_1implicitSphere_a98baaba6ae38f3c7129cdb6bb38bc547}\label{classFoam_1_1implicitSphere_a98baaba6ae38f3c7129cdb6bb38bc547}} 
+\index{implicitSphere@{implicitSphere}!radius\_@{radius\_}}
+\index{radius\_@{radius\_}!implicitSphere@{implicitSphere}}
+\doxysubsubsection{\texorpdfstring{radius\_}{radius\_}}
+{\footnotesize\ttfamily scalar radius\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 124 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+Referenced by implicit\+Sphere\+::curvature(), implicit\+Sphere\+::radius(), and implicit\+Sphere\+::value().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/level\+Set\+Implicit\+Surfaces/\mbox{\hyperlink{levelSetImplicitSurfaces_8H}{level\+Set\+Implicit\+Surfaces.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/level\+Set\+Implicit\+Surfaces/\mbox{\hyperlink{levelSetImplicitSurfaces_8C}{level\+Set\+Implicit\+Surfaces.\+C}}\end{DoxyCompactItemize}

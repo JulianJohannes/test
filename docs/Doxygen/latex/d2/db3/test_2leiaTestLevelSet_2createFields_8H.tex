@@ -1,0 +1,44 @@
+\hypertarget{test_2leiaTestLevelSet_2createFields_8H}{}\doxysection{/home/julian/\+Open\+FOAM/leia2/applications/test/leia\+Test\+Level\+Set/create\+Fields.H File Reference}
+\label{test_2leiaTestLevelSet_2createFields_8H}\index{/home/julian/OpenFOAM/leia2/applications/test/leiaTestLevelSet/createFields.H@{/home/julian/OpenFOAM/leia2/applications/test/leiaTestLevelSet/createFields.H}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{db/d3b/test_2leiaTestLevelSet_2createFields_8H__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Info$<$$<$ \char`\"{}Reading field psi\textbackslash{}n\char`\"{}$<$$<$ endl;vol\+Scalar\+Field psi(IOobject(\char`\"{}psi\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+MUST\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE), mesh);vol\+Scalar\+Field \mbox{\hyperlink{errorCalculation_8H_ae9f0ddde249653348d4a211dbbb7096b}{psi0}}(\char`\"{}psi0\char`\"{}, psi);vol\+Scalar\+Field alpha(IOobject(\char`\"{}alpha\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+NO\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE), mesh, dimensioned\+Scalar(\char`\"{}alpha\char`\"{}, dimless, 0));auto\+Ptr$<$ redistancer $>$ \mbox{\hyperlink{test_2leiaTestLevelSet_2createFields_8H_aace324bbb663d697eb7a848e589653ac}{redist}} = redistancer\+::\+New(mesh)
+\item 
+auto\+Ptr$<$ phase\+Indicator $>$ \mbox{\hyperlink{test_2leiaTestLevelSet_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}{phase\+Ind}} = phase\+Indicator\+::\+New(mesh)
+\begin{DoxyCompactList}\small\item\em phase-\/indicator selection \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{test_2leiaTestLevelSet_2createFields_8H_aace324bbb663d697eb7a848e589653ac}\label{test_2leiaTestLevelSet_2createFields_8H_aace324bbb663d697eb7a848e589653ac}} 
+\index{createFields.H@{createFields.H}!redist@{redist}}
+\index{redist@{redist}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{redist}{redist}}
+{\footnotesize\ttfamily Info$<$$<$ \char`\"{}Reading field psi\textbackslash{}n\char`\"{} $<$$<$ endl;vol\+Scalar\+Field psi ( IOobject ( \char`\"{}psi\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+MUST\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE ), mesh);vol\+Scalar\+Field \mbox{\hyperlink{errorCalculation_8H_ae9f0ddde249653348d4a211dbbb7096b}{psi0}}(\char`\"{}psi0\char`\"{}, psi);vol\+Scalar\+Field alpha ( IOobject ( \char`\"{}alpha\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+NO\+\_\+\+READ, IOobject\+::\+AUTO\+\_\+\+WRITE ), mesh, dimensioned\+Scalar(\char`\"{}alpha\char`\"{}, dimless, 0));auto\+Ptr$<$redistancer$>$ redist = redistancer\+::\+New(mesh)}
+
+
+
+Definition at line 37 of file create\+Fields.\+H.
+
+\mbox{\Hypertarget{test_2leiaTestLevelSet_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}\label{test_2leiaTestLevelSet_2createFields_8H_ab6f3db223f93b19b9fd86f42f84818a6}} 
+\index{createFields.H@{createFields.H}!phaseInd@{phaseInd}}
+\index{phaseInd@{phaseInd}!createFields.H@{createFields.H}}
+\doxysubsubsection{\texorpdfstring{phaseInd}{phaseInd}}
+{\footnotesize\ttfamily auto\+Ptr$<$phase\+Indicator$>$ phase\+Ind = phase\+Indicator\+::\+New(mesh)}
+
+
+
+phase-\/indicator selection 
+
+
+
+Definition at line 42 of file create\+Fields.\+H.
+

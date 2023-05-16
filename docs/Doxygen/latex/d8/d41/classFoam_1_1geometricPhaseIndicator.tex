@@ -1,0 +1,184 @@
+\hypertarget{classFoam_1_1geometricPhaseIndicator}{}\doxysection{geometric\+Phase\+Indicator Class Reference}
+\label{classFoam_1_1geometricPhaseIndicator}\index{geometricPhaseIndicator@{geometricPhaseIndicator}}
+
+
+Computes the phase indicator as a volume fraction from a field \textbackslash{}psi\+\_\+c.  
+
+
+
+
+Inheritance diagram for geometric\+Phase\+Indicator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{d7/d80/classFoam_1_1geometricPhaseIndicator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for geometric\+Phase\+Indicator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/df8/classFoam_1_1geometricPhaseIndicator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1geometricPhaseIndicator_a472a2ca8fa2db334b45955a3138b5a1d}{Type\+Name}} (\char`\"{}geometric\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1geometricPhaseIndicator_a1619e0159d152217f02ef024c128589f}{geometric\+Phase\+Indicator}} (const fv\+Mesh \&mesh)
+\begin{DoxyCompactList}\small\item\em Construct from components. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFoam_1_1geometricPhaseIndicator_aadb729d0a835a616c9b2d68dfc4c6a4c}{$\sim$geometric\+Phase\+Indicator}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFoam_1_1geometricPhaseIndicator_aea83bfccc67e19568c96a435b6e1cad5}{calc\+Phase\+Indicator}} (vol\+Scalar\+Field \&alpha, const vol\+Scalar\+Field \&psi)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const vol\+Scalar\+Field \& \mbox{\hyperlink{classFoam_1_1geometricPhaseIndicator_ac366afb0da1306767fe45fd5153e611f}{narrow\+Band\+\_\+}}
+\item 
+tmp$<$ vol\+Vector\+Field $>$ \mbox{\hyperlink{classFoam_1_1geometricPhaseIndicator_ab04f9c4de0dc2d5fcec62eb48a720059}{nc\+Tmp\+\_\+}}
+\item 
+tmp$<$ vol\+Scalar\+Field $>$ \mbox{\hyperlink{classFoam_1_1geometricPhaseIndicator_a6cbc540d9540bc1907ea69fad685b5e5}{dc\+Tmp\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Computes the phase indicator as a volume fraction from a field \textbackslash{}psi\+\_\+c. 
+
+\label{_Description}%
+
+
+In each cell \textbackslash{}\+Omega\+\_\+c, a piecewise-\/planer approximation \textbackslash{}psi$^\wedge$l\+\_\+c is computed using linear least squares. This implicit plane is then used to truncate the cell and compute the phase-\/specific volume \textbackslash{}\+Omega\+\_\+c$^\wedge$-\/, resulting in the volume fraction
+
+\textbackslash{}alpha\+\_\+c = $\vert$\textbackslash{}\+Omega\+\_\+c$^\wedge$-\/$\vert$ / $\vert$\textbackslash{}\+Omega\+\_\+c$\vert$
+
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/phaseIndicator/geometricPhaseIndicator.H}{\texttt{ geometric\+Phase\+Indicator.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/phaseIndicator/geometricPhaseIndicator.C}{\texttt{ geometric\+Phase\+Indicator.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 54 of file geometric\+Phase\+Indicator.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1geometricPhaseIndicator_a1619e0159d152217f02ef024c128589f}\label{classFoam_1_1geometricPhaseIndicator_a1619e0159d152217f02ef024c128589f}} 
+\index{geometricPhaseIndicator@{geometricPhaseIndicator}!geometricPhaseIndicator@{geometricPhaseIndicator}}
+\index{geometricPhaseIndicator@{geometricPhaseIndicator}!geometricPhaseIndicator@{geometricPhaseIndicator}}
+\doxysubsubsection{\texorpdfstring{geometricPhaseIndicator()}{geometricPhaseIndicator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1geometricPhaseIndicator}{geometric\+Phase\+Indicator}} (\begin{DoxyParamCaption}\item[{const fv\+Mesh \&}]{mesh }\end{DoxyParamCaption})}
+
+
+
+Construct from components. 
+
+
+
+Definition at line 47 of file geometric\+Phase\+Indicator.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1geometricPhaseIndicator_aadb729d0a835a616c9b2d68dfc4c6a4c}\label{classFoam_1_1geometricPhaseIndicator_aadb729d0a835a616c9b2d68dfc4c6a4c}} 
+\index{geometricPhaseIndicator@{geometricPhaseIndicator}!````~geometricPhaseIndicator@{$\sim$geometricPhaseIndicator}}
+\index{````~geometricPhaseIndicator@{$\sim$geometricPhaseIndicator}!geometricPhaseIndicator@{geometricPhaseIndicator}}
+\doxysubsubsection{\texorpdfstring{$\sim$geometricPhaseIndicator()}{~geometricPhaseIndicator()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1geometricPhaseIndicator}{geometric\+Phase\+Indicator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1geometricPhaseIndicator_a472a2ca8fa2db334b45955a3138b5a1d}\label{classFoam_1_1geometricPhaseIndicator_a472a2ca8fa2db334b45955a3138b5a1d}} 
+\index{geometricPhaseIndicator@{geometricPhaseIndicator}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!geometricPhaseIndicator@{geometricPhaseIndicator}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}geometric\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1geometricPhaseIndicator_aea83bfccc67e19568c96a435b6e1cad5}\label{classFoam_1_1geometricPhaseIndicator_aea83bfccc67e19568c96a435b6e1cad5}} 
+\index{geometricPhaseIndicator@{geometricPhaseIndicator}!calcPhaseIndicator@{calcPhaseIndicator}}
+\index{calcPhaseIndicator@{calcPhaseIndicator}!geometricPhaseIndicator@{geometricPhaseIndicator}}
+\doxysubsubsection{\texorpdfstring{calcPhaseIndicator()}{calcPhaseIndicator()}}
+{\footnotesize\ttfamily void calc\+Phase\+Indicator (\begin{DoxyParamCaption}\item[{vol\+Scalar\+Field \&}]{alpha,  }\item[{const vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1phaseIndicator_a7796d12b53a99da16798c780ba063f05}{phase\+Indicator}}.
+
+
+
+Definition at line 97 of file geometric\+Phase\+Indicator.\+C.
+
+
+
+References geometric\+Phase\+Indicator\+::dc\+Tmp\+\_\+, Foam\+::intersect\+Cell(), narrow\+Band, geometric\+Phase\+Indicator\+::narrow\+Band\+\_\+, geometric\+Phase\+Indicator\+::nc\+Tmp\+\_\+, and source.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d41/classFoam_1_1geometricPhaseIndicator_aea83bfccc67e19568c96a435b6e1cad5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFoam_1_1geometricPhaseIndicator_ac366afb0da1306767fe45fd5153e611f}\label{classFoam_1_1geometricPhaseIndicator_ac366afb0da1306767fe45fd5153e611f}} 
+\index{geometricPhaseIndicator@{geometricPhaseIndicator}!narrowBand\_@{narrowBand\_}}
+\index{narrowBand\_@{narrowBand\_}!geometricPhaseIndicator@{geometricPhaseIndicator}}
+\doxysubsubsection{\texorpdfstring{narrowBand\_}{narrowBand\_}}
+{\footnotesize\ttfamily const vol\+Scalar\+Field\& narrow\+Band\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 63 of file geometric\+Phase\+Indicator.\+H.
+
+
+
+Referenced by geometric\+Phase\+Indicator\+::calc\+Phase\+Indicator().
+
+\mbox{\Hypertarget{classFoam_1_1geometricPhaseIndicator_ab04f9c4de0dc2d5fcec62eb48a720059}\label{classFoam_1_1geometricPhaseIndicator_ab04f9c4de0dc2d5fcec62eb48a720059}} 
+\index{geometricPhaseIndicator@{geometricPhaseIndicator}!ncTmp\_@{ncTmp\_}}
+\index{ncTmp\_@{ncTmp\_}!geometricPhaseIndicator@{geometricPhaseIndicator}}
+\doxysubsubsection{\texorpdfstring{ncTmp\_}{ncTmp\_}}
+{\footnotesize\ttfamily tmp$<$vol\+Vector\+Field$>$ nc\+Tmp\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 67 of file geometric\+Phase\+Indicator.\+H.
+
+
+
+Referenced by geometric\+Phase\+Indicator\+::calc\+Phase\+Indicator().
+
+\mbox{\Hypertarget{classFoam_1_1geometricPhaseIndicator_a6cbc540d9540bc1907ea69fad685b5e5}\label{classFoam_1_1geometricPhaseIndicator_a6cbc540d9540bc1907ea69fad685b5e5}} 
+\index{geometricPhaseIndicator@{geometricPhaseIndicator}!dcTmp\_@{dcTmp\_}}
+\index{dcTmp\_@{dcTmp\_}!geometricPhaseIndicator@{geometricPhaseIndicator}}
+\doxysubsubsection{\texorpdfstring{dcTmp\_}{dcTmp\_}}
+{\footnotesize\ttfamily tmp$<$vol\+Scalar\+Field$>$ dc\+Tmp\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 68 of file geometric\+Phase\+Indicator.\+H.
+
+
+
+Referenced by geometric\+Phase\+Indicator\+::calc\+Phase\+Indicator().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/phase\+Indicator/\mbox{\hyperlink{geometricPhaseIndicator_8H}{geometric\+Phase\+Indicator.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/phase\+Indicator/\mbox{\hyperlink{geometricPhaseIndicator_8C}{geometric\+Phase\+Indicator.\+C}}\end{DoxyCompactItemize}

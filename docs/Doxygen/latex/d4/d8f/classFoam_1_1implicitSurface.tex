@@ -1,0 +1,141 @@
+\hypertarget{classFoam_1_1implicitSurface}{}\doxysection{implicit\+Surface Class Reference}
+\label{classFoam_1_1implicitSurface}\index{implicitSurface@{implicitSurface}}
+
+
+Inheritance diagram for implicit\+Surface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d1/dcd/classFoam_1_1implicitSurface__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSurface_aeaf8361710ee687d8e10211984fde54d}{Type\+Name}} (\char`\"{}implicit\+Surface\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSurface_ac9a492f95abe0dcd72a229b9e0c93b43}{declare\+Run\+Time\+Selection\+Table}} (auto\+Ptr, \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}}, dictionary,(const dictionary \&dict),(dict))
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSurface_a463ec57d01eea04811de035cc872610a}{implicit\+Surface}} ()=default
+\item 
+\mbox{\hyperlink{classFoam_1_1implicitSurface_a068bc5aa4748bdfa8d0aadb582dbc675}{implicit\+Surface}} (const dictionary \&dict)
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1implicitSurface_aab325a2f5566f0bad615f85f515e3cdf}{$\sim$implicit\+Surface}} ()=default
+\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1implicitSurface_ab9b7881f27b19149252409d5d223e7e0}{value}} (const vector \&) const =0
+\item 
+virtual vector \mbox{\hyperlink{classFoam_1_1implicitSurface_a823b516683a702d5eb8eb344b2aaebd6}{grad}} (const vector \&) const =0
+\item 
+virtual scalar \mbox{\hyperlink{classFoam_1_1implicitSurface_af85f47a71c30a0914a934794c77a9943}{curvature}} (const vector \&) const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} $>$ \mbox{\hyperlink{classFoam_1_1implicitSurface_a3a2feafeceb67b504db9142b59e8c334}{New}} (const word \&name, const dictionary \&dict)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 36 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitSurface_a463ec57d01eea04811de035cc872610a}\label{classFoam_1_1implicitSurface_a463ec57d01eea04811de035cc872610a}} 
+\index{implicitSurface@{implicitSurface}!implicitSurface@{implicitSurface}}
+\index{implicitSurface@{implicitSurface}!implicitSurface@{implicitSurface}}
+\doxysubsubsection{\texorpdfstring{implicitSurface()}{implicitSurface()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classFoam_1_1implicitSurface_a068bc5aa4748bdfa8d0aadb582dbc675}\label{classFoam_1_1implicitSurface_a068bc5aa4748bdfa8d0aadb582dbc675}} 
+\index{implicitSurface@{implicitSurface}!implicitSurface@{implicitSurface}}
+\index{implicitSurface@{implicitSurface}!implicitSurface@{implicitSurface}}
+\doxysubsubsection{\texorpdfstring{implicitSurface()}{implicitSurface()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file level\+Set\+Implicit\+Surfaces.\+H.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSurface_aab325a2f5566f0bad615f85f515e3cdf}\label{classFoam_1_1implicitSurface_aab325a2f5566f0bad615f85f515e3cdf}} 
+\index{implicitSurface@{implicitSurface}!````~implicitSurface@{$\sim$implicitSurface}}
+\index{````~implicitSurface@{$\sim$implicitSurface}!implicitSurface@{implicitSurface}}
+\doxysubsubsection{\texorpdfstring{$\sim$implicitSurface()}{~implicitSurface()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1implicitSurface_aeaf8361710ee687d8e10211984fde54d}\label{classFoam_1_1implicitSurface_aeaf8361710ee687d8e10211984fde54d}} 
+\index{implicitSurface@{implicitSurface}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!implicitSurface@{implicitSurface}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}implicit\+Surface\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1implicitSurface_ac9a492f95abe0dcd72a229b9e0c93b43}\label{classFoam_1_1implicitSurface_ac9a492f95abe0dcd72a229b9e0c93b43}} 
+\index{implicitSurface@{implicitSurface}!declareRunTimeSelectionTable@{declareRunTimeSelectionTable}}
+\index{declareRunTimeSelectionTable@{declareRunTimeSelectionTable}!implicitSurface@{implicitSurface}}
+\doxysubsubsection{\texorpdfstring{declareRunTimeSelectionTable()}{declareRunTimeSelectionTable()}}
+{\footnotesize\ttfamily declare\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{auto\+Ptr}]{,  }\item[{\mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}}}]{,  }\item[{dictionary}]{,  }\item[{(const dictionary \&dict)}]{,  }\item[{(dict)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1implicitSurface_a3a2feafeceb67b504db9142b59e8c334}\label{classFoam_1_1implicitSurface_a3a2feafeceb67b504db9142b59e8c334}} 
+\index{implicitSurface@{implicitSurface}!New@{New}}
+\index{New@{New}!implicitSurface@{implicitSurface}}
+\doxysubsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1implicitSurface}{implicit\+Surface}} $>$ New (\begin{DoxyParamCaption}\item[{const word \&}]{name,  }\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 36 of file level\+Set\+Implicit\+Surfaces.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSurface_ab9b7881f27b19149252409d5d223e7e0}\label{classFoam_1_1implicitSurface_ab9b7881f27b19149252409d5d223e7e0}} 
+\index{implicitSurface@{implicitSurface}!value@{value}}
+\index{value@{value}!implicitSurface@{implicitSurface}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily virtual scalar value (\begin{DoxyParamCaption}\item[{const vector \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classFoam_1_1implicitSinc_afd75110375d5a7f673003f5ca0949b8d}{implicit\+Sinc}}, \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_afd75110375d5a7f673003f5ca0949b8d}{implicit\+Ellipsoid}}, \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_afd75110375d5a7f673003f5ca0949b8d}{implicit\+Slotted\+Sphere}}, \mbox{\hyperlink{classFoam_1_1implicitSphere_afd75110375d5a7f673003f5ca0949b8d}{implicit\+Sphere}}, \mbox{\hyperlink{classFoam_1_1hesseNormalPlane_afd75110375d5a7f673003f5ca0949b8d}{hesse\+Normal\+Plane}}, and \mbox{\hyperlink{classFoam_1_1implicitPlane_afd75110375d5a7f673003f5ca0949b8d}{implicit\+Plane}}.
+
+
+
+Referenced by signed\+Distance\+::value().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d8f/classFoam_1_1implicitSurface_ab9b7881f27b19149252409d5d223e7e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1implicitSurface_a823b516683a702d5eb8eb344b2aaebd6}\label{classFoam_1_1implicitSurface_a823b516683a702d5eb8eb344b2aaebd6}} 
+\index{implicitSurface@{implicitSurface}!grad@{grad}}
+\index{grad@{grad}!implicitSurface@{implicitSurface}}
+\doxysubsubsection{\texorpdfstring{grad()}{grad()}}
+{\footnotesize\ttfamily virtual vector grad (\begin{DoxyParamCaption}\item[{const vector \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classFoam_1_1implicitSinc_ae8a2dc10148707498bc4a7ec60335408}{implicit\+Sinc}}, \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_ae8a2dc10148707498bc4a7ec60335408}{implicit\+Ellipsoid}}, \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_ae8a2dc10148707498bc4a7ec60335408}{implicit\+Slotted\+Sphere}}, \mbox{\hyperlink{classFoam_1_1implicitSphere_ae8a2dc10148707498bc4a7ec60335408}{implicit\+Sphere}}, \mbox{\hyperlink{classFoam_1_1hesseNormalPlane_ae8a2dc10148707498bc4a7ec60335408}{hesse\+Normal\+Plane}}, and \mbox{\hyperlink{classFoam_1_1implicitPlane_ae8a2dc10148707498bc4a7ec60335408}{implicit\+Plane}}.
+
+\mbox{\Hypertarget{classFoam_1_1implicitSurface_af85f47a71c30a0914a934794c77a9943}\label{classFoam_1_1implicitSurface_af85f47a71c30a0914a934794c77a9943}} 
+\index{implicitSurface@{implicitSurface}!curvature@{curvature}}
+\index{curvature@{curvature}!implicitSurface@{implicitSurface}}
+\doxysubsubsection{\texorpdfstring{curvature()}{curvature()}}
+{\footnotesize\ttfamily virtual scalar curvature (\begin{DoxyParamCaption}\item[{const vector \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classFoam_1_1implicitSinc_a02f37321b8ac5b33ed606f38b97a2a8d}{implicit\+Sinc}}, \mbox{\hyperlink{classFoam_1_1implicitEllipsoid_a02f37321b8ac5b33ed606f38b97a2a8d}{implicit\+Ellipsoid}}, \mbox{\hyperlink{classFoam_1_1implicitSlottedSphere_a02f37321b8ac5b33ed606f38b97a2a8d}{implicit\+Slotted\+Sphere}}, \mbox{\hyperlink{classFoam_1_1implicitSphere_a02f37321b8ac5b33ed606f38b97a2a8d}{implicit\+Sphere}}, \mbox{\hyperlink{classFoam_1_1hesseNormalPlane_a02f37321b8ac5b33ed606f38b97a2a8d}{hesse\+Normal\+Plane}}, and \mbox{\hyperlink{classFoam_1_1implicitPlane_a02f37321b8ac5b33ed606f38b97a2a8d}{implicit\+Plane}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/level\+Set\+Implicit\+Surfaces/\mbox{\hyperlink{levelSetImplicitSurfaces_8H}{level\+Set\+Implicit\+Surfaces.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/level\+Set\+Implicit\+Surfaces/\mbox{\hyperlink{levelSetImplicitSurfaces_8C}{level\+Set\+Implicit\+Surfaces.\+C}}\end{DoxyCompactItemize}

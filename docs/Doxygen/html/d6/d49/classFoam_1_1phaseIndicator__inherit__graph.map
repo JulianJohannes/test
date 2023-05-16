@@ -1,0 +1,6 @@
+<map id="phaseIndicator" name="phaseIndicator">
+<area shape="rect" id="node1" title=" " alt="" coords="245,5,363,32"/>
+<area shape="rect" id="node2" href="$d8/d41/classFoam_1_1geometricPhaseIndicator.html" title="Computes the phase indicator as a volume fraction from a field \psi_c." alt="" coords="5,80,189,107"/>
+<area shape="rect" id="node3" href="$df/dc1/classFoam_1_1heavisidePhaseIndicator.html" title=" " alt="" coords="213,80,395,107"/>
+<area shape="rect" id="node4" href="$da/db1/classFoam_1_1sharpJumpPhaseIndicator.html" title=" " alt="" coords="419,80,605,107"/>
+</map>

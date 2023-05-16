@@ -1,0 +1,274 @@
+\hypertarget{classFoam_1_1explicitMag1GradientFvPatchField}{}\doxysection{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field Class Reference}
+\label{classFoam_1_1explicitMag1GradientFvPatchField}\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+
+
+Sets the BC gradient to the normalized gradient of the internal\+Field of the last time step.  
+
+
+
+
+Inheritance diagram for explicit\+Mag1\+Gradient\+Fv\+Patch\+Field\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{d2/d5e/classFoam_1_1explicitMag1GradientFvPatchField__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for explicit\+Mag1\+Gradient\+Fv\+Patch\+Field\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d6/d19/classFoam_1_1explicitMag1GradientFvPatchField__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_ae67d50b628e5fc3cb2d38e81dff81802}{Type\+Name}} (\char`\"{}explicit\+Mag1\+Gradient\char`\"{})
+\begin{DoxyCompactList}\small\item\em Runtime type information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_a18682f3f2c1793cf32ea070213fcd174}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} (const fv\+Patch \&, const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&)
+\begin{DoxyCompactList}\small\item\em Construct from patch and internal field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_a2655b2ab5e9d2fa4a307c7c3632d1866}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} (const fv\+Patch \&, const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&, const dictionary \&)
+\begin{DoxyCompactList}\small\item\em Construct from patch, internal field and dictionary. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_a245b165ce2146a756b4933190d44f22d}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} (const \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} \&, const fv\+Patch \&, const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&, const fv\+Patch\+Field\+Mapper \&)
+\begin{DoxyCompactList}\small\item\em Construct by mapping the given \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_a49f47347f4df4abacc6726068029eb40}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} (const \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} \&)
+\begin{DoxyCompactList}\small\item\em Construct as copy. \end{DoxyCompactList}\item 
+virtual tmp$<$ \mbox{\hyperlink{classfvPatchField}{fv\+Patch\+Field}}$<$ scalar $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_ae58a0ffea0d308536c500f6a0125fe78}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Construct and return a clone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_a5ca3eb82e5a3cba69419a9fc4671f9d3}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} (const \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} \&, const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&)
+\begin{DoxyCompactList}\small\item\em Construct as copy setting internal field reference. \end{DoxyCompactList}\item 
+virtual tmp$<$ \mbox{\hyperlink{classfvPatchField}{fv\+Patch\+Field}}$<$ scalar $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_aeb63be02eee4e7adcfc5bcad6983cdc2}{clone}} (const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&iF) const
+\begin{DoxyCompactList}\small\item\em Construct and return a clone setting internal field reference. \end{DoxyCompactList}\item 
+virtual tmp$<$ Field$<$ vector $>$ $>$ \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField_a5131bff005088169cbc51972be3bd280}{calc\+Gradient}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sets the BC gradient to the normalized gradient of the internal\+Field of the last time step. 
+
+\label{_Description}%
+
+
+\$\textbackslash{}nabla \textbackslash{}psi\+\_\+b$^\wedge$\{n+1\} = \textbackslash{}frac\{\textbackslash{}nabla \textbackslash{}psi\+\_\+c$^\wedge$\{n\}\}\{$\vert$\textbackslash{}nabla \textbackslash{}psi\+\_\+c$^\wedge$\{n\}$\vert$\} \$
+
+where \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+$ \nabla(x)$ &= &gradient (user-\/specified)  \\\cline{1-3}
+\end{longtabu}
+
+
+\begin{DoxyParagraph}{Usage}
+Example of the boundary condition specification\+: \begin{DoxyVerb}<patchName>
+{
+    type            explicitMag1Gradient;
+}
+\end{DoxyVerb}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/finiteVolume/fields/fvPatchFields/derived/explicitMag1Gradient/explicitMag1GradientFvPatchField.H}{\texttt{ explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+H}} 
+\item \href{/home/julian/OpenFOAM/leia2/src/finiteVolume/fields/fvPatchFields/derived/explicitMag1Gradient/explicitMag1GradientFvPatchField.C}{\texttt{ explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 72 of file explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1explicitMag1GradientFvPatchField_a18682f3f2c1793cf32ea070213fcd174}\label{classFoam_1_1explicitMag1GradientFvPatchField_a18682f3f2c1793cf32ea070213fcd174}} 
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{explicitMag1GradientFvPatchField()}{explicitMag1GradientFvPatchField()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} (\begin{DoxyParamCaption}\item[{const fv\+Patch \&}]{p,  }\item[{const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&}]{iF }\end{DoxyParamCaption})}
+
+
+
+Construct from patch and internal field. 
+
+
+
+Definition at line 29 of file explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+C.
+
+
+
+Referenced by explicit\+Mag1\+Gradient\+Fv\+Patch\+Field\+::clone().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{d7/de7/classFoam_1_1explicitMag1GradientFvPatchField_a18682f3f2c1793cf32ea070213fcd174_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1explicitMag1GradientFvPatchField_a2655b2ab5e9d2fa4a307c7c3632d1866}\label{classFoam_1_1explicitMag1GradientFvPatchField_a2655b2ab5e9d2fa4a307c7c3632d1866}} 
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{explicitMag1GradientFvPatchField()}{explicitMag1GradientFvPatchField()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} (\begin{DoxyParamCaption}\item[{const fv\+Patch \&}]{p,  }\item[{const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&}]{iF,  }\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})}
+
+
+
+Construct from patch, internal field and dictionary. 
+
+
+
+Definition at line 40 of file explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitMag1GradientFvPatchField_a245b165ce2146a756b4933190d44f22d}\label{classFoam_1_1explicitMag1GradientFvPatchField_a245b165ce2146a756b4933190d44f22d}} 
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{explicitMag1GradientFvPatchField()}{explicitMag1GradientFvPatchField()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} \&}]{ptf,  }\item[{const fv\+Patch \&}]{p,  }\item[{const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&}]{iF,  }\item[{const fv\+Patch\+Field\+Mapper \&}]{mapper }\end{DoxyParamCaption})}
+
+
+
+Construct by mapping the given \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}}. 
+
+onto a new patch 
+
+Definition at line 52 of file explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitMag1GradientFvPatchField_a49f47347f4df4abacc6726068029eb40}\label{classFoam_1_1explicitMag1GradientFvPatchField_a49f47347f4df4abacc6726068029eb40}} 
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{explicitMag1GradientFvPatchField()}{explicitMag1GradientFvPatchField()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} \&}]{ptf }\end{DoxyParamCaption})}
+
+
+
+Construct as copy. 
+
+
+
+Definition at line 65 of file explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1explicitMag1GradientFvPatchField_a5ca3eb82e5a3cba69419a9fc4671f9d3}\label{classFoam_1_1explicitMag1GradientFvPatchField_a5ca3eb82e5a3cba69419a9fc4671f9d3}} 
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{explicitMag1GradientFvPatchField()}{explicitMag1GradientFvPatchField()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFoam_1_1explicitMag1GradientFvPatchField}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field}} \&}]{ptf,  }\item[{const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&}]{iF }\end{DoxyParamCaption})}
+
+
+
+Construct as copy setting internal field reference. 
+
+
+
+Definition at line 75 of file explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+C.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1explicitMag1GradientFvPatchField_ae67d50b628e5fc3cb2d38e81dff81802}\label{classFoam_1_1explicitMag1GradientFvPatchField_ae67d50b628e5fc3cb2d38e81dff81802}} 
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}explicit\+Mag1\+Gradient\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Runtime type information. 
+
+\mbox{\Hypertarget{classFoam_1_1explicitMag1GradientFvPatchField_ae58a0ffea0d308536c500f6a0125fe78}\label{classFoam_1_1explicitMag1GradientFvPatchField_ae58a0ffea0d308536c500f6a0125fe78}} 
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!clone@{clone}}
+\index{clone@{clone}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual tmp$<$\mbox{\hyperlink{classfvPatchField}{fv\+Patch\+Field}}$<$scalar$>$ $>$ clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Construct and return a clone. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_ae58a0ffea0d308536c500f6a0125fe78}{explicit\+Gradient\+Fv\+Patch\+Field}}.
+
+
+
+Definition at line 132 of file explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+H.
+
+
+
+References explicit\+Mag1\+Gradient\+Fv\+Patch\+Field\+::explicit\+Mag1\+Gradient\+Fv\+Patch\+Field().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{d7/de7/classFoam_1_1explicitMag1GradientFvPatchField_ae58a0ffea0d308536c500f6a0125fe78_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1explicitMag1GradientFvPatchField_aeb63be02eee4e7adcfc5bcad6983cdc2}\label{classFoam_1_1explicitMag1GradientFvPatchField_aeb63be02eee4e7adcfc5bcad6983cdc2}} 
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!clone@{clone}}
+\index{clone@{clone}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual tmp$<$\mbox{\hyperlink{classfvPatchField}{fv\+Patch\+Field}}$<$scalar$>$ $>$ clone (\begin{DoxyParamCaption}\item[{const Dimensioned\+Field$<$ scalar, vol\+Mesh $>$ \&}]{iF }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Construct and return a clone setting internal field reference. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_aeb63be02eee4e7adcfc5bcad6983cdc2}{explicit\+Gradient\+Fv\+Patch\+Field}}.
+
+
+
+Definition at line 152 of file explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+H.
+
+
+
+References explicit\+Mag1\+Gradient\+Fv\+Patch\+Field\+::explicit\+Mag1\+Gradient\+Fv\+Patch\+Field().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{d7/de7/classFoam_1_1explicitMag1GradientFvPatchField_aeb63be02eee4e7adcfc5bcad6983cdc2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1explicitMag1GradientFvPatchField_a5131bff005088169cbc51972be3bd280}\label{classFoam_1_1explicitMag1GradientFvPatchField_a5131bff005088169cbc51972be3bd280}} 
+\index{explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}!calcGradient@{calcGradient}}
+\index{calcGradient@{calcGradient}!explicitMag1GradientFvPatchField@{explicitMag1GradientFvPatchField}}
+\doxysubsubsection{\texorpdfstring{calcGradient()}{calcGradient()}}
+{\footnotesize\ttfamily tmp$<$ Field$<$ vector $>$ $>$ calc\+Gradient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1explicitGradientFvPatchField_a5131bff005088169cbc51972be3bd280}{explicit\+Gradient\+Fv\+Patch\+Field}}.
+
+
+
+Definition at line 87 of file explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+C.
+
+
+
+References explicit\+Gradient\+Fv\+Patch\+Field\+::calc\+Gradient().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{d7/de7/classFoam_1_1explicitMag1GradientFvPatchField_a5131bff005088169cbc51972be3bd280_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/finite\+Volume/fields/fv\+Patch\+Fields/derived/explicit\+Mag1\+Gradient/\mbox{\hyperlink{explicitMag1GradientFvPatchField_8H}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/finite\+Volume/fields/fv\+Patch\+Fields/derived/explicit\+Mag1\+Gradient/\mbox{\hyperlink{explicitMag1GradientFvPatchField_8C}{explicit\+Mag1\+Gradient\+Fv\+Patch\+Field.\+C}}\end{DoxyCompactItemize}

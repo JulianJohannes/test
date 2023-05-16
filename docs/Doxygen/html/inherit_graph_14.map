@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$db/d46/classFoam_1_1SDPLSSource.html" title="The base class SDPLSSource is the root for the model hierarchy of the SDPLS method by Fricke et...." alt="" coords="5,132,112,159"/>
+<area shape="rect" id="node2" href="$d2/daa/classFoam_1_1SDPLS__R.html" title="Concrete class which calculates the SDPLS source term explicitly." alt="" coords="176,5,255,32"/>
+<area shape="rect" id="node3" href="$d3/db8/classFoam_1_1SDPLS__Rlin.html" title="Concrete class which calculates the SDPLS source term explicitly." alt="" coords="168,56,263,83"/>
+<area shape="rect" id="node4" href="$db/d7f/classFoam_1_1SDPLS__Rquad.html" title="Concrete class which calculates the SDPLS source term explicitly." alt="" coords="160,107,271,133"/>
+<area shape="rect" id="node5" href="$d6/d21/classFoam_1_1SDPLS__lin.html" title="Concrete class which calculates the SDPLS source term explicitly." alt="" coords="172,157,259,184"/>
+<area shape="rect" id="node6" href="$de/d27/classFoam_1_1SDPLS__quad.html" title="Concrete class which calculates the SDPLS source term explicitly." alt="" coords="164,208,267,235"/>
+<area shape="rect" id="node7" href="$db/d9f/classFoam_1_1SDPLS__test.html" title="Concrete class which calculates the SDPLS source term explicitly." alt="" coords="168,259,263,285"/>
+</map>

@@ -1,0 +1,65 @@
+\hypertarget{namespaceFoam_1_1functionObjects}{}\doxysection{Foam\+::function\+Objects Namespace Reference}
+\label{namespaceFoam_1_1functionObjects}\index{Foam::functionObjects@{Foam::functionObjects}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}}
+\begin{DoxyCompactList}\small\item\em Calculates the absolute signed distance error of a field \textbackslash{}psi which represents signed distance to an interface. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}}
+\begin{DoxyCompactList}\small\item\em Looks up a signed\+Distance-\/error field (from \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}} function\+Object for example). Calculates further properties and writes them to a CSV file \char`\"{}grad\+Psi\+Error.\+csv\char`\"{} The following properties a written in every row. \char`\"{}\+TIME,\char`\"{} \char`\"{}\+MAX\+\_\+\+DELTA\+\_\+\+X,\char`\"{} \char`\"{}\+MEAN\+\_\+\+DELTA\+\_\+\+X,\char`\"{} \char`\"{}\+E\+\_\+\+MAX\+\_\+\+GRAD\+\_\+\+PSI,\char`\"{} \char`\"{}\+E\+\_\+\+MEAN\+\_\+\+GRAD\+\_\+\+PSI,\char`\"{} \char`\"{}\+E\+\_\+\+NARROW\+\_\+\+MAX\+\_\+\+GRAD\+\_\+\+PSI,\char`\"{} \char`\"{}\+E\+\_\+\+NARROW\+\_\+\+MEAN\+\_\+\+GRAD\+\_\+\+PSI\textbackslash{}n\char`\"{}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}}
+\begin{DoxyCompactList}\small\item\em Calculates the Total\+Varation of a field \textbackslash{}psi and its absolute and relative error compared to the initial state. The calculates properties are written to a CSV file \char`\"{}\+TVerror.\+csv\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceFoam_1_1functionObjects_a8b774d4ecc0d1bb8410cdabc3bc7d081}{define\+Type\+Name\+And\+Debug}} (\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}}, 0)
+\item 
+\mbox{\hyperlink{namespaceFoam_1_1functionObjects_a93d8171abfb96725b562df59a21a3968}{add\+To\+Run\+Time\+Selection\+Table}} (function\+Object, \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}}, dictionary)
+\item 
+\mbox{\hyperlink{namespaceFoam_1_1functionObjects_a4d8379fccaa4f0e31d79cee2a080d4c8}{define\+Type\+Name\+And\+Debug}} (\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}}, 0)
+\item 
+\mbox{\hyperlink{namespaceFoam_1_1functionObjects_a6a74401d9ffb46bd53f737c6220ca417}{add\+To\+Run\+Time\+Selection\+Table}} (function\+Object, \mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}}, dictionary)
+\item 
+\mbox{\hyperlink{namespaceFoam_1_1functionObjects_a91ccc94a44a5d2a01c9d7e60dea238c1}{define\+Type\+Name\+And\+Debug}} (\mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}}, 0)
+\item 
+\mbox{\hyperlink{namespaceFoam_1_1functionObjects_a5c199415fa72d584095e22858914ae4f}{add\+To\+Run\+Time\+Selection\+Table}} (function\+Object, \mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}}, dictionary)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceFoam_1_1functionObjects_a8b774d4ecc0d1bb8410cdabc3bc7d081}\label{namespaceFoam_1_1functionObjects_a8b774d4ecc0d1bb8410cdabc3bc7d081}} 
+\index{Foam::functionObjects@{Foam::functionObjects}!defineTypeNameAndDebug@{defineTypeNameAndDebug}}
+\index{defineTypeNameAndDebug@{defineTypeNameAndDebug}!Foam::functionObjects@{Foam::functionObjects}}
+\doxysubsubsection{\texorpdfstring{defineTypeNameAndDebug()}{defineTypeNameAndDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Foam\+::function\+Objects\+::define\+Type\+Name\+And\+Debug (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}}}]{,  }\item[{0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceFoam_1_1functionObjects_a93d8171abfb96725b562df59a21a3968}\label{namespaceFoam_1_1functionObjects_a93d8171abfb96725b562df59a21a3968}} 
+\index{Foam::functionObjects@{Foam::functionObjects}!addToRunTimeSelectionTable@{addToRunTimeSelectionTable}}
+\index{addToRunTimeSelectionTable@{addToRunTimeSelectionTable}!Foam::functionObjects@{Foam::functionObjects}}
+\doxysubsubsection{\texorpdfstring{addToRunTimeSelectionTable()}{addToRunTimeSelectionTable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Foam\+::function\+Objects\+::add\+To\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{function\+Object}]{,  }\item[{\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiError}{grad\+Psi\+Error}}}]{,  }\item[{dictionary}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceFoam_1_1functionObjects_a4d8379fccaa4f0e31d79cee2a080d4c8}\label{namespaceFoam_1_1functionObjects_a4d8379fccaa4f0e31d79cee2a080d4c8}} 
+\index{Foam::functionObjects@{Foam::functionObjects}!defineTypeNameAndDebug@{defineTypeNameAndDebug}}
+\index{defineTypeNameAndDebug@{defineTypeNameAndDebug}!Foam::functionObjects@{Foam::functionObjects}}
+\doxysubsubsection{\texorpdfstring{defineTypeNameAndDebug()}{defineTypeNameAndDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Foam\+::function\+Objects\+::define\+Type\+Name\+And\+Debug (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}}}]{,  }\item[{0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceFoam_1_1functionObjects_a6a74401d9ffb46bd53f737c6220ca417}\label{namespaceFoam_1_1functionObjects_a6a74401d9ffb46bd53f737c6220ca417}} 
+\index{Foam::functionObjects@{Foam::functionObjects}!addToRunTimeSelectionTable@{addToRunTimeSelectionTable}}
+\index{addToRunTimeSelectionTable@{addToRunTimeSelectionTable}!Foam::functionObjects@{Foam::functionObjects}}
+\doxysubsubsection{\texorpdfstring{addToRunTimeSelectionTable()}{addToRunTimeSelectionTable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Foam\+::function\+Objects\+::add\+To\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{function\+Object}]{,  }\item[{\mbox{\hyperlink{classFoam_1_1functionObjects_1_1gradPsiErrorCSV}{grad\+Psi\+Error\+CSV}}}]{,  }\item[{dictionary}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceFoam_1_1functionObjects_a91ccc94a44a5d2a01c9d7e60dea238c1}\label{namespaceFoam_1_1functionObjects_a91ccc94a44a5d2a01c9d7e60dea238c1}} 
+\index{Foam::functionObjects@{Foam::functionObjects}!defineTypeNameAndDebug@{defineTypeNameAndDebug}}
+\index{defineTypeNameAndDebug@{defineTypeNameAndDebug}!Foam::functionObjects@{Foam::functionObjects}}
+\doxysubsubsection{\texorpdfstring{defineTypeNameAndDebug()}{defineTypeNameAndDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Foam\+::function\+Objects\+::define\+Type\+Name\+And\+Debug (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}}}]{,  }\item[{0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceFoam_1_1functionObjects_a5c199415fa72d584095e22858914ae4f}\label{namespaceFoam_1_1functionObjects_a5c199415fa72d584095e22858914ae4f}} 
+\index{Foam::functionObjects@{Foam::functionObjects}!addToRunTimeSelectionTable@{addToRunTimeSelectionTable}}
+\index{addToRunTimeSelectionTable@{addToRunTimeSelectionTable}!Foam::functionObjects@{Foam::functionObjects}}
+\doxysubsubsection{\texorpdfstring{addToRunTimeSelectionTable()}{addToRunTimeSelectionTable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Foam\+::function\+Objects\+::add\+To\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{function\+Object}]{,  }\item[{\mbox{\hyperlink{classFoam_1_1functionObjects_1_1TVerrorCSV}{TVerror\+CSV}}}]{,  }\item[{dictionary}]{ }\end{DoxyParamCaption})}
+

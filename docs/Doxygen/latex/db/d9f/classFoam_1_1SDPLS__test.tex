@@ -1,0 +1,110 @@
+\hypertarget{classFoam_1_1SDPLS__test}{}\doxysection{SDPLS\+\_\+test Class Reference}
+\label{classFoam_1_1SDPLS__test}\index{SDPLS\_test@{SDPLS\_test}}
+
+
+Concrete class which calculates the SDPLS source term explicitly.  
+
+
+
+
+Inheritance diagram for SDPLS\+\_\+test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{da/d03/classFoam_1_1SDPLS__test__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for SDPLS\+\_\+test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d38/classFoam_1_1SDPLS__test__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1SDPLS__test_ad9bbf9b4ccfbc188914895adb44bd5c3}{Type\+Name}} (\char`\"{}test\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1SDPLS__test_a8263436d9396adf106f7995b5c25cc2e}{SDPLS\+\_\+test}} (const dictionary \&dict, const fv\+Mesh \&mesh)
+\item 
+virtual \mbox{\hyperlink{classFoam_1_1SDPLS__test_a62360b5ac2674d987c22aa0374b65451}{$\sim$\+SDPLS\+\_\+test}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual tmp$<$ vol\+Scalar\+Field $>$ \mbox{\hyperlink{classFoam_1_1SDPLS__test_acbfa906d29f0390bb1b529561314da48}{non\+Linear\+Part}} (const vol\+Scalar\+Field \&\mbox{\hyperlink{classFoam_1_1SDPLSSource_a758345530da99d55ed8b45c215f424f1}{R}}, const vol\+Scalar\+Field \&psi, const vol\+Vector\+Field \&U) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete class which calculates the SDPLS source term explicitly. 
+
+\label{_Description}%
+
+
+\begin{DoxyParagraph}{Source files}
+
+\begin{DoxyItemize}
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/SDPLSSource/SDPLS_test.H}{\texttt{ SDPLS\+\_\+test.\+H}} SDPLS\+\_\+ 
+\item \href{/home/julian/OpenFOAM/leia2/src/leiaLevelSet/SDPLSSource/test.C}{\texttt{ test.\+C}} 
+\end{DoxyItemize}
+\end{DoxyParagraph}
+
+
+Definition at line 53 of file SDPLS\+\_\+test.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1SDPLS__test_a8263436d9396adf106f7995b5c25cc2e}\label{classFoam_1_1SDPLS__test_a8263436d9396adf106f7995b5c25cc2e}} 
+\index{SDPLS\_test@{SDPLS\_test}!SDPLS\_test@{SDPLS\_test}}
+\index{SDPLS\_test@{SDPLS\_test}!SDPLS\_test@{SDPLS\_test}}
+\doxysubsubsection{\texorpdfstring{SDPLS\_test()}{SDPLS\_test()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1SDPLS__test}{SDPLS\+\_\+test}} (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict,  }\item[{const fv\+Mesh \&}]{mesh }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file SDPLS\+\_\+test.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1SDPLS__test_a62360b5ac2674d987c22aa0374b65451}\label{classFoam_1_1SDPLS__test_a62360b5ac2674d987c22aa0374b65451}} 
+\index{SDPLS\_test@{SDPLS\_test}!````~SDPLS\_test@{$\sim$SDPLS\_test}}
+\index{````~SDPLS\_test@{$\sim$SDPLS\_test}!SDPLS\_test@{SDPLS\_test}}
+\doxysubsubsection{\texorpdfstring{$\sim$SDPLS\_test()}{~SDPLS\_test()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1SDPLS__test}{SDPLS\+\_\+test}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1SDPLS__test_ad9bbf9b4ccfbc188914895adb44bd5c3}\label{classFoam_1_1SDPLS__test_ad9bbf9b4ccfbc188914895adb44bd5c3}} 
+\index{SDPLS\_test@{SDPLS\_test}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!SDPLS\_test@{SDPLS\_test}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}test\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1SDPLS__test_acbfa906d29f0390bb1b529561314da48}\label{classFoam_1_1SDPLS__test_acbfa906d29f0390bb1b529561314da48}} 
+\index{SDPLS\_test@{SDPLS\_test}!nonLinearPart@{nonLinearPart}}
+\index{nonLinearPart@{nonLinearPart}!SDPLS\_test@{SDPLS\_test}}
+\doxysubsubsection{\texorpdfstring{nonLinearPart()}{nonLinearPart()}}
+{\footnotesize\ttfamily tmp$<$ vol\+Scalar\+Field $>$ non\+Linear\+Part (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{R,  }\item[{const vol\+Scalar\+Field \&}]{psi,  }\item[{const vol\+Vector\+Field \&}]{U }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classFoam_1_1SDPLSSource_acbfa906d29f0390bb1b529561314da48}{SDPLSSource}}.
+
+
+
+Definition at line 43 of file SDPLS\+\_\+test.\+C.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\mbox{\hyperlink{SDPLS__test_8H}{SDPLS\+\_\+test.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\mbox{\hyperlink{SDPLS__test_8C}{SDPLS\+\_\+test.\+C}}\end{DoxyCompactItemize}

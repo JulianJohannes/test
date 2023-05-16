@@ -1,0 +1,104 @@
+\hypertarget{errorCalculation_8H}{}\doxysection{/home/julian/\+Open\+FOAM/leia2/applications/solvers/leia\+Level\+Set\+Foam/error\+Calculation.H File Reference}
+\label{errorCalculation_8H}\index{/home/julian/OpenFOAM/leia2/applications/solvers/leiaLevelSetFoam/errorCalculation.H@{/home/julian/OpenFOAM/leia2/applications/solvers/leiaLevelSetFoam/errorCalculation.H}}
+Include dependency graph for error\+Calculation.\+H\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{d9/dbf/errorCalculation_8H__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+surface\+Scalar\+Field \mbox{\hyperlink{errorCalculation_8H_a9d823340daf7973efdb2806c95879888}{phi0}} (\char`\"{}phi0\char`\"{}, phi)
+\item 
+vol\+Vector\+Field \mbox{\hyperlink{errorCalculation_8H_aeb0573dd00ad67c50010e8f01877cc2c}{U0}} (\char`\"{}U0\char`\"{}, U)
+\item 
+vol\+Scalar\+Field \mbox{\hyperlink{errorCalculation_8H_ae9f0ddde249653348d4a211dbbb7096b}{psi0}} (IOobject(\char`\"{}psi\+End\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+READ\+\_\+\+IF\+\_\+\+PRESENT, IOobject\+::\+NO\+\_\+\+WRITE), psi)
+\item 
+vol\+Scalar\+Field \mbox{\hyperlink{errorCalculation_8H_ab2bce992421343d52c06932332da5058}{alpha0}} (IOobject(\char`\"{}alpha\+End\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+READ\+\_\+\+IF\+\_\+\+PRESENT, IOobject\+::\+NO\+\_\+\+WRITE), alpha)
+\item 
+OFstream \mbox{\hyperlink{errorCalculation_8H_abd17a7599ee9cd6d6ee7f71c4cf1d6e8}{error\+File}} (\char`\"{}leia\+Level\+Set\+Foam.\+csv\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{errorCalculation_8H_a9d823340daf7973efdb2806c95879888}\label{errorCalculation_8H_a9d823340daf7973efdb2806c95879888}} 
+\index{errorCalculation.H@{errorCalculation.H}!phi0@{phi0}}
+\index{phi0@{phi0}!errorCalculation.H@{errorCalculation.H}}
+\doxysubsubsection{\texorpdfstring{phi0()}{phi0()}}
+{\footnotesize\ttfamily surface\+Scalar\+Field phi0 (\begin{DoxyParamCaption}\item[{\char`\"{}phi0\char`\"{}}]{,  }\item[{phi}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by velocity\+Model\+::oscillate\+Velocity().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{da/dca/errorCalculation_8H_a9d823340daf7973efdb2806c95879888_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{errorCalculation_8H_aeb0573dd00ad67c50010e8f01877cc2c}\label{errorCalculation_8H_aeb0573dd00ad67c50010e8f01877cc2c}} 
+\index{errorCalculation.H@{errorCalculation.H}!U0@{U0}}
+\index{U0@{U0}!errorCalculation.H@{errorCalculation.H}}
+\doxysubsubsection{\texorpdfstring{U0()}{U0()}}
+{\footnotesize\ttfamily vol\+Vector\+Field U0 (\begin{DoxyParamCaption}\item[{\char`\"{}U0\char`\"{}}]{,  }\item[{U}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by velocity\+Model\+::oscillate\+Velocity().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{da/dca/errorCalculation_8H_aeb0573dd00ad67c50010e8f01877cc2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{errorCalculation_8H_ae9f0ddde249653348d4a211dbbb7096b}\label{errorCalculation_8H_ae9f0ddde249653348d4a211dbbb7096b}} 
+\index{errorCalculation.H@{errorCalculation.H}!psi0@{psi0}}
+\index{psi0@{psi0}!errorCalculation.H@{errorCalculation.H}}
+\doxysubsubsection{\texorpdfstring{psi0()}{psi0()}}
+{\footnotesize\ttfamily vol\+Scalar\+Field psi0 (\begin{DoxyParamCaption}\item[{IOobject(\char`\"{}psi\+End\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+READ\+\_\+\+IF\+\_\+\+PRESENT, IOobject\+::\+NO\+\_\+\+WRITE)}]{,  }\item[{psi}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by redistanced\+Plane\+Is\+Unchanged(), and report\+Errors().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dca/errorCalculation_8H_ae9f0ddde249653348d4a211dbbb7096b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{errorCalculation_8H_ab2bce992421343d52c06932332da5058}\label{errorCalculation_8H_ab2bce992421343d52c06932332da5058}} 
+\index{errorCalculation.H@{errorCalculation.H}!alpha0@{alpha0}}
+\index{alpha0@{alpha0}!errorCalculation.H@{errorCalculation.H}}
+\doxysubsubsection{\texorpdfstring{alpha0()}{alpha0()}}
+{\footnotesize\ttfamily vol\+Scalar\+Field alpha0 (\begin{DoxyParamCaption}\item[{IOobject(\char`\"{}alpha\+End\char`\"{}, run\+Time.\+time\+Name(), mesh, IOobject\+::\+READ\+\_\+\+IF\+\_\+\+PRESENT, IOobject\+::\+NO\+\_\+\+WRITE)}]{,  }\item[{alpha}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by report\+Errors().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{da/dca/errorCalculation_8H_ab2bce992421343d52c06932332da5058_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{errorCalculation_8H_abd17a7599ee9cd6d6ee7f71c4cf1d6e8}\label{errorCalculation_8H_abd17a7599ee9cd6d6ee7f71c4cf1d6e8}} 
+\index{errorCalculation.H@{errorCalculation.H}!errorFile@{errorFile}}
+\index{errorFile@{errorFile}!errorCalculation.H@{errorCalculation.H}}
+\doxysubsubsection{\texorpdfstring{errorFile()}{errorFile()}}
+{\footnotesize\ttfamily OFstream error\+File (\begin{DoxyParamCaption}\item[{\char`\"{}leia\+Level\+Set\+Foam.\+csv\char`\"{}}]{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,4 @@
+<map id="clone" name="clone">
+<area shape="rect" id="node1" title="Construct and return a clone setting internal field reference." alt="" coords="5,5,63,32"/>
+<area shape="rect" id="node2" href="$d1/d36/classFoam_1_1explicitGradientFvPatchField.html#a96467afecea2dabb97f08b3266b9a9ae" title="Construct from patch and internal field." alt="" coords="111,5,319,32"/>
+</map>

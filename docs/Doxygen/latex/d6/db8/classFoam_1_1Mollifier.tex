@@ -1,0 +1,152 @@
+\hypertarget{classFoam_1_1Mollifier}{}\doxysection{Mollifier Class Reference}
+\label{classFoam_1_1Mollifier}\index{Mollifier@{Mollifier}}
+
+
+Inheritance diagram for Mollifier\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{d9/d9f/classFoam_1_1Mollifier__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFoam_1_1Mollifier_a660172304dfa1b418cc1bded338b9fd9}{Type\+Name}} (\char`\"{}none\char`\"{})
+\item 
+\mbox{\hyperlink{classFoam_1_1Mollifier_a3da0454d791a6b73c4b7f2d1ef7bf43e}{declare\+Run\+Time\+Selection\+Table}} (auto\+Ptr, \mbox{\hyperlink{classFoam_1_1Mollifier}{Mollifier}}, Dictionary,(const dictionary \&dict),(dict))
+\item 
+\mbox{\hyperlink{classFoam_1_1Mollifier_a87279d9bdc407abf64588b8c1cfc9e2e}{Mollifier}} (const dictionary \&dict)
+\begin{DoxyCompactList}\small\item\em Construct from components. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFoam_1_1Mollifier_a851af1a918a7fdbdc1cacf77e09734b2}{$\sim$\+Mollifier}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+tmp$<$ vol\+Scalar\+Field $>$ \mbox{\hyperlink{classFoam_1_1Mollifier_a12bc88e425baf70aabe176514f8a497e}{field}} (const vol\+Scalar\+Field \&psi) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1Mollifier}{Mollifier}} $>$ \mbox{\hyperlink{classFoam_1_1Mollifier_a3624bb62c9e7e8f4e99e3b86a5d0a7b6}{New}} (const dictionary \&dict)
+\begin{DoxyCompactList}\small\item\em Select default constructed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \mbox{\hyperlink{classFoam_1_1Mollifier_a76df394e9393689fafa95e7907f5f720}{mollify}} (double x) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 53 of file Mollifier.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFoam_1_1Mollifier_a87279d9bdc407abf64588b8c1cfc9e2e}\label{classFoam_1_1Mollifier_a87279d9bdc407abf64588b8c1cfc9e2e}} 
+\index{Mollifier@{Mollifier}!Mollifier@{Mollifier}}
+\index{Mollifier@{Mollifier}!Mollifier@{Mollifier}}
+\doxysubsubsection{\texorpdfstring{Mollifier()}{Mollifier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFoam_1_1Mollifier}{Mollifier}} (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})}
+
+
+
+Construct from components. 
+
+
+
+Definition at line 63 of file Mollifier.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1Mollifier_a851af1a918a7fdbdc1cacf77e09734b2}\label{classFoam_1_1Mollifier_a851af1a918a7fdbdc1cacf77e09734b2}} 
+\index{Mollifier@{Mollifier}!````~Mollifier@{$\sim$Mollifier}}
+\index{````~Mollifier@{$\sim$Mollifier}!Mollifier@{Mollifier}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mollifier()}{~Mollifier()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classFoam_1_1Mollifier}{Mollifier}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFoam_1_1Mollifier_a660172304dfa1b418cc1bded338b9fd9}\label{classFoam_1_1Mollifier_a660172304dfa1b418cc1bded338b9fd9}} 
+\index{Mollifier@{Mollifier}!TypeName@{TypeName}}
+\index{TypeName@{TypeName}!Mollifier@{Mollifier}}
+\doxysubsubsection{\texorpdfstring{TypeName()}{TypeName()}}
+{\footnotesize\ttfamily Type\+Name (\begin{DoxyParamCaption}\item[{\char`\"{}none\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1Mollifier_a3da0454d791a6b73c4b7f2d1ef7bf43e}\label{classFoam_1_1Mollifier_a3da0454d791a6b73c4b7f2d1ef7bf43e}} 
+\index{Mollifier@{Mollifier}!declareRunTimeSelectionTable@{declareRunTimeSelectionTable}}
+\index{declareRunTimeSelectionTable@{declareRunTimeSelectionTable}!Mollifier@{Mollifier}}
+\doxysubsubsection{\texorpdfstring{declareRunTimeSelectionTable()}{declareRunTimeSelectionTable()}}
+{\footnotesize\ttfamily declare\+Run\+Time\+Selection\+Table (\begin{DoxyParamCaption}\item[{auto\+Ptr}]{,  }\item[{\mbox{\hyperlink{classFoam_1_1Mollifier}{Mollifier}}}]{,  }\item[{Dictionary}]{,  }\item[{(const dictionary \&dict)}]{,  }\item[{(dict)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFoam_1_1Mollifier_a3624bb62c9e7e8f4e99e3b86a5d0a7b6}\label{classFoam_1_1Mollifier_a3624bb62c9e7e8f4e99e3b86a5d0a7b6}} 
+\index{Mollifier@{Mollifier}!New@{New}}
+\index{New@{New}!Mollifier@{Mollifier}}
+\doxysubsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily Foam\+::auto\+Ptr$<$ \mbox{\hyperlink{classFoam_1_1Mollifier}{Mollifier}} $>$ New (\begin{DoxyParamCaption}\item[{const dictionary \&}]{dict }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Select default constructed. 
+
+
+
+Definition at line 40 of file Mollifier.\+C.
+
+\mbox{\Hypertarget{classFoam_1_1Mollifier_a12bc88e425baf70aabe176514f8a497e}\label{classFoam_1_1Mollifier_a12bc88e425baf70aabe176514f8a497e}} 
+\index{Mollifier@{Mollifier}!field@{field}}
+\index{field@{field}!Mollifier@{Mollifier}}
+\doxysubsubsection{\texorpdfstring{field()}{field()}}
+{\footnotesize\ttfamily tmp$<$ vol\+Scalar\+Field $>$ field (\begin{DoxyParamCaption}\item[{const vol\+Scalar\+Field \&}]{psi }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 68 of file Mollifier.\+C.
+
+
+
+References Mollifier\+::mollify().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{d6/db8/classFoam_1_1Mollifier_a12bc88e425baf70aabe176514f8a497e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classFoam_1_1Mollifier_a76df394e9393689fafa95e7907f5f720}\label{classFoam_1_1Mollifier_a76df394e9393689fafa95e7907f5f720}} 
+\index{Mollifier@{Mollifier}!mollify@{mollify}}
+\index{mollify@{mollify}!Mollifier@{Mollifier}}
+\doxysubsubsection{\texorpdfstring{mollify()}{mollify()}}
+{\footnotesize\ttfamily double mollify (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classFoam_1_1Mollifier1_a76df394e9393689fafa95e7907f5f720}{Mollifier1}}.
+
+
+
+Definition at line 97 of file Mollifier.\+C.
+
+
+
+Referenced by Mollifier\+::field().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{d6/db8/classFoam_1_1Mollifier_a76df394e9393689fafa95e7907f5f720_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Mollifier/\mbox{\hyperlink{Mollifier_8H}{Mollifier.\+H}}\item 
+/home/julian/\+Open\+FOAM/leia2/src/leia\+Level\+Set/\+SDPLSSource/\+Mollifier/\mbox{\hyperlink{Mollifier_8C}{Mollifier.\+C}}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="explicitMag1GradientFvPatchField" name="explicitMag1GradientFvPatchField">
+<area shape="rect" id="node1" title="Sets the BC gradient to the normalized gradient of the internalField of the last time step." alt="" coords="69,171,283,212"/>
+<area shape="rect" id="node2" href="$d1/d36/classFoam_1_1explicitGradientFvPatchField.html" title="Sets the BC gradient to the gradient of the internalField of the last time step." alt="" coords="72,95,280,121"/>
+<area shape="rect" id="node3" href="$d5/d6c/classfvPatchField.html" title=" " alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="200,5,323,32"/>
+</map>
